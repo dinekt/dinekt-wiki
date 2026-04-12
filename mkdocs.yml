@@ -1,0 +1,28 @@
+site_name: Dinekt Knowledge Wiki
+site_description: 技術ナレッジの検証済みコレクション
+site_url: https://dinekt.github.io/dinekt-wiki/
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
