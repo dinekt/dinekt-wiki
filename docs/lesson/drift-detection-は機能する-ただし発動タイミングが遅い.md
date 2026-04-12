@@ -14,3 +14,25 @@
 3. 代表がメタファー的な語（『データベーステーブル』『フォルダ』『箱』）を使った場合、リテラル解釈か比喩かを確認する質問テンプレートが必要 → forge v1.3 への学び
 
 なぜ重要: 構造的批判（P4: 別軸評価）が機能した実証例。intent_graph 凍結 → 下流判断 → drift-detection → 巻き戻しのループは、組織再構築のような大規模意思決定で実際に救われる
+
+---
+
+## 先行概念チェック
+
+**判定**: 🔀 部分的に新規  
+**独自性スコア**: 65/100  
+**検証日**: 2026-04-12T15:47:52+00:00  
+
+### 先行概念の概要
+
+drift detection はAI分野で認知された概念。ARMO、Adopt AI、designative.info 等が intent drift や specification drift を解説。ただし「凍結された intent-graph からの drift を Phase 4 の二役レビューで検出し Phase 1 に巻き戻す」という具体的パターンは先行なし。
+
+### この概念の独自部分
+
+forge v1.2 の実装に基づく具体的な drift 検出→巻き戻しループの実証事例。intent-graph 凍結という仕組みと、drift の発動タイミングが遅いという実務的教訓の組み合わせが独自。
+
+### 参考ソース
+
+- https://www.armosec.io/blog/detecting-intent-drift-in-ai-agents-with-runtime-behavioral-data/
+- https://www.designative.info/2026/03/08/preventing-agent-drift-designing-ai-systems-that-stay-aligned-with-human-intent/
+- https://www.adopt.ai/glossary/agent-drift-detection
