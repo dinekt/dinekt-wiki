@@ -1,0 +1,153 @@
+---
+tags:
+  - responsibility
+  - governance
+  - concept
+---
+
+# AI エージェントと人間の責任分界
+
+<div class="dnk-meta" markdown>
+<span class="pill cat">Concepts</span>
+<span class="pill">#responsibility</span>
+<span class="pill">#governance</span>
+<span class="pill">#concept</span>
+<span class="pill">updated 2026-04-13</span>
+<span class="pill">5 min read</span>
+</div>
+
+AI エージェントに仕事を任せる際、**「誰が何の責任を持つか」**を曖昧にすると、事故時に収拾がつかなくなる。責任分界を明示的に設計する。
+
+### 責任の 3 層
+
+```mermaid
+flowchart TD
+    T[タスク]
+    T --> D[判断層<br/>Decision]
+    T --> E[実行層<br/>Execution]
+    T --> V[検証層<br/>Verification]
+
+    D --> DA[誰が決めるか]
+    E --> EA[誰が実行するか]
+    V --> VA[誰が結果を確認するか]
+
+    style D fill:#fff3e0,stroke:#ffb74d
+    style E fill:#e3f2fd,stroke:#64b5f6
+    style V fill:#e8f5e9,stroke:#81c784
+```
+
+- **判断層**: 何をどうするか決める
+- **実行層**: 決まったことを実際にやる
+- **検証層**: 結果が期待通りかを確認する
+
+エージェントと人間が、どの層をどこまで担うかを設計する。
+
+### 典型的な役割配分
+
+```mermaid
+flowchart LR
+    subgraph 人間中心
+      A1[判断: 人]
+      A2[実行: 人]
+      A3[検証: 人]
+    end
+    subgraph 人間+AI
+      B1[判断: 人]
+      B2[実行: AI]
+      B3[検証: 人]
+    end
+    subgraph AI中心
+      C1[判断: AI]
+      C2[実行: AI]
+      C3[検証: 人 抽出]
+    end
+    subgraph 完全自律
+      D1[判断: AI]
+      D2[実行: AI]
+      D3[検証: AI]
+    end
+
+    style D1 fill:#ffebee,stroke:#e57373
+    style D2 fill:#ffebee,stroke:#e57373
+    style D3 fill:#ffebee,stroke:#e57373
+```
+
+- **人間中心**: 手作業。最も安全だが遅い
+- **人間 + AI**: 人が決め、AI が実行。検証は人。多くの業務がここに落ち着く
+- **AI 中心**: AI が判断・実行、人は抜き打ちで検証。定型業務向け
+- **完全自律**: 検証も AI。限定的な用途のみ
+
+### 責任分界の原則
+
+**1. 不可逆な行動は人間が判断する**
+
+削除・送信・決済・公開など、**取り消せないアクション**は人間の承認を通す。
+
+**2. 検証層は必ず分離する**
+
+判断と実行を同じ主体（AI）がやるのは OK でも、**検証まで同じ主体**は避ける。自己監査はバイアスが残る。
+
+**3. ログで追跡可能にする**
+
+誰が何を判断し・実行し・確認したか、すべて記録する。事故時の原因追跡に必須。
+
+**4. エスカレーションパスを用意する**
+
+AI が自信を持って判断できないケースは、人間に上げる。閾値を設定する。
+
+```mermaid
+flowchart TD
+    T[AI のタスク] --> C{信頼度}
+    C -->|高| A[自動実行]
+    C -->|中| R[人間レビュー]
+    C -->|低| E[人間へエスカレーション]
+
+    style A fill:#e8f5e9,stroke:#81c784
+    style R fill:#fff9c4,stroke:#fff176
+    style E fill:#ffebee,stroke:#e57373
+```
+
+### 事故時の責任
+
+AI の判断ミスで事故が起きたとき、**最終的な責任は人間**にある。
+
+- **設計責任**: どこまで AI に任せるか決めた人間
+- **運用責任**: 異常を検知・対応する人間
+- **組織責任**: AI を導入した組織
+
+AI 自体に責任能力はない。事故防止は**人間の設計責任**として扱う。
+
+### 契約と法的考慮
+
+業務で AI を使う場合、法的な責任分界も設計に含める。
+
+- AI の出力を顧客にそのまま提示する場合、**誤情報の責任**は誰か
+- 決済・契約等の執行に AI が関わる場合、**執行責任**は誰か
+- 個人情報を AI に渡す場合、**データ保護責任**は誰か
+
+規模が大きくなるほど、法務と一緒に設計する必要がある。
+
+### アンチパターン
+
+- **「AI が判断したので仕方ない」**: 責任を AI に押し付ける。人間の設計責任を放棄している
+- **検証層の省略**: 実行だけ任せて検証しないと、失敗が蓄積する
+- **ログの欠落**: 追跡できないと、改善も責任追及もできない
+- **エスカレーションパスなし**: AI が判断に詰まったとき、勝手に進めるか停止するかで混乱
+
+### まとめ
+
+責任分界は**「誰が判断・実行・検証するか」**の 3 層で整理する。不可逆な行動は人間判断、検証層は必ず分離、ログで追跡可能にする。AI を導入する前に、この設計を済ませる。
+
+
+
+## 関連エントリ
+
+- [Drift Detection — 実装が意図から乖離する現象を検出する](drift-detection-実装が意図から乖離する現象を検出する.md)
+- [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
+- [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
+
+
+<div class="dnk-prev-next" markdown>
+  <div class="prev">← [エージェントの自律度レベルと昇格基準](エージェントの自律度レベルと昇格基準.md)</div>
+  <div class="next">[Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md) →</div>
+</div>

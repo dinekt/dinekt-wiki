@@ -128,8 +128,8 @@ LLM の非決定性は**治すべきバグではなく、前提条件**。前提
 ## 関連エントリ
 
 - [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
+- [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
 - [Drift Detection — 実装が意図から乖離する現象を検出する](drift-detection-実装が意図から乖離する現象を検出する.md)
-- [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
 
 
 <div class="dnk-prev-next" markdown>

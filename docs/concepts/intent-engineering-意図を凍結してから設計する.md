@@ -63,7 +63,7 @@ Dinekt では forge というハーネス設計フレームワークで実装し
 
 - [Drift Detection — 実装が意図から乖離する現象を検出する](drift-detection-実装が意図から乖離する現象を検出する.md)
 - [比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](../case-studies/比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)
-- [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
+- [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
 
 
 <div class="dnk-prev-next" markdown>
