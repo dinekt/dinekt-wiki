@@ -51,6 +51,6 @@ CREATE VIRTUAL TABLE entries_fts USING fts5(
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [実装言語を選ぶ前に環境前提を確認する](実装言語を選ぶ前に環境前提を確認する.md)</div>
+  <div class="prev">← [LLM 機能を本番リリースする前のチェックリスト](llm-機能を本番リリースする前のチェックリスト.md)</div>
   <div class="next">[SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md) →</div>
 </div>
