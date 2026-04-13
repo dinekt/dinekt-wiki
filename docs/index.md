@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>70 entries</span>
+  <span>71 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 12
-    "Techniques" : 20
+    "Techniques" : 21
     "Patterns" : 8
     "Case Studies" : 12
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _20 entries_
+    _21 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[推論モデル (o1/o3/Extended Thinking) の使いどころ](techniques/推論モデル-o1o3extended-thinking-の使いどころ.md)__
+
+    ---
+
+    OpenAI の o1・o3、Anthropic の Extended Thinking、Google の Deep Thinking など、明示的に推論時間を使うモデル（Reasoning Mode…
+
 -   __[AI エージェント運用の 10 メトリクス](tech-notes/ai-エージェント運用の-10-メトリクス.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     「このデータから〇〇を抽出して」のような複雑な要求を 1 リクエストで処理しようとすると、精度が不安定になる。タスクを段階分解することで劇的に改善した事例。 発生した問題 ユーザーが「過去 3 ヶ月の…
-
--   __[AI エージェントが読みやすいドキュメントの書き方](techniques/ai-エージェントが読みやすいドキュメントの書き方.md)__
-
-    ---
-
-    AI エージェントが参照するドキュメントは、人間向けと書き方を変えると精度が大きく上がる。人間が読みやすい文章と、AI が解釈しやすい文章は、重なるが同じではない。 AI が解釈しやすい書き方 8 つ…
 
 </div>
 

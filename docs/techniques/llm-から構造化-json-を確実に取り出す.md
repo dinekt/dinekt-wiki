@@ -130,6 +130,6 @@ flowchart TD
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [CoT・ToT・ReAct — 推論パターンの使い分け](cottotreact-推論パターンの使い分け.md)</div>
+  <div class="prev">← [推論モデル (o1/o3/Extended Thinking) の使いどころ](推論モデル-o1o3extended-thinking-の使いどころ.md)</div>
   <div class="next">[プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md) →</div>
 </div>

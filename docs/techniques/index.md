@@ -4,7 +4,7 @@
 
 Techniques には、エージェントやプロンプトの設計時に使える具体的な手法をまとめています。Concepts で扱う考え方を、現場で運用可能なレベルまで落とし込んだものです。
 
-**20 件のエントリ**
+**21 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -19,6 +19,12 @@ Techniques には、エージェントやプロンプトの設計時に使える
     ---
 
     LLM の推論能力を引き出すパターンとして、Chain-of-Thought (CoT)、Tree-of-Thoughts (ToT)、ReAct が筆者的。用途に応じて使い分ける。 3 つのパターン…
+
+-   __[推論モデル (o1/o3/Extended Thinking) の使いどころ](推論モデル-o1o3extended-thinking-の使いどころ.md)__
+
+    ---
+
+    OpenAI の o1・o3、Anthropic の Extended Thinking、Google の Deep Thinking など、明示的に推論時間を使うモデル（Reasoning Mode…
 
 -   __[LLM から構造化 JSON を確実に取り出す](llm-から構造化-json-を確実に取り出す.md)__
 
