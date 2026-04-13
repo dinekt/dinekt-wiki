@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>68 entries</span>
+  <span>69 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -38,7 +38,7 @@ flowchart TD
 pie showData title カテゴリの分布
     "Concepts" : 12
     "Techniques" : 20
-    "Patterns" : 7
+    "Patterns" : 8
     "Case Studies" : 12
     "Tools" : 6
     "Tech Notes" : 11
@@ -81,7 +81,7 @@ pie showData title カテゴリの分布
 
     失敗モードと再発防止のパターン集
 
-    _7 entries_
+    _8 entries_
 
 -   __[Case Studies](case-studies/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[情報過多コンテキストの 4 つの失敗モード](patterns/情報過多コンテキストの-4-つの失敗モード.md)__
+
+    ---
+
+    「コンテキストにたくさん情報を入れれば、精度が上がる」と思いがち。実は逆。情報過多のコンテキストは、かえって精度を落とす。 症状 4 つの失敗モード 1. 重要情報の見落とし (Lost in the…
+
 -   __[AI プロダクトと倫理 — 7 つの観点](concepts/ai-プロダクトと倫理-7-つの観点.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     Claude Code を日々の開発で使い倒している中で気付いた、小さいけど効く 10 の実践。1 つ 1 つは小さいが、合計すると体感が大きく変わる。 10 の小技 1. 最初に「役割」を明示する…
-
--   __[LLM レッドチーミング — 意図的な攻撃で安全性を検証する](techniques/llm-レッドチーミング-意図的な攻撃で安全性を検証する.md)__
-
-    ---
-
-    LLM を組み込んだアプリの安全性を検証するには、意図的に攻撃を試みるレッドチーミングが有効。実運用前に必ず通す工程にする。 レッドチーミングの位置づけ 評価セット（正常系の確認）と別物。攻撃者視点で…
 
 </div>
 
