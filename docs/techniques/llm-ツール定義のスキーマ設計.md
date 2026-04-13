@@ -154,5 +154,5 @@ flowchart TD
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md)</div>
-  <div class="next">[ヒアリングテンプレートの設計](ヒアリングテンプレートの設計.md) →</div>
+  <div class="next">[プロンプトが期待通りに動かないときのデバッグ手順](プロンプトが期待通りに動かないときのデバッグ手順.md) →</div>
 </div>
