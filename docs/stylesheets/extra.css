@@ -239,22 +239,38 @@ body, .md-typeset {
 }
 
 .md-typeset .grid.cards > ul > li {
+  position: relative;
   border: none;
   border-right: 1px solid var(--dnk-border);
   border-bottom: 1px solid var(--dnk-border);
   border-radius: 0;
-  padding: 1.2rem 1.2rem 1.4rem;
+  padding: 1.3rem 1.3rem 1.5rem;
   margin: 0;
   background: var(--dnk-bg);
-  transition: background 0.12s ease;
+  transition: background 0.15s ease, border-color 0.15s ease;
   box-shadow: none;
   list-style: none;
+}
+
+.md-typeset .grid.cards > ul > li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--dnk-fg);
+  transition: width 0.2s ease;
 }
 
 .md-typeset .grid.cards > ul > li:hover {
   background: var(--dnk-bg-soft);
   transform: none;
   box-shadow: none;
+}
+
+.md-typeset .grid.cards > ul > li:hover::before {
+  width: 100%;
 }
 
 .md-typeset .grid.cards > ul > li > p {
@@ -450,6 +466,34 @@ body, .md-typeset {
   border: none;
   border-top: 1px solid var(--dnk-border);
   margin: 2.2rem 0;
+}
+
+/* ---------- 関連エントリ section ---------- */
+
+.md-typeset h2#_1,
+.md-typeset h2:has(+ ul) {
+  /* generic h2 style kept */
+}
+
+.md-typeset h2 + ul {
+  margin-top: 0.6rem;
+}
+
+/* Style the 関連エントリ list to feel like a subtle "see also" block */
+.md-typeset h2:last-of-type + ul {
+  border-top: 1px solid var(--dnk-border);
+  padding-top: 0.8rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* ---------- Section index intro paragraph ---------- */
+
+.md-typeset h1 + p em {
+  font-style: normal;
+  color: var(--dnk-fg-soft);
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
 }
 
 /* ---------- Disable fade-in ---------- */

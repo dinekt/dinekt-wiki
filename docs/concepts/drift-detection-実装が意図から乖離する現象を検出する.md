@@ -33,3 +33,4 @@ drift は早期に検出するほど修復コストが低い。設計段階（Ph
 ## 関連エントリ
 
 - [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
+- [二役レビューの実装パターン](../techniques/二役レビューの実装パターン.md)
