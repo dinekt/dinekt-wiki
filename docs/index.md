@@ -23,13 +23,6 @@ flowchart TD
     T --> TO[Tools<br/>道具と実装]
     CS --> TN[Tech Notes<br/>小さな知見]
     TO --> TN
-
-    style C fill:#262626,color:#fff,stroke:#262626
-    style T fill:#e8f5e9,stroke:#81c784,color:#000
-    style P fill:#ffebee,stroke:#e57373,color:#000
-    style CS fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style TO fill:#fff3e0,stroke:#ffb74d,color:#000
-    style TN fill:#f6f6f6,stroke:#8a8a8a,color:#000
 ```
 
 ## カテゴリ別エントリ数

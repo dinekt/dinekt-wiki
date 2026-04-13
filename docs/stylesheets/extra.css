@@ -591,28 +591,88 @@ body, .md-typeset {
   background: #161616;
 }
 
-/* ---------- Mermaid readability: ensure node labels are always visible ---------- */
-/* Fallback text color when the author has not set one via inline `color:`. */
-/* Using non-!important so inline styles from Mermaid directives (color:#fff on
-   dark-filled nodes) still win. */
+/* ---------- Mermaid readability ---------- */
+/* Strategy: in dark mode, force all node labels to be high-contrast light text,
+   AND darken the pastel fills inline-styled by authors so text remains readable. */
 
+/* LIGHT MODE: ensure all text is dark */
 [data-md-color-scheme="default"] .md-typeset .mermaid .nodeLabel,
-[data-md-color-scheme="default"] .md-typeset .mermaid .cluster-label {
-  color: #0a0a0a;
-}
-
-[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .cluster-label {
-  color: #ededed;
-}
-
-/* Edge labels always need high contrast against the mermaid bg */
-[data-md-color-scheme="default"] .md-typeset .mermaid .edgeLabel {
+[data-md-color-scheme="default"] .md-typeset .mermaid .nodeLabel *,
+[data-md-color-scheme="default"] .md-typeset .mermaid .label,
+[data-md-color-scheme="default"] .md-typeset .mermaid .label *,
+[data-md-color-scheme="default"] .md-typeset .mermaid .cluster-label,
+[data-md-color-scheme="default"] .md-typeset .mermaid foreignObject div {
   color: #0a0a0a !important;
+  fill: #0a0a0a !important;
 }
 
-[data-md-color-scheme="slate"] .md-typeset .mermaid .edgeLabel {
+/* Override: nodes with explicitly dark fills get white text in light mode */
+[data-md-color-scheme="default"] .md-typeset .mermaid g.node[style*="fill:#262626"] .nodeLabel,
+[data-md-color-scheme="default"] .md-typeset .mermaid g.node[style*="fill:#262626"] foreignObject div,
+[data-md-color-scheme="default"] .md-typeset .mermaid g.node[style*="fill:#0a0a0a"] .nodeLabel,
+[data-md-color-scheme="default"] .md-typeset .mermaid g.node[style*="fill:#0a0a0a"] foreignObject div {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* DARK MODE: rewrite pastel fills to dark saturated versions, text becomes light */
+[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel *,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .label,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .label *,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .cluster-label,
+[data-md-color-scheme="slate"] .md-typeset .mermaid foreignObject div {
   color: #ededed !important;
+  fill: #ededed !important;
+}
+
+/* Replace pastel fills in dark mode to darker equivalents */
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#e8f5e9"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#e8f5e9"] > polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#e8f5e9"] > circle {
+  fill: #1b5e20 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#ffebee"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#ffebee"] > polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#ffebee"] > circle {
+  fill: #7f1d1d !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#e3f2fd"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#e3f2fd"] > polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#e3f2fd"] > circle {
+  fill: #0d47a1 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fff3e0"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fff3e0"] > polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fff3e0"] > circle {
+  fill: #5d4037 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fff9c4"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fff9c4"] > polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fff9c4"] > circle {
+  fill: #4e4400 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#f6f6f6"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#f6f6f6"] > polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#f6f6f6"] > circle {
+  fill: #333333 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#fafafa"] > rect {
+  fill: #2a2a2a !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#ffcdd2"] > rect {
+  fill: #7f1d1d !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#ffebee"] > rect {
+  fill: #7f1d1d !important;
+}
+
+/* Dark fills in dark mode: keep but ensure distinguishable border */
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#262626"] > rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid g.node[style*="fill:#262626"] > polygon {
+  fill: #1f1f1f !important;
+  stroke: #666 !important;
+  stroke-width: 2px !important;
 }
 
 /* Edge label background (prevents overlap with edge line) */
