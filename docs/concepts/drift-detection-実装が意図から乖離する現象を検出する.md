@@ -73,10 +73,10 @@ drift は早期に検出するほど修復コストが低い。設計段階（Ph
 
 - [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
 - [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
-- [コンテキストは有限で劣化する資源である](コンテキストは有限で劣化する資源である.md)
+- [エージェントの自律度レベルと昇格基準](エージェントの自律度レベルと昇格基準.md)
 
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)</div>
-  <div class="next">[Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md) →</div>
+  <div class="next">[エージェントの自律度レベルと昇格基準](エージェントの自律度レベルと昇格基準.md) →</div>
 </div>

@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>37 entries</span>
+  <span>38 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -53,7 +53,7 @@ flowchart TD
 
     AI 開発の根底にある概念・思想
 
-    _6 entries_
+    _7 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -101,6 +101,12 @@ flowchart TD
 
 <div class="grid cards" markdown>
 
+-   __[エージェントの自律度レベルと昇格基準](concepts/エージェントの自律度レベルと昇格基準.md)__
+
+    ---
+
+    AI エージェントを運用する際、「どこまで自律的に動かしていいか」は設計の根本に関わる決定。エージェントの自律度レベルを段階として捉えると、判断がぶれない。 5 段階の自律度 mermaid flow…
+
 -   __[LLM API のレート制限との付き合い方](tech-notes/llm-api-のレート制限との付き合い方.md)__
 
     ---
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     LLM に「こういう形式で答えてほしい」と伝える最強の手段は、例を見せること。Fewshot examples を正しく設計すると、出力の品質と一貫性が大きく変わる。 なぜ例示が効くか 自然言語の指示…
-
--   __[LLM から構造化 JSON を確実に取り出す](techniques/llm-から構造化-json-を確実に取り出す.md)__
-
-    ---
-
-    LLM から構造化データ（JSON）を取り出す際、JSON Mode や Function Calling を使わないと、プレーンテキストの中に JSON が混じって返ってきて、パースに失敗しやすい。…
 
 </div>
 
