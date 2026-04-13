@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>65 entries</span>
+  <span>66 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -39,7 +39,7 @@ pie showData title カテゴリの分布
     "Concepts" : 11
     "Techniques" : 19
     "Patterns" : 7
-    "Case Studies" : 11
+    "Case Studies" : 12
     "Tools" : 6
     "Tech Notes" : 11
 ```
@@ -89,7 +89,7 @@ pie showData title カテゴリの分布
 
     実際に遭遇したケースと対応の記録
 
-    _11 entries_
+    _12 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -112,6 +112,12 @@ pie showData title カテゴリの分布
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[複雑なタスクを LLM に段階分解させて精度を上げた事例](case-studies/複雑なタスクを-llm-に段階分解させて精度を上げた事例.md)__
+
+    ---
+
+    「このデータから〇〇を抽出して」のような複雑な要求を 1 リクエストで処理しようとすると、精度が不安定になる。タスクを段階分解することで劇的に改善した事例。 発生した問題 ユーザーが「過去 3 ヶ月の…
 
 -   __[AI エージェントが読みやすいドキュメントの書き方](techniques/ai-エージェントが読みやすいドキュメントの書き方.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     「モデルをファインチューニングすべきか、プロンプトで頑張るか」は AI 機能開発でよく議論になる。結論から言うと、プロンプトエンジニアリングで行けるところまで行くのが基本。ファインチューニングは最後の…
-
--   __[LLM API キーの管理と漏洩防止](tech-notes/llm-api-キーの管理と漏洩防止.md)__
-
-    ---
-
-    LLM の API キー（OpenAI, Anthropic 等）は高価・攻撃対象・漏洩時の影響が大きい。最初から管理の仕組みを整えないと、事故を起こす。 漏洩の主な経路 基本の守り方 1. 環境変数…
 
 </div>
 
