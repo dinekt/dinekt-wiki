@@ -153,6 +153,6 @@ flowchart TD
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md)</div>
+  <div class="prev">← [LLM コストを減らす 7 つの手法 (優先順位つき)](llm-コストを減らす-7-つの手法-優先順位つき.md)</div>
   <div class="next">[プロンプトが期待通りに動かないときのデバッグ手順](プロンプトが期待通りに動かないときのデバッグ手順.md) →</div>
 </div>
