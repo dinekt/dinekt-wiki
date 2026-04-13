@@ -105,6 +105,6 @@ flowchart LR
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [Claude Code settings.json を使いこなす](claude-code-settingsjson-を使いこなす.md)</div>
+  <div class="prev">← [Claude Code のサブエージェント活用法](claude-code-のサブエージェント活用法.md)</div>
   <div class="next"></div>
 </div>

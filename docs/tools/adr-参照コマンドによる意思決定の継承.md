@@ -93,7 +93,7 @@ flowchart LR
 
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](../case-studies/claudemd-肥大化を-adr-分離で回復した事例.md)
 - [Claude Code settings.json を使いこなす](claude-code-settingsjson-を使いこなす.md)
-- [forge — ハーネス設計フレームワーク](forge-ハーネス設計フレームワーク.md)
+- [Claude Code のサブエージェント活用法](claude-code-のサブエージェント活用法.md)
 
 
 <div class="dnk-prev-next" markdown>

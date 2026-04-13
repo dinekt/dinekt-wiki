@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>47 entries</span>
+  <span>48 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -85,7 +85,7 @@ flowchart TD
 
     Dinekt が設計・運用している道具と実装
 
-    _4 entries_
+    _5 entries_
 
 -   __[Tech Notes](tech-notes/index.md)__
 
@@ -100,6 +100,12 @@ flowchart TD
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[Claude Code のサブエージェント活用法](tools/claude-code-のサブエージェント活用法.md)__
+
+    ---
+
+    Claude Code のサブエージェント機能は、専門分野に特化した別エージェントを呼び出す仕組み。うまく使えばメインのコンテキストを節約しつつ、専門的な判断を得られる。 基本構造 メインはオーケスト…
 
 -   __[AI エージェントと人間の責任分界](concepts/ai-エージェントと人間の責任分界.md)__
 
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     LLM が期待通りの出力を返さないとき、何から手をつけるか。プロンプトデバッグはアプリ開発と違った進め方が必要。 切り分けの手順 1. 再現性を確認する 同じ入力で 5 回実行し、パターンを見る。 -…
-
--   __[LLM の非決定性を前提に設計する](concepts/llm-の非決定性を前提に設計する.md)__
-
-    ---
-
-    LLM の出力は本質的に非決定的。同じ入力でも呼び出しごとに違う結果が返る。これを「バグ」として扱うと無限に消耗する。前提として受け入れ、その上で設計するのが実用的な態度。 非決定性の源 - サンプリ…
 
 </div>
 
