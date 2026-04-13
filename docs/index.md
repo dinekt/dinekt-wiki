@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>61 entries</span>
+  <span>62 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -39,7 +39,7 @@ pie showData title カテゴリの分布
     "Concepts" : 11
     "Techniques" : 16
     "Patterns" : 7
-    "Case Studies" : 10
+    "Case Studies" : 11
     "Tools" : 6
     "Tech Notes" : 11
 ```
@@ -89,7 +89,7 @@ pie showData title カテゴリの分布
 
     実際に遭遇したケースと対応の記録
 
-    _10 entries_
+    _11 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -112,6 +112,12 @@ pie showData title カテゴリの分布
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[評価セットを後回しにしてリリース後に立て直した事例](case-studies/評価セットを後回しにしてリリース後に立て直した事例.md)__
+
+    ---
+
+    新規の LLM 機能を作る際、評価セットを後回しにしたことで、本番リリース後に品質問題を抱えた事例と、そこからの立て直し。 発生した事象 新機能（ユーザー質問への自動回答）をリリース。開発中は目視確認…
 
 -   __[ファインチューニング vs プロンプト — どちらを選ぶか](concepts/ファインチューニング-vs-プロンプト-どちらを選ぶか.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM に長文（ブログ記事、ドキュメント、レポート等）を書かせる際、短い出力より桁違いに失敗する。中途終了・繰り返し・矛盾・尻すぼみなどの失敗モードが典型。 5 つの典型的な失敗 1. 尻すぼみ 症状…
-
--   __[Claude Code を使った効率的な不具合調査](case-studies/claude-code-を使った効率的な不具合調査.md)__
-
-    ---
-
-    不具合調査で Claude Code を使うと、「何となく修正して動いた」では終わらず、根本原因まで特定できる確率が大きく上がる。ただしやり方を間違えるとむしろ遅くなる。効率的な進め方を整理。 調査フ…
 
 </div>
 
