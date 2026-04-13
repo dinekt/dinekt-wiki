@@ -13,20 +13,19 @@ theme:
     text: Inter
     code: JetBrains Mono
   icon:
-    logo: material/lightbulb-on-outline
     repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: indigo
+      primary: black
+      accent: black
       toggle:
         icon: material/weather-night
         name: ダークモードに切り替え
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: indigo
+      primary: black
+      accent: white
       toggle:
         icon: material/weather-sunny
         name: ライトモードに切り替え
@@ -37,15 +36,11 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.footer
-    - navigation.indexes
     - toc.follow
     - search.suggest
     - search.highlight
-    - search.share
     - content.code.copy
-    - content.code.annotate
     - content.tooltips
-    - announce.dismiss
 
 extra_css:
   - stylesheets/extra.css
@@ -57,30 +52,19 @@ plugins:
 
 markdown_extensions:
   - toc:
-      permalink: true
+      permalink: "#"
       permalink_title: このセクションへのリンク
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.caret
   - tables
   - attr_list
   - md_in_html
@@ -97,4 +81,4 @@ extra:
       name: Dinekt on GitHub
   generator: false
 
-copyright: Copyright &copy; 2026 Dinekt
+copyright: "&copy; 2026 Dinekt"
