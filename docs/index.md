@@ -5,9 +5,9 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>33 entries</span>
+  <span>34 entries</span>
   <span>6 categories</span>
-  <span>auto-generated</span>
+  <span>updated 2026-04-13</span>
 </div>
 
 </div>
@@ -53,7 +53,7 @@ flowchart TD
 
     AI 開発の根底にある概念・思想
 
-    _5 entries_
+    _6 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -101,6 +101,12 @@ flowchart TD
 
 <div class="grid cards" markdown>
 
+-   __[プロンプトインジェクション — LLM アプリの最重要セキュリティ論点](concepts/プロンプトインジェクション-llm-アプリの最重要セキュリティ論点.md)__
+
+    ---
+
+    LLM を組み込んだアプリで、ユーザー入力や外部データに仕込まれた悪意ある指示が LLM を操る攻撃。プロンプトインジェクションは LLM アプリのセキュリティで最も重要な論点。 攻撃パターン mer…
+
 -   __[Few-shot Examples の効果的な設計](techniques/few-shot-examples-の効果的な設計.md)__
 
     ---
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     Vercel（や Cloudflare Workers）の Edge Runtime は起動が速くグローバル分散できるが、Node.js API の大半が使えない。Node Runtime との使い分…
-
--   __[LLM-as-Judge — 評価者 LLM の組み立て方](techniques/llm-as-judge-評価者-llm-の組み立て方.md)__
-
-    ---
-
-    LLM の出力品質を別の LLM に評価させる手法。主観的な評価軸（トーン、読みやすさ、含意の適切さ）を自動化できる。ただし評価者自身にバイアスがあるため、実装には注意が要る。 基本構造 mermai…
 
 </div>
 

@@ -103,5 +103,5 @@ LLM を使った機能の品質を担保するには、**評価を仕組み化**
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [Drift Detection — 実装が意図から乖離する現象を検出する](drift-detection-実装が意図から乖離する現象を検出する.md)</div>
-  <div class="next">[技術選定の5軸評価フレームワーク](技術選定の5軸評価フレームワーク.md) →</div>
+  <div class="next">[プロンプトインジェクション — LLM アプリの最重要セキュリティ論点](プロンプトインジェクション-llm-アプリの最重要セキュリティ論点.md) →</div>
 </div>
