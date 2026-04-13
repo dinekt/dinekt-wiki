@@ -47,4 +47,4 @@ CREATE VIRTUAL TABLE entries_fts USING fts5(
 
 - [SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md)
 - [ナレッジベースを静的 Wiki として自動公開するパイプライン](../tools/ナレッジベースを静的-wiki-として自動公開するパイプライン.md)
-- [chrome.storage は local / sync / session を正しく使い分ける](chromestorage-は-local-sync-session-を正しく使い分ける.md)
+- [Edge Runtime vs Node Runtime の使い分け](edge-runtime-vs-node-runtime-の使い分け.md)

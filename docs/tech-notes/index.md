@@ -4,7 +4,7 @@
 
 特定の技術に関する小さな発見や設定ノウハウをまとめた、辞書的なカテゴリです。必要な項目だけを拾い読みしてください。
 
-**5 件のエントリ**
+**6 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -25,6 +25,12 @@
     ---
 
     FTS5 のクエリ構文では  " ( )  などが演算子として解釈される。ユーザー入力をそのまま渡すとクエリエラーや意図しない検索結果を招く。たとえば technews は tech NOT news…
+
+-   __[Edge Runtime vs Node Runtime の使い分け](edge-runtime-vs-node-runtime-の使い分け.md)__
+
+    ---
+
+    Vercel（や Cloudflare Workers）の Edge Runtime は起動が速くグローバル分散できるが、Node.js API の大半が使えない。Node Runtime との使い分…
 
 -   __[ナレッジベースのファイル命名規則とテキスト規約](ナレッジベースのファイル命名規則とテキスト規約.md)__
 

@@ -41,4 +41,4 @@ FTS5 のクエリ構文では `-` `"` `(` `)` `*` などが演算子として解
 
 - [SQLite FTS5 で日本語を全文検索する](sqlite-fts5-で日本語を全文検索する.md)
 - [ナレッジベースを静的 Wiki として自動公開するパイプライン](../tools/ナレッジベースを静的-wiki-として自動公開するパイプライン.md)
-- [chrome.storage は local / sync / session を正しく使い分ける](chromestorage-は-local-sync-session-を正しく使い分ける.md)
+- [Edge Runtime vs Node Runtime の使い分け](edge-runtime-vs-node-runtime-の使い分け.md)

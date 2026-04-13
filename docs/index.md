@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>28 entries</span>
+  <span>31 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -41,7 +41,7 @@
 
     エージェントやプロンプトの設計手法
 
-    _5 entries_
+    _7 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -73,13 +73,31 @@
 
     技術仕様・Tips・検証メモ
 
-    _5 entries_
+    _6 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[Edge Runtime vs Node Runtime の使い分け](tech-notes/edge-runtime-vs-node-runtime-の使い分け.md)__
+
+    ---
+
+    Vercel（や Cloudflare Workers）の Edge Runtime は起動が速くグローバル分散できるが、Node.js API の大半が使えない。Node Runtime との使い分…
+
+-   __[LLM-as-Judge — 評価者 LLM の組み立て方](techniques/llm-as-judge-評価者-llm-の組み立て方.md)__
+
+    ---
+
+    LLM の出力品質を別の LLM に評価させる手法。主観的な評価軸（トーン、読みやすさ、含意の適切さ）を自動化できる。ただし評価者自身にバイアスがあるため、実装には注意が要る。 基本構造 mermai…
+
+-   __[RAG のチャンクサイズを選ぶ基準](techniques/rag-のチャンクサイズを選ぶ基準.md)__
+
+    ---
+
+    RAG（RetrievalAugmented Generation）で文書をベクトル検索用にチャンク分割する際、チャンクサイズの選定は検索精度と応答品質に直結する。大きすぎても小さすぎても失敗する。…
 
 -   __[プロンプトキャッシュを壊さない書き方](techniques/プロンプトキャッシュを壊さない書き方.md)__
 
@@ -98,24 +116,6 @@
     ---
 
     OpenAI（や Anthropic）の Chat Completions API でストリーミング応答を Next.js サーバーから受けて、ブラウザにリアルタイム表示する実装パターン。Server…
-
--   __[Eval-Driven Development — LLM 機能開発は評価から始める](concepts/eval-driven-development-llm-機能開発は評価から始める.md)__
-
-    ---
-
-    LLM を使った機能を作る際、目視確認だけに頼ると品質が安定しない。評価を先に書き、評価が通ることを目指して実装するという進め方が、LLM 時代の TDD に相当する。EvalDriven Devel…
-
--   __[エージェント運用の失敗モード一覧と対策マップ](patterns/エージェント運用の失敗モード一覧と対策マップ.md)__
-
-    ---
-
-    単一エージェント運用の典型的な 7 つのアンチパターンと、マルチエージェント運用で頻出する 8 つの失敗モードに対する、実装可能な対策の対応表。個別の解説は各エントリを参照。 パターンと対策の対応図…
-
--   __[ADR 参照コマンドによる意思決定の継承](tools/adr-参照コマンドによる意思決定の継承.md)__
-
-    ---
-
-    アーキテクチャ上の意思決定を Architecture Decision Record（ADR）として残し、Claude Code の作業前に自動で参照させる運用パターン。 ADR 参照の流れ mer…
 
 </div>
 
