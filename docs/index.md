@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>75 entries</span>
+  <span>76 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -38,7 +38,7 @@ flowchart TD
 pie showData title カテゴリの分布
     "Concepts" : 14
     "Techniques" : 21
-    "Patterns" : 8
+    "Patterns" : 9
     "Case Studies" : 13
     "Tools" : 6
     "Tech Notes" : 13
@@ -81,7 +81,7 @@ pie showData title カテゴリの分布
 
     失敗モードと再発防止のパターン集
 
-    _8 entries_
+    _9 entries_
 
 -   __[Case Studies](case-studies/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[LLM 開発で避けるべき落とし穴 TOP 10](patterns/llm-開発で避けるべき落とし穴-top-10.md)__
+
+    ---
+
+    本 Wiki の各エントリから抽出した、LLM / AI エージェント開発で絶対に避けるべき落とし穴を 10 個に絞ってまとめる。新規プロジェクト開始時のチェックリストとして使える。 TOP 10 1…
+
 -   __[評価駆動で LLM 機能をゼロから作った 5 日間の流れ](case-studies/評価駆動で-llm-機能をゼロから作った-5-日間の流れ.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     OpenAI の o1・o3、Anthropic の Extended Thinking、Google の Deep Thinking など、明示的に推論時間を使うモデル（Reasoning Mode…
-
--   __[AI エージェント運用の 10 メトリクス](tech-notes/ai-エージェント運用の-10-メトリクス.md)__
-
-    ---
-
-    AI エージェントを本番運用する際、何を計測すべきかが曖昧だと改善できない。重要な 10 のメトリクスを 4 層で整理。 メトリクスの 4 層 品質層 1. 正答率（Accuracy） 評価セットでの…
 
 </div>
 
