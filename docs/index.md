@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>56 entries</span>
+  <span>57 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -38,7 +38,7 @@ flowchart TD
 pie showData title カテゴリの分布
     "Concepts" : 9
     "Techniques" : 15
-    "Patterns" : 6
+    "Patterns" : 7
     "Case Studies" : 10
     "Tools" : 6
     "Tech Notes" : 10
@@ -81,7 +81,7 @@ pie showData title カテゴリの分布
 
     失敗モードと再発防止のパターン集
 
-    _6 entries_
+    _7 entries_
 
 -   __[Case Studies](case-studies/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[長い出力を生成させるときの 5 つの失敗](patterns/長い出力を生成させるときの-5-つの失敗.md)__
+
+    ---
+
+    LLM に長文（ブログ記事、ドキュメント、レポート等）を書かせる際、短い出力より桁違いに失敗する。中途終了・繰り返し・矛盾・尻すぼみなどの失敗モードが典型。 5 つの典型的な失敗 1. 尻すぼみ 症状…
+
 -   __[Claude Code を使った効率的な不具合調査](case-studies/claude-code-を使った効率的な不具合調査.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     エージェントに「記憶」を持たせる設計は、セッションをまたいだ継続的な会話・学習・作業を実現するために必須。どこに・何を・どう保持するかを整理する。 メモリの 3 種類 短期メモリ（セッション中） 保存…
-
--   __[ツール実行の 5 つの失敗モード](patterns/ツール実行の-5-つの失敗モード.md)__
-
-    ---
-
-    LLM にツール（関数）を使わせる設計は、ツール呼び出し特有の失敗モードを抱える。筆者的な 5 パターンと対策を整理。 5 つの失敗モード 1. 無関係なツールを選ぶ 症状: 「天気を知りたい」と言わ…
 
 </div>
 
