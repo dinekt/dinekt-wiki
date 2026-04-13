@@ -2,7 +2,7 @@
 
 # Dinekt Knowledge Wiki
 
-<p class="dnk-hero-tagline">Claude Code を中心とした AI 開発・エージェント設計の現場で得た知見を、再利用できる形でまとめたナレッジベースです。</p>
+<p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
   <span>15 entries</span>
@@ -12,7 +12,18 @@
 
 </div>
 
-## どこから読むか
+## はじめての方へ
+
+**推奨の読み順**:
+
+1. [Concepts](concepts/index.md) — 背景にある考え方を掴む
+2. [Patterns](patterns/index.md) — 典型的な失敗と対策をチェックリストとして読む
+3. [Techniques](techniques/index.md) — 設計手法として応用する
+4. [Case Studies](case-studies/index.md) — 実例で理解を補強する
+
+必要に応じて [Tools](tools/index.md) と [Tech Notes](tech-notes/index.md) を辞書的に参照してください。
+
+## カテゴリ
 
 <div class="grid cards" markdown>
 
@@ -44,7 +55,7 @@
 
     ---
 
-    Dinekt が実際に遭遇したケースと対応の記録
+    実際に遭遇したケースと対応の記録
 
     _2 entries_
 
