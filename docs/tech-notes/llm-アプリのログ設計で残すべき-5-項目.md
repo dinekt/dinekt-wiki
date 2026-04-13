@@ -28,7 +28,7 @@ flowchart LR
     R --> L4[文脈<br/>ユーザー/セッション]
     R --> L5[結果<br/>成功/失敗/再試行]
 
-    style R fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style R fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 **1. 入力プロンプト（全文）**
@@ -70,8 +70,8 @@ flowchart TD
     C -->|なし| S[保存]
     M --> S
 
-    style C fill:#fff3e0,stroke:#ffb74d
-    style M fill:#e3f2fd,stroke:#64b5f6
+    style C fill:#fff3e0,stroke:#ffb74d,color:#000
+    style M fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 - 個人情報（氏名、住所、電話番号、メール）は検出してマスキング

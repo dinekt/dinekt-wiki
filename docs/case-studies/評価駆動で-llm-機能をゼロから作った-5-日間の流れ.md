@@ -33,8 +33,8 @@ flowchart LR
     D3 --> D4[Day 4<br/>本番準備]
     D4 --> D5[Day 5<br/>段階リリース]
 
-    style D1 fill:#e3f2fd,stroke:#64b5f6
-    style D5 fill:#e8f5e9,stroke:#81c784
+    style D1 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style D5 fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### Day 1: 評価セット骨組み（2 時間）
@@ -126,8 +126,8 @@ flowchart LR
     C[Canary 10%] -->|監視 2h| C2[50%]
     C2 -->|監視 4h| F[100%]
 
-    style C fill:#fff9c4
-    style F fill:#e8f5e9
+    style C fill:#fff9c4,color:#000
+    style F fill:#e8f5e9,color:#000
 ```
 
 **10% 配信後の結果**:

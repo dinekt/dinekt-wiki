@@ -37,8 +37,8 @@ flowchart LR
       L[低レベル PDF 構造]
     end
 
-    style PyMuPDF fill:#e8f5e9,stroke:#81c784
-    style pikepdf fill:#e3f2fd,stroke:#64b5f6
+    style PyMuPDF fill:#e8f5e9,stroke:#81c784,color:#000
+    style pikepdf fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### ライブラリの特徴

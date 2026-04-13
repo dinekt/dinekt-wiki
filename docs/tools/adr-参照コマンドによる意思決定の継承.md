@@ -32,9 +32,9 @@ flowchart TD
     M --> E
     E --> F[作業完了]
 
-    style R fill:#e3f2fd,stroke:#64b5f6
-    style P fill:#fff3e0,stroke:#ffb74d
-    style M fill:#e8f5e9,stroke:#81c784
+    style R fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style P fill:#fff3e0,stroke:#ffb74d,color:#000
+    style M fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### コマンドの中身
@@ -76,9 +76,9 @@ flowchart LR
     A --> S[Superseded]
     A --> R[Rejected]
 
-    style A fill:#e8f5e9,stroke:#81c784
-    style S fill:#f6f6f6,stroke:#c8c8c8
-    style R fill:#ffebee,stroke:#e57373
+    style A fill:#e8f5e9,stroke:#81c784,color:#000
+    style S fill:#f6f6f6,stroke:#c8c8c8,color:#000
+    style R fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 運用のコツ

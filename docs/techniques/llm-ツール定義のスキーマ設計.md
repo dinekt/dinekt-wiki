@@ -35,7 +35,7 @@ flowchart TD
     P --> P2[必須/任意を明示]
     P --> P3[列挙型で選択肢を限定]
 
-    style T fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style T fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### 名前のつけ方

@@ -129,7 +129,7 @@ flowchart TD
     CK --> S[セキュリティ 7,8]
     CK --> Q[品質 9,10]
 
-    style CK fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style CK fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### 使い方

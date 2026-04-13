@@ -32,9 +32,9 @@ flowchart TD
     E2 -->|はい| D
     E2 -->|いいえ| F[ファインチューニング<br/>を検討]
 
-    style P fill:#e8f5e9,stroke:#81c784
-    style R fill:#fff9c4,stroke:#fff176
-    style F fill:#ffebee,stroke:#e57373
+    style P fill:#e8f5e9,stroke:#81c784,color:#000
+    style R fill:#fff9c4,stroke:#fff176,color:#000
+    style F fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 **ファインチューニングに進む前に、必ずプロンプト + RAG で試す**。この順序を守ると、大半のケースは FT なしで済む。

@@ -30,8 +30,8 @@ flowchart LR
     AI --> B2[定義された語彙]
     AI --> B3[前提を文字で書く]
 
-    style H fill:#e3f2fd
-    style AI fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style H fill:#e3f2fd,color:#000
+    style AI fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### 8 つのコツ
@@ -123,7 +123,7 @@ flowchart LR
     Q -->|正しく答えられる| OK[合格]
     Q -->|誤解する| F[ドキュメントを書き直す]
 
-    style F fill:#ffebee,stroke:#e57373
+    style F fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 運用のコツ

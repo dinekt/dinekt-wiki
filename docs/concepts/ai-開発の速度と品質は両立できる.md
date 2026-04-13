@@ -27,8 +27,8 @@ flowchart LR
     S[速度] -->|見かけ上| Q1[品質犠牲]
     Q[品質] -->|見かけ上| S1[速度犠牲]
 
-    style Q1 fill:#ffebee,stroke:#e57373
-    style S1 fill:#ffebee,stroke:#e57373
+    style Q1 fill:#ffebee,stroke:#e57373,color:#000
+    style S1 fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 「速く作ると雑」「丁寧にやると遅い」と思いがち。
@@ -47,7 +47,7 @@ flowchart TD
     F --> OK
     R --> OK
 
-    style OK fill:#e8f5e9,stroke:#81c784
+    style OK fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### 4 つの両立策
@@ -78,7 +78,7 @@ flowchart LR
     M --> D[デプロイ]
     D --> V[本番検証]
 
-    style F fill:#0a0a0a,color:#fff
+    style F fill:#262626,color:#fff
 ```
 
 **サイクルが 1 週間以下**で回れば、品質改善が加速する。
@@ -107,8 +107,8 @@ flowchart LR
       L3 --> L4[品質安定]
     end
 
-    style S4 fill:#ffebee,stroke:#e57373
-    style L4 fill:#e8f5e9,stroke:#81c784
+    style S4 fill:#ffebee,stroke:#e57373,color:#000
+    style L4 fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 **短期最適 = 長期不利**。AI 開発は特に、**仕組みから作る**のが結果的に速い。

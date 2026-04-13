@@ -35,8 +35,8 @@ flowchart LR
       R4[複雑タスク向き]
     end
 
-    style 通常モデル fill:#e8f5e9,stroke:#81c784
-    style 推論モデル fill:#fff3e0,stroke:#ffb74d
+    style 通常モデル fill:#e8f5e9,stroke:#81c784,color:#000
+    style 推論モデル fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 推論モデルが向くタスク
@@ -79,8 +79,8 @@ flowchart TD
     B -->|時間 OK| R[推論モデル]
     B -->|品質最優先| R
 
-    style N fill:#e8f5e9,stroke:#81c784
-    style R fill:#fff3e0,stroke:#ffb74d
+    style N fill:#e8f5e9,stroke:#81c784,color:#000
+    style R fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### コスト感
@@ -120,8 +120,8 @@ flowchart LR
     R --> C[結果チェック<br/>通常モデル]
     C --> O[出力]
 
-    style R1 fill:#e3f2fd,stroke:#64b5f6
-    style R fill:#fff3e0,stroke:#ffb74d
+    style R1 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style R fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 - 入力の複雑度をルータで判定し、使い分ける

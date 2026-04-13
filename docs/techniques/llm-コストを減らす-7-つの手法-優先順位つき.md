@@ -30,9 +30,9 @@ flowchart LR
     L[効果 小] --> B[バッチ化]
     L --> T[ストリーミング早期停止]
 
-    style H fill:#e8f5e9,stroke:#81c784
-    style M2 fill:#fff9c4,stroke:#fff176
-    style L fill:#fff3e0,stroke:#ffb74d
+    style H fill:#e8f5e9,stroke:#81c784,color:#000
+    style M2 fill:#fff9c4,stroke:#fff176,color:#000
+    style L fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 1. プロンプトキャッシュを活かす（効果: 最大）

@@ -15,7 +15,7 @@ tags:
 <span class="pill">#accuracy</span>
 <span class="pill">#case-study</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">6 min read</span>
 </div>
 
 「このデータから〇〇を抽出して」のような**複雑な要求を 1 リクエストで処理**しようとすると、精度が不安定になる。**タスクを段階分解**することで劇的に改善した事例。
@@ -38,8 +38,8 @@ flowchart LR
     I[入力: フィードバック 100 件] --> L[LLM<br/>全部やって]
     L --> O[結果<br/>品質が不安定]
 
-    style L fill:#ffebee,stroke:#e57373
-    style O fill:#ffebee,stroke:#e57373
+    style L fill:#ffebee,stroke:#e57373,color:#000
+    style O fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 分解後のフロー（成功）
@@ -52,10 +52,10 @@ flowchart TD
     S3 --> S4[Step 4<br/>上位 5 件を選出 + 筆者コメント]
     S4 --> O[最終結果]
 
-    style S1 fill:#e8f5e9,stroke:#81c784
-    style S2 fill:#e8f5e9,stroke:#81c784
-    style S3 fill:#e3f2fd,stroke:#64b5f6
-    style S4 fill:#fff3e0,stroke:#ffb74d
+    style S1 fill:#e8f5e9,stroke:#81c784,color:#000
+    style S2 fill:#e8f5e9,stroke:#81c784,color:#000
+    style S3 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style S4 fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 各ステップの設計
@@ -107,9 +107,9 @@ flowchart TD
     D1 -->|はい| D2[段階分解]
     D1 -->|いいえ| D3[ReAct で動的分解]
 
-    style S fill:#e8f5e9,stroke:#81c784
-    style D2 fill:#e3f2fd,stroke:#64b5f6
-    style D3 fill:#fff3e0,stroke:#ffb74d
+    style S fill:#e8f5e9,stroke:#81c784,color:#000
+    style D2 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style D3 fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 分解のコツ

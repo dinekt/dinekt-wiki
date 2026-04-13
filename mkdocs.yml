@@ -3,17 +3,12 @@ site_url: https://dinekt.github.io/dinekt-wiki/
 site_description: Claude Code と AI 開発の実践知識ベース by Dinekt
 site_author: Dinekt
 
-repo_name: dinekt/dinekt-wiki
-repo_url: https://github.com/dinekt/dinekt-wiki
-
 theme:
   name: material
   language: ja
   font:
     text: Inter
     code: JetBrains Mono
-  icon:
-    repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -83,9 +78,6 @@ extra:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/dinekt
       name: Dinekt on X
-    - icon: fontawesome/brands/github
-      link: https://github.com/dinekt
-      name: Dinekt on GitHub
   generator: false
 
 copyright: "&copy; 2026 Dinekt"

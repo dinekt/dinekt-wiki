@@ -37,8 +37,8 @@ flowchart LR
       A4[stream + events]
     end
 
-    style O1 fill:#e3f2fd
-    style A1 fill:#fff3e0
+    style O1 fill:#e3f2fd,color:#000
+    style A1 fill:#fff3e0,color:#000
 ```
 
 ### API 構造の違い
@@ -103,7 +103,7 @@ flowchart LR
     P --> C[キャッシュ割引]
     P --> B[バッチ割引]
 
-    style P fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style P fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 - 出力単価は入力より高い（両社とも）

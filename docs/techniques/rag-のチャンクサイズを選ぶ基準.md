@@ -28,9 +28,9 @@ flowchart LR
     M[中程度<br/>500-1200 字] -->|バランス| P2[実用的]
     L[大きいチャンク<br/>2000+ 字] -->|文脈豊富| P3[ノイズ混入<br/>関連性低下]
 
-    style S fill:#ffebee,stroke:#e57373
-    style M fill:#e8f5e9,stroke:#81c784
-    style L fill:#ffebee,stroke:#e57373
+    style S fill:#ffebee,stroke:#e57373,color:#000
+    style M fill:#e8f5e9,stroke:#81c784,color:#000
+    style L fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 **経験則**: 日本語なら **600〜1000 文字** が出発点。英語なら 200〜400 トークン。扱うドキュメントの種類で調整する。
@@ -61,9 +61,9 @@ flowchart LR
       C[1800-2800 字]
     end
 
-    style A fill:#e3f2fd
-    style B fill:#e3f2fd
-    style C fill:#e3f2fd
+    style A fill:#e3f2fd,color:#000
+    style B fill:#e3f2fd,color:#000
+    style C fill:#e3f2fd,color:#000
 ```
 
 100 字のオーバーラップなら、境界に跨る内容も両チャンクから引ける。

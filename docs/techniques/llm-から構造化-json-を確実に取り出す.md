@@ -28,9 +28,9 @@ flowchart TD
     C -->|はい| D[プロンプトで指示 +<br/>堅牢なパース]
     C -->|いいえ| E[スキーマバリデーション +<br/>リトライ]
 
-    style B fill:#e8f5e9,stroke:#81c784
-    style D fill:#fff9c4,stroke:#fff176
-    style E fill:#fff3e0,stroke:#ffb74d
+    style B fill:#e8f5e9,stroke:#81c784,color:#000
+    style D fill:#fff9c4,stroke:#fff176,color:#000
+    style E fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### アプローチ 1: JSON Mode / Function Calling
@@ -106,8 +106,8 @@ flowchart TD
     T -->|はい| R
     T -->|いいえ| F[失敗として扱う]
 
-    style OK fill:#e8f5e9,stroke:#81c784
-    style F fill:#ffebee,stroke:#e57373
+    style OK fill:#e8f5e9,stroke:#81c784,color:#000
+    style F fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### アンチパターン

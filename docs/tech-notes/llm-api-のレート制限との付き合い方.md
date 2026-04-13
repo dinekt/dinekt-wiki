@@ -29,7 +29,7 @@ flowchart LR
     A --> D[Concurrent<br/>同時接続数]
     A --> E[Daily<br/>日次上限]
 
-    style A fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style A fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 - **RPM**（Requests Per Minute）: 1 分あたりのリクエスト上限
@@ -70,7 +70,7 @@ flowchart LR
     W --> B
     T[毎分トークン補充] --> B
 
-    style B fill:#fff3e0,stroke:#ffb74d
+    style B fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ライブラリ（`ratelimit`, `aiolimiter` 等）を使うと実装が楽。

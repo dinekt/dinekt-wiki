@@ -24,12 +24,12 @@ flowchart TD
     CS --> TN[Tech Notes<br/>小さな知見]
     TO --> TN
 
-    style C fill:#0a0a0a,color:#fff,stroke:#0a0a0a
-    style T fill:#e8f5e9,stroke:#81c784
-    style P fill:#ffebee,stroke:#e57373
-    style CS fill:#e3f2fd,stroke:#64b5f6
-    style TO fill:#fff3e0,stroke:#ffb74d
-    style TN fill:#f6f6f6,stroke:#8a8a8a
+    style C fill:#262626,color:#fff,stroke:#262626
+    style T fill:#e8f5e9,stroke:#81c784,color:#000
+    style P fill:#ffebee,stroke:#e57373,color:#000
+    style CS fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style TO fill:#fff3e0,stroke:#ffb74d,color:#000
+    style TN fill:#f6f6f6,stroke:#8a8a8a,color:#000
 ```
 
 ## カテゴリ別エントリ数
@@ -113,41 +113,41 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
--   __[Claude Code の Slash Command と Skill の使い分け](tech-notes/claude-code-の-slash-command-と-skill-の使い分け.md)__
+-   __[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)__
 
     ---
 
-    Claude Code には で呼び出す Slash Command と、自然言語で起動される Skill がある。名前は似ているが役割も実装も違う。正しく使い分けると運用効率が大きく変わる。 違いの…
+    Chrome 拡張 Manifest V3 で、Content Script（ページに注入するスクリプト）と Side Panel（ブラウザ右側のパネル UI）を連携させる際に遭遇した実装上の落とし穴…
 
--   __[Guardrails — LLM 出力を決定論的に制御する仕組み](techniques/guardrails-llm-出力を決定論的に制御する仕組み.md)__
-
-    ---
-
-    LLM の出力を決定論的に制御するための仕組みを総称して Guardrails（ガードレール）と呼ぶ。自由な生成と安全な運用の両立に必須。 Guardrails の 3 層 1. Input Guar…
-
--   __[エージェント専用ワークスペースのディレクトリ設計](techniques/エージェント専用ワークスペースのディレクトリ設計.md)__
+-   __[LLM モデル / プロバイダー切り替え時の互換性問題と段階移行](case-studies/llm-モデル-プロバイダー切り替え時の互換性問題と段階移行.md)__
 
     ---
 
-    エージェントに仕事を任せる際、作業する専用のディレクトリ構造を設計すると、混乱が減り、追跡性が上がる。「ワークスペース」という発想で整理する。 基本構造 各ディレクトリの役割 tasks/ — 1 タ…
+    コストや性能を理由に、運用中の LLM を別のモデル・プロバイダーに切り替える場面は増えている。互換性は完全ではない。事前に想定すべき差分と、段階的な移行手順。 遭遇しうる差分 よく遭遇する具体的な問…
 
--   __[LLM 開発で避けるべき落とし穴 TOP 10](patterns/llm-開発で避けるべき落とし穴-top-10.md)__
-
-    ---
-
-    本 Wiki の各エントリから抽出した、LLM / AI エージェント開発で絶対に避けるべき落とし穴を 10 個に絞ってまとめる。新規プロジェクト開始時のチェックリストとして使える。 TOP 10 1…
-
--   __[評価駆動で LLM 機能をゼロから作った 5 日間の流れ](case-studies/評価駆動で-llm-機能をゼロから作った-5-日間の流れ.md)__
+-   __[Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](case-studies/nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)__
 
     ---
 
-    評価駆動開発（EDD）で LLM 機能をゼロから作った際の、実際の時系列と意思決定。新規機能をどう立ち上げるかの雛形として使える。 開発する機能 ユーザーが入力した商品レビューから、改善ポイントを 3…
+    Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。 併用の基本構造 ハマりどころ 1.…
+
+-   __[AI プロダクトと倫理 — 7 つの観点](concepts/ai-プロダクトと倫理-7-つの観点.md)__
+
+    ---
+
+    AI を組み込んだプロダクトを作る際、技術・コスト・品質だけでなく、倫理的な考慮を避けられない論点として扱う必要がある。具体的な 7 つの観点を示す。 7 つの倫理的論点 1. 透明性（Transpa…
 
 -   __[AI 開発の速度と品質は両立できる](concepts/ai-開発の速度と品質は両立できる.md)__
 
     ---
 
     AI 開発では「速く作る」と「品質を担保する」がトレードオフに見えるが、実は両立可能。評価セット・自動化・仕組みが速度を下げず、品質を上げる。 見かけのトレードオフ 「速く作ると雑」「丁寧にやると遅い…
+
+-   __[Drift Detection — 実装が意図から乖離する現象を検出する](concepts/drift-detection-実装が意図から乖離する現象を検出する.md)__
+
+    ---
+
+    AI エージェントによる実装が、当初の意図・仕様から徐々に乖離していく現象。これを検出して巻き戻す仕組みが drift-detection。 発生と検出のメカニズム なぜ drift が起きるか -…
 
 </div>
 

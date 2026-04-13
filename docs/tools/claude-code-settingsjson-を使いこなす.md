@@ -28,7 +28,7 @@ flowchart TD
     S --> M[mcp<br/>MCP サーバー]
     S --> T[theme / statusLine<br/>UI]
 
-    style S fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style S fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### permissions: ツール実行の許可

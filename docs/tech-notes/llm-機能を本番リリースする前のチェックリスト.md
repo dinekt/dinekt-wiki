@@ -29,7 +29,7 @@ flowchart LR
     C --> O[運用]
     C --> X[ユーザー体験]
 
-    style C fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style C fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### カテゴリ別チェックリスト
@@ -77,10 +77,10 @@ flowchart LR
     C2 --> C3[50%]
     C3 --> F[100%]
 
-    style C1 fill:#e3f2fd,stroke:#64b5f6
-    style C2 fill:#fff9c4,stroke:#fff176
-    style C3 fill:#fff3e0,stroke:#ffb74d
-    style F fill:#e8f5e9,stroke:#81c784
+    style C1 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style C2 fill:#fff9c4,stroke:#fff176,color:#000
+    style C3 fill:#fff3e0,stroke:#ffb74d,color:#000
+    style F fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 一気に 100% に向けず、段階的に比率を上げる。各段階でメトリクスを確認し、異常があればロールバック。

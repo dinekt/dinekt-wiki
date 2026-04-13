@@ -33,8 +33,8 @@ flowchart TD
     D --> E[評価軸を定める]
     E --> B[実装]
 
-    style J fill:#fff3e0,stroke:#ffb74d
-    style R fill:#e8f5e9,stroke:#81c784
+    style J fill:#fff3e0,stroke:#ffb74d,color:#000
+    style R fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### 3 つの基本原則
@@ -72,8 +72,8 @@ flowchart LR
     L2 --> L3[L3<br/>実行+報告]
     L3 --> L4[L4<br/>例外のみ承認]
 
-    style L1 fill:#e8f5e9,stroke:#81c784
-    style L4 fill:#ffebee,stroke:#e57373
+    style L1 fill:#e8f5e9,stroke:#81c784,color:#000
+    style L4 fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 良い AI プロダクトの共通項

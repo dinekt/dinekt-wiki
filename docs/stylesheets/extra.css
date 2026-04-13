@@ -591,11 +591,51 @@ body, .md-typeset {
   background: #161616;
 }
 
-/* Ensure mermaid node text inherits readable color in dark mode */
-[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .edgeLabel {
-  color: var(--dnk-fg) !important;
+/* ---------- Mermaid readability: ensure node labels are always visible ---------- */
+/* Fallback text color when the author has not set one via inline `color:`. */
+/* Using non-!important so inline styles from Mermaid directives (color:#fff on
+   dark-filled nodes) still win. */
+
+[data-md-color-scheme="default"] .md-typeset .mermaid .nodeLabel,
+[data-md-color-scheme="default"] .md-typeset .mermaid .cluster-label {
+  color: #0a0a0a;
 }
+
+[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .cluster-label {
+  color: #ededed;
+}
+
+/* Edge labels always need high contrast against the mermaid bg */
+[data-md-color-scheme="default"] .md-typeset .mermaid .edgeLabel {
+  color: #0a0a0a !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .mermaid .edgeLabel {
+  color: #ededed !important;
+}
+
+/* Edge label background (prevents overlap with edge line) */
+.md-typeset .mermaid .edgeLabel {
+  background-color: var(--dnk-bg-soft) !important;
+  padding: 0.1em 0.3em !important;
+}
+
+/* Cluster (subgraph) background and border */
+[data-md-color-scheme="default"] .md-typeset .mermaid .cluster rect {
+  fill: #fafafa !important;
+  stroke: #c8c8c8 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .mermaid .cluster rect {
+  fill: #1f1f1f !important;
+  stroke: #3a3a3a !important;
+}
+
+/* When a node has an inline style with explicit color, preserve it.
+   Mermaid applies inline style to <rect> and attaches <text>/<foreignObject> separately.
+   We use a fallback chain: if the node's text tag lacks inline color,
+   theme's default color applies. */
 
 /* ---------- Disable fade-in ---------- */
 

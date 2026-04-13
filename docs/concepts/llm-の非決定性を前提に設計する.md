@@ -33,7 +33,7 @@ flowchart LR
     V[モデル内部の揺らぎ] --> M
     D[プロバイダーのアップデート] --> M
 
-    style M fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style M fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 - **サンプリング**: Temperature・top-p・top-k による確率的選択
@@ -64,9 +64,9 @@ flowchart LR
     V2 -->|OK| O[出力]
     V2 -->|NG| R[リトライ or フォールバック]
 
-    style V1 fill:#e3f2fd,stroke:#64b5f6
-    style L fill:#fff3e0,stroke:#ffb74d
-    style V2 fill:#e3f2fd,stroke:#64b5f6
+    style V1 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style L fill:#fff3e0,stroke:#ffb74d,color:#000
+    style V2 fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 LLM を「非決定的な中間処理」として扱い、前後を決定論的ロジックで挟む。

@@ -63,8 +63,8 @@ flowchart TD
     T9 --> T4
     T11 --> T12
 
-    style C1 fill:#0a0a0a,color:#fff
-    style C10 fill:#0a0a0a,color:#fff
+    style C1 fill:#262626,color:#fff
+    style C10 fill:#262626,color:#fff
 ```
 
 ## プロンプト設計の流れ
@@ -80,9 +80,9 @@ flowchart LR
     V --> E[評価セットで検証]
     E --> D[本番デプロイ]
 
-    style H fill:#e3f2fd,stroke:#64b5f6
-    style E fill:#fff3e0,stroke:#ffb74d
-    style D fill:#e8f5e9,stroke:#81c784
+    style H fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style E fill:#fff3e0,stroke:#ffb74d,color:#000
+    style D fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ## トラブル対応の流れ
@@ -106,10 +106,10 @@ flowchart TD
     F --> F2[レート制限対応]
     F --> F3[エラー復帰]
 
-    style T fill:#ffebee,stroke:#e57373
-    style Q fill:#fff3e0,stroke:#ffb74d
-    style C fill:#fff9c4,stroke:#fff176
-    style F fill:#e3f2fd,stroke:#64b5f6
+    style T fill:#ffebee,stroke:#e57373,color:#000
+    style Q fill:#fff3e0,stroke:#ffb74d,color:#000
+    style C fill:#fff9c4,stroke:#fff176,color:#000
+    style F fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ## カテゴリ別索引

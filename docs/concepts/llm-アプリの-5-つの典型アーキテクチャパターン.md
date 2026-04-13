@@ -30,7 +30,7 @@ flowchart TD
     P --> P4[4. マルチエージェント型]
     P --> P5[5. バッチ処理型]
 
-    style P fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style P fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### パターン 1: シンプル応答型
@@ -44,7 +44,7 @@ flowchart LR
     L --> A
     A --> U
 
-    style L fill:#fff3e0,stroke:#ffb74d
+    style L fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 **例**: チャットボット、翻訳、要約
@@ -66,8 +66,8 @@ flowchart LR
     L --> A
     A --> U
 
-    style V fill:#e3f2fd,stroke:#64b5f6
-    style L fill:#fff3e0,stroke:#ffb74d
+    style V fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style L fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 **例**: 社内ドキュメント QA、サポート自動化
@@ -93,10 +93,10 @@ flowchart LR
     L --> A
     A --> U
 
-    style L fill:#fff3e0,stroke:#ffb74d
-    style T1 fill:#e3f2fd
-    style T2 fill:#e3f2fd
-    style T3 fill:#e3f2fd
+    style L fill:#fff3e0,stroke:#ffb74d,color:#000
+    style T1 fill:#e3f2fd,color:#000
+    style T2 fill:#e3f2fd,color:#000
+    style T3 fill:#e3f2fd,color:#000
 ```
 
 **例**: スマート予約システム、AI アシスタント、調査エージェント
@@ -119,8 +119,8 @@ flowchart TD
     A4 --> O
     O --> U
 
-    style O fill:#0a0a0a,color:#fff
-    style A3 fill:#fff3e0,stroke:#ffb74d
+    style O fill:#262626,color:#fff
+    style A3 fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 **例**: 自律的なコード生成、リサーチエージェント
@@ -142,8 +142,8 @@ flowchart LR
     W --> R[結果 DB]
     R --> V[可視化]
 
-    style L fill:#fff3e0,stroke:#ffb74d
-    style W fill:#e3f2fd,stroke:#64b5f6
+    style L fill:#fff3e0,stroke:#ffb74d,color:#000
+    style W fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 **例**: レビュー分析、大量タグ付け、文書分類

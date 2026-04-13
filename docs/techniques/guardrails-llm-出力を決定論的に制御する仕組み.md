@@ -29,9 +29,9 @@ flowchart LR
     L --> G3[Action Guardrails<br/>実行検査]
     G3 --> S[システム]
 
-    style G1 fill:#e3f2fd,stroke:#64b5f6
-    style G2 fill:#e3f2fd,stroke:#64b5f6
-    style G3 fill:#e3f2fd,stroke:#64b5f6
+    style G1 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style G2 fill:#e3f2fd,stroke:#64b5f6,color:#000
+    style G3 fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### 1. Input Guardrails（入力側）
@@ -77,7 +77,7 @@ flowchart TD
     OK -->|はい| U[ユーザーへ]
     OK -->|いいえ| R[再生成 or フォールバック]
 
-    style OK fill:#fff3e0,stroke:#ffb74d
+    style OK fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 3. Action Guardrails（実行側）
@@ -121,9 +121,9 @@ flowchart LR
     R -->|怪しい| C[分類器<br/>中程度]
     C -->|判断困難| J[LLM-as-Judge<br/>遅い・高い]
 
-    style R fill:#e8f5e9,stroke:#81c784
-    style C fill:#fff9c4,stroke:#fff176
-    style J fill:#fff3e0,stroke:#ffb74d
+    style R fill:#e8f5e9,stroke:#81c784,color:#000
+    style C fill:#fff9c4,stroke:#fff176,color:#000
+    style J fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 失敗時の対応

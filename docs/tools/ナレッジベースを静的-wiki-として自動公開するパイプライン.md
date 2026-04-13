@@ -34,9 +34,9 @@ flowchart TD
     I --> J[GitHub Actions]
     J --> K[GitHub Pages 公開]
 
-    style C fill:#f6f6f6,stroke:#8a8a8a
-    style X fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5
-    style K fill:#0a0a0a,stroke:#0a0a0a,color:#fff
+    style C fill:#f6f6f6,stroke:#8a8a8a,color:#000
+    style X fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5,color:#000
+    style K fill:#262626,stroke:#0a0a0a,color:#fff
 ```
 
 ### 設計上のポイント
@@ -60,7 +60,7 @@ flowchart LR
     P -. 到達不能 .-> W
     P -. 到達不能 .-> X
 
-    style P fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5
+    style P fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5,color:#000
 ```
 
 **2. フィルタと検証を分離する**
