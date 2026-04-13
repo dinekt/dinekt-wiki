@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>41 entries</span>
+  <span>42 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -53,7 +53,7 @@ flowchart TD
 
     AI 開発の根底にある概念・思想
 
-    _7 entries_
+    _8 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -101,6 +101,12 @@ flowchart TD
 
 <div class="grid cards" markdown>
 
+-   __[LLM の非決定性を前提に設計する](concepts/llm-の非決定性を前提に設計する.md)__
+
+    ---
+
+    LLM の出力は本質的に非決定的。同じ入力でも呼び出しごとに違う結果が返る。これを「バグ」として扱うと無限に消耗する。前提として受け入れ、その上で設計するのが実用的な態度。 非決定性の源 mermai…
+
 -   __[LLM エージェントに大規模リファクタリングを安全に任せる手順](case-studies/llm-エージェントに大規模リファクタリングを安全に任せる手順.md)__
 
     ---
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     LLM API（OpenAI・Anthropic 等）のレート制限は、負荷時に必ず遭遇する。事前にリトライ戦略・バックオフ・キューを組み込んでおかないと、本番で落ちる。 主なレート制限の種類 merm…
-
--   __[LLM ツール定義のスキーマ設計](techniques/llm-ツール定義のスキーマ設計.md)__
-
-    ---
-
-    LLM にツール（関数）を使わせる際、ツールのスキーマ（名前・説明・パラメータ）が LLM の使いこなしに直結する。プロンプトエンジニアリングと同じくらい重要。 良いツール定義の条件 mermaid…
 
 </div>
 
