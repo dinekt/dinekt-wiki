@@ -61,7 +61,7 @@ CLAUDE.md を「索引」に徹させ、個別の意思決定は ADR（Architect
 
 - [ADR 参照コマンドによる意思決定の継承](../tools/adr-参照コマンドによる意思決定の継承.md)
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
-- [forge — ハーネス設計フレームワーク](../tools/forge-ハーネス設計フレームワーク.md)
+- [Claude Code settings.json を使いこなす](../tools/claude-code-settingsjson-を使いこなす.md)
 
 
 <div class="dnk-prev-next" markdown>

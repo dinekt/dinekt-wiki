@@ -105,6 +105,6 @@ flowchart LR
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)</div>
+  <div class="prev">← [Claude Code settings.json を使いこなす](claude-code-settingsjson-を使いこなす.md)</div>
   <div class="next"></div>
 </div>

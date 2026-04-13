@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>38 entries</span>
+  <span>39 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -85,7 +85,7 @@ flowchart TD
 
     Dinekt が設計・運用している道具と実装
 
-    _3 entries_
+    _4 entries_
 
 -   __[Tech Notes](tech-notes/index.md)__
 
@@ -100,6 +100,12 @@ flowchart TD
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[Claude Code settings.json を使いこなす](tools/claude-code-settingsjson-を使いこなす.md)__
+
+    ---
+
+    Claude Code は ~/.claude/settings.json でツール権限・hooks・環境変数・MCP サーバーを集中管理できる。この 1 ファイルを使いこなせるかで、日々の運用効率が…
 
 -   __[エージェントの自律度レベルと昇格基準](concepts/エージェントの自律度レベルと昇格基準.md)__
 
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     LLM を組み込んだアプリで、ユーザー入力や外部データに仕込まれた悪意ある指示が LLM を操る攻撃。プロンプトインジェクションは LLM アプリのセキュリティで最も重要な論点。 攻撃パターン mer…
-
--   __[Few-shot Examples の効果的な設計](techniques/few-shot-examples-の効果的な設計.md)__
-
-    ---
-
-    LLM に「こういう形式で答えてほしい」と伝える最強の手段は、例を見せること。Fewshot examples を正しく設計すると、出力の品質と一貫性が大きく変わる。 なぜ例示が効くか 自然言語の指示…
 
 </div>
 
