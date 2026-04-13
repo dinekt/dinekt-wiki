@@ -30,9 +30,6 @@ flowchart TD
       D --> L[LLM がその指示に従う]
     end
 
-    style U1 fill:#ffebee,stroke:#e57373,color:#000
-    style D fill:#fff3e0,stroke:#ffb74d,color:#000
-    style L fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 典型的な攻撃例
@@ -67,10 +64,6 @@ flowchart LR
     T --> O[出力検査<br/>センシティブ情報漏洩]
     O --> U[ユーザー]
 
-    style F fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style S fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style T fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style O fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 **1. 入力フィルタ**

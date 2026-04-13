@@ -15,7 +15,7 @@ tags:
 <span class="pill">#api-diff</span>
 <span class="pill">#reference</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">6 min read</span>
+<span class="pill">5 min read</span>
 </div>
 
 OpenAI API と Anthropic API は**多くの概念が共通**するが、細かな仕様差がある。両方を扱う実装で引っかかるポイントを整理。
@@ -37,8 +37,6 @@ flowchart LR
       A4[stream + events]
     end
 
-    style O1 fill:#e3f2fd,color:#000
-    style A1 fill:#fff3e0,color:#000
 ```
 
 ### API 構造の違い
@@ -103,7 +101,6 @@ flowchart LR
     P --> C[キャッシュ割引]
     P --> B[バッチ割引]
 
-    style P fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 - 出力単価は入力より高い（両社とも）

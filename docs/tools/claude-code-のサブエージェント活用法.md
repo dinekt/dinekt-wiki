@@ -30,7 +30,6 @@ flowchart TD
     S2 --> M
     S3 --> M
 
-    style M fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 メインはオーケストレーター役に徹し、専門タスクは別エージェントに委譲する。

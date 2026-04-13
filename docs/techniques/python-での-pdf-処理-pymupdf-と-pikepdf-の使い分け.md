@@ -15,7 +15,7 @@ tags:
 <span class="pill">#pymupdf</span>
 <span class="pill">#pikepdf</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">3 min read</span>
+<span class="pill">2 min read</span>
 </div>
 
 Python で PDF を扱う際、**PyMuPDF（fitz）** と **pikepdf** は両方とも有力だが、得意領域が異なる。両方を使い分けると実装の見通しが良くなる。
@@ -37,8 +37,6 @@ flowchart LR
       L[低レベル PDF 構造]
     end
 
-    style PyMuPDF fill:#e8f5e9,stroke:#81c784,color:#000
-    style pikepdf fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### ライブラリの特徴

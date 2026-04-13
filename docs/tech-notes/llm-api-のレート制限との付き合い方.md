@@ -15,7 +15,7 @@ tags:
 <span class="pill">#llm</span>
 <span class="pill">#api</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 LLM API（OpenAI・Anthropic 等）のレート制限は、負荷時に必ず遭遇する。**事前にリトライ戦略・バックオフ・キュー**を組み込んでおかないと、本番で落ちる。
@@ -29,7 +29,6 @@ flowchart LR
     A --> D[Concurrent<br/>同時接続数]
     A --> E[Daily<br/>日次上限]
 
-    style A fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 - **RPM**（Requests Per Minute）: 1 分あたりのリクエスト上限
@@ -70,7 +69,6 @@ flowchart LR
     W --> B
     T[毎分トークン補充] --> B
 
-    style B fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ライブラリ（`ratelimit`, `aiolimiter` 等）を使うと実装が楽。

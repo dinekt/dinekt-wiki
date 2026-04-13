@@ -96,7 +96,6 @@ flowchart LR
     E -->|納得| OK[採用]
     E -->|違和感| F[再依頼]
 
-    style E fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 実践の順序

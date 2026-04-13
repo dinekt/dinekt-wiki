@@ -31,7 +31,6 @@ flowchart TD
     SA -->|JWT| DB
     DB -->|RLS 判定| DB
 
-    style DB fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### ハマりどころ
@@ -65,8 +64,6 @@ flowchart TD
     B --> D[読み取り中心]
     C --> E[複雑な結合・集計]
 
-    style B fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style C fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ユーザースコープの読み書きは supabase-js（RLS 尊重）、管理者処理や複雑な集計は Prisma（service_role）という住み分けが実運用で機能した。

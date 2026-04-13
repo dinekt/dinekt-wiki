@@ -13,7 +13,7 @@ tags:
 <span class="pill">#red-team</span>
 <span class="pill">#llm-safety</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 LLM を組み込んだアプリの安全性を検証するには、**意図的に攻撃を試みる**レッドチーミングが有効。実運用前に必ず通す工程にする。
@@ -26,7 +26,6 @@ flowchart LR
     E --> R[レッドチーミング<br/>攻撃的入力]
     R --> P[本番投入]
 
-    style R fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 評価セット（正常系の確認）と別物。**攻撃者視点で壊れないかを確かめる**フェーズ。
@@ -73,9 +72,6 @@ flowchart TD
     A --> F[修正]
     F --> E
 
-    style P fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style C fill:#fff3e0,stroke:#ffb74d,color:#000
-    style F fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 **1. 準備**
@@ -133,9 +129,6 @@ flowchart LR
     L --> F2[出力検査]
     F2 --> U[ユーザー]
 
-    style F1 fill:#e3f2fd,color:#000
-    style P fill:#e3f2fd,color:#000
-    style F2 fill:#e3f2fd,color:#000
 ```
 
 **多層防御**を基本に。1 つの層で完全に守ろうとしない。

@@ -15,7 +15,7 @@ tags:
 <span class="pill">#case-study</span>
 <span class="pill">#workflow</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 不具合調査で Claude Code を使うと、「何となく修正して動いた」では終わらず、**根本原因まで特定**できる確率が大きく上がる。ただし**やり方を間違えるとむしろ遅くなる**。効率的な進め方を整理。
@@ -35,11 +35,6 @@ flowchart TD
     V -->|OK| D[デプロイ]
     V -->|NG| T
 
-    style R fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style O fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style H fill:#fff3e0,stroke:#ffb74d,color:#000
-    style T fill:#fff9c4,stroke:#fff176,color:#000
-    style V fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### 効率的な進め方
@@ -109,7 +104,6 @@ flowchart LR
     P3[テストが豊富] --> OK
     P4[git history が<br/>読みやすい] --> OK
 
-    style OK fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ログ・再現性・テスト・コミット履歴の質が、調査効率を決める。**普段からの整備**が効く。

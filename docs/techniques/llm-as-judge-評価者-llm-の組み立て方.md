@@ -31,8 +31,6 @@ flowchart LR
     R[評価ルーブリック] --> J
     J --> S[スコア + 理由]
 
-    style J fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style R fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 評価ルーブリックの設計

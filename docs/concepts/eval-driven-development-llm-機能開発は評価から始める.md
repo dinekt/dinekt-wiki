@@ -33,8 +33,6 @@ flowchart LR
       T -->|不通過| I
     end
 
-    style E fill:#262626,color:#fff,stroke:#0a0a0a
-    style T fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 評価セットの作り方
@@ -64,7 +62,6 @@ flowchart LR
     O --> J
     J --> S[スコア + 理由]
 
-    style J fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### 評価の運用

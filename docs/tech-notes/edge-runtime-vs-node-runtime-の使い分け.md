@@ -29,8 +29,6 @@ flowchart TD
     B -->|長時間| N
     B -->|ストリーミング| E
 
-    style E fill:#e8f5e9,stroke:#81c784,color:#000
-    style N fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 制約比較

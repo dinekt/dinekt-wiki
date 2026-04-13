@@ -88,8 +88,6 @@ flowchart TD
     P --> M[event.id を記録]
     M --> R3[200 を返して終了]
 
-    style V fill:#fff3e0,stroke:#ffb74d,color:#000
-    style D fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### チェックリスト

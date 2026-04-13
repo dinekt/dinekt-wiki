@@ -15,7 +15,7 @@ tags:
 <span class="pill">#openai</span>
 <span class="pill">#anthropic</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 コストや性能を理由に、運用中の LLM を別のモデル・プロバイダーに切り替える場面は増えている。**互換性は完全ではない**。事前に想定すべき差分と、段階的な移行手順。
@@ -37,7 +37,6 @@ flowchart TD
     D4 --> E5[コンテキスト長]
     D5 --> E6[入力/出力単価比]
 
-    style M fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### よく遭遇する具体的な問題
@@ -82,8 +81,6 @@ flowchart LR
     S3 --> S4[4. 段階的に<br/>比率アップ]
     S4 --> S5[5. 完全移行]
 
-    style S2 fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style S3 fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 **Step 1: 抽象化層を作る**

@@ -28,7 +28,6 @@ flowchart TD
     L --> S[スクリーンショット/画面共有]
     L --> T[チャットやメールで送信]
 
-    style L fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 基本の守り方
@@ -64,7 +63,6 @@ flowchart LR
     B[ブラウザ] --> S[サーバー]
     S --> L[LLM API]
 
-    style S fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 サーバーが「API キーを持つ唯一の場所」になる設計。
@@ -110,7 +108,6 @@ flowchart TD
     U --> L[使用履歴を確認<br/>不正利用がないか]
     L --> F[報告・記録]
 
-    style R fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 **順序が重要**。まず無効化、次に交換、最後に調査。

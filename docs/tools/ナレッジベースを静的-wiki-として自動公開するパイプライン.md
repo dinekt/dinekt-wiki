@@ -13,7 +13,7 @@ tags:
 <span class="pill">#sqlite</span>
 <span class="pill">#mkdocs</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">4 min read</span>
+<span class="pill">3 min read</span>
 </div>
 
 SQLite に蓄積したナレッジを、静的 Wiki として自動公開するパイプライン。この Dinekt Knowledge Wiki そのものが実装例。
@@ -34,9 +34,6 @@ flowchart TD
     I --> J[GitHub Actions]
     J --> K[GitHub Pages 公開]
 
-    style C fill:#f6f6f6,stroke:#8a8a8a,color:#000
-    style X fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5,color:#000
-    style K fill:#262626,stroke:#0a0a0a,color:#fff
 ```
 
 ### 設計上のポイント
@@ -60,7 +57,6 @@ flowchart LR
     P -. 到達不能 .-> W
     P -. 到達不能 .-> X
 
-    style P fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5,color:#000
 ```
 
 **2. フィルタと検証を分離する**

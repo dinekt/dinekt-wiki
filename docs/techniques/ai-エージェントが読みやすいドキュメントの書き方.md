@@ -13,7 +13,7 @@ tags:
 <span class="pill">#ai-first</span>
 <span class="pill">#technique</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 AI エージェントが参照するドキュメントは、**人間向けと書き方を変える**と精度が大きく上がる。人間が読みやすい文章と、AI が解釈しやすい文章は、重なるが同じではない。
@@ -30,8 +30,6 @@ flowchart LR
     AI --> B2[定義された語彙]
     AI --> B3[前提を文字で書く]
 
-    style H fill:#e3f2fd,color:#000
-    style AI fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### 8 つのコツ
@@ -123,7 +121,6 @@ flowchart LR
     Q -->|正しく答えられる| OK[合格]
     Q -->|誤解する| F[ドキュメントを書き直す]
 
-    style F fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 運用のコツ

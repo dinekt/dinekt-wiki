@@ -15,7 +15,7 @@ tags:
 <span class="pill">#security</span>
 <span class="pill">#runbook</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">6 min read</span>
+<span class="pill">5 min read</span>
 </div>
 
 LLM アプリで**インシデントが発生したとき**の初動対応を、事前に決めておく。インシデントの種類ごとに異なる対応手順を持つのが鉄則。
@@ -30,7 +30,6 @@ flowchart TD
     I --> C4[サービス停止]
     I --> C5[攻撃検出]
 
-    style I fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 共通の初動フロー
@@ -44,9 +43,6 @@ flowchart LR
     E --> R[再発防止]
     R --> P[事後報告]
 
-    style D fill:#ffebee,stroke:#e57373,color:#000
-    style M fill:#fff3e0,stroke:#ffb74d,color:#000
-    style E fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 **1. 検知**: アラート or ユーザー報告
@@ -118,7 +114,6 @@ flowchart TD
     O --> O1[平日/休日の担当者]
     T --> T1[年 2 回のドリル]
 
-    style P fill:#262626,color:#fff
 ```
 
 **1. モニタリング**: 閾値超過で自動通知（[運用メトリクス](ai-エージェント運用の-10-メトリクス.md)参照）

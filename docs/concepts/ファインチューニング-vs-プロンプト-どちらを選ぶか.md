@@ -15,7 +15,7 @@ tags:
 <span class="pill">#rag</span>
 <span class="pill">#decision</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 「モデルをファインチューニングすべきか、プロンプトで頑張るか」は AI 機能開発でよく議論になる。**結論から言うと、プロンプトエンジニアリングで行けるところまで行くのが基本**。ファインチューニングは最後の手段。
@@ -32,9 +32,6 @@ flowchart TD
     E2 -->|はい| D
     E2 -->|いいえ| F[ファインチューニング<br/>を検討]
 
-    style P fill:#e8f5e9,stroke:#81c784,color:#000
-    style R fill:#fff9c4,stroke:#fff176,color:#000
-    style F fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 **ファインチューニングに進む前に、必ずプロンプト + RAG で試す**。この順序を守ると、大半のケースは FT なしで済む。

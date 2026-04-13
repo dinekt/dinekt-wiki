@@ -13,7 +13,7 @@ tags:
 <span class="pill">#slash-command</span>
 <span class="pill">#skill</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">6 min read</span>
+<span class="pill">5 min read</span>
 </div>
 
 Claude Code には `/<command>` で呼び出す **Slash Command** と、自然言語で起動される **Skill** がある。名前は似ているが**役割も実装も違う**。正しく使い分けると運用効率が大きく変わる。
@@ -29,8 +29,6 @@ flowchart LR
     K --> K2[複雑な手順の自動化]
     K --> K3[動的判断を含む]
 
-    style S fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style K fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### Slash Command
@@ -99,8 +97,6 @@ flowchart TD
     S --> U1[/ で明示呼び出し]
     K --> U2[自然言語で自動起動]
 
-    style S fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style K fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 ### 典型的なユースケース
@@ -166,7 +162,6 @@ flowchart LR
     C --> C2[複雑すぎる Slash を Skill へ]
     C --> C3[重複を統合]
 
-    style C fill:#262626,color:#fff
 ```
 
 ### チェックリスト

@@ -13,7 +13,7 @@ tags:
 <span class="pill">#few-shot</span>
 <span class="pill">#technique</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">4 min read</span>
+<span class="pill">3 min read</span>
 </div>
 
 LLM に「こういう形式で答えてほしい」と伝える最強の手段は、**例を見せること**。Few-shot examples を正しく設計すると、出力の品質と一貫性が大きく変わる。
@@ -28,9 +28,6 @@ flowchart LR
     I2[指示 + 例 1 件] --> O2[形式が安定]
     I3[指示 + 例 3-5 件] --> O3[形式 + 粒度が安定]
 
-    style I1 fill:#ffebee,stroke:#e57373,color:#000
-    style I2 fill:#fff9c4,stroke:#fff176,color:#000
-    style I3 fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### 件数の目安

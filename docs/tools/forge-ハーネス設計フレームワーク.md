@@ -33,8 +33,6 @@ flowchart LR
     P4 -->|OK| P5
     P5 --> O[ハーネス設計書<br/>+ ファイル群]
 
-    style P4 fill:#fff3e0,stroke:#ffb74d,color:#000
-    style P5 fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 ### フェーズ別の役割
@@ -59,7 +57,6 @@ flowchart TD
     C --> V6[constraints<br/>変えないもの]
     C --> V7[frequency<br/>1 回か継続か]
 
-    style C fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### 内蔵している設計原則

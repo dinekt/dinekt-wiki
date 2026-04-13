@@ -32,9 +32,6 @@ flowchart TD
     T --> T1[複数経路を探索]
     R --> R1[推論 + 行動の交互]
 
-    style C fill:#e8f5e9,stroke:#81c784,color:#000
-    style T fill:#fff9c4,stroke:#fff176,color:#000
-    style R fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### 1. Chain-of-Thought (CoT)
@@ -78,7 +75,6 @@ flowchart TD
     C1 --> E
     E --> F[最良を選ぶ]
 
-    style E fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 **実装**: 複数のアプローチを LLM に生成させ、別の LLM に評価させる、を反復する。

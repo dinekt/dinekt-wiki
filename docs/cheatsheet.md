@@ -113,7 +113,6 @@ flowchart TD
     A -->|指示無視| I[CLAUDE.md 分離 + 肯定形]
     A -->|頻繁な失敗| F[エラー分類 + リトライ戦略]
 
-    style P fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ## 主要エントリへのリンク

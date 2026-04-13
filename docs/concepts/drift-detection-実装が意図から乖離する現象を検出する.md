@@ -13,7 +13,7 @@ tags:
 <span class="pill">#review</span>
 <span class="pill">#concept</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">3 min read</span>
+<span class="pill">2 min read</span>
 </div>
 
 AI エージェントによる実装が、当初の意図・仕様から徐々に乖離していく現象。これを検出して巻き戻す仕組みが **drift-detection**。
@@ -30,9 +30,6 @@ flowchart TD
     R -->|乖離検出| BACK[Phase 1.2 に巻き戻し]
     BACK --> I
 
-    style I fill:#262626,color:#fff,stroke:#0a0a0a
-    style R fill:#fafafa,stroke:#525252,color:#000
-    style BACK fill:#f6f6f6,stroke:#c8c8c8,color:#000
 ```
 
 ### なぜ drift が起きるか
@@ -58,11 +55,6 @@ flowchart LR
     P3 -->|中| P4[Phase 4<br/>実装着手]
     P4 -->|高| P5[Phase 5<br/>実装完了]
 
-    style P1 fill:#e8f5e9,stroke:#81c784,color:#000
-    style P2 fill:#e8f5e9,stroke:#81c784,color:#000
-    style P3 fill:#fff3e0,stroke:#ffb74d,color:#000
-    style P4 fill:#ffebee,stroke:#e57373,color:#000
-    style P5 fill:#ffcdd2,stroke:#e57373,color:#000
 ```
 
 drift は早期に検出するほど修復コストが低い。設計段階（Phase 3 相当）まで進んでから検出されると、それまでの設計作業をやり直す必要がある。理想はヒアリング直後（Phase 1.2 相当）で、意図グラフと設計方針の突き合わせを済ませること。

@@ -33,7 +33,6 @@ flowchart LR
     SP <-->|chrome.runtime<br/>.sendMessage| BG
     BG <-->|chrome.storage<br/>.local| ST[(Storage)]
 
-    style BG fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### 観察された問題と対処

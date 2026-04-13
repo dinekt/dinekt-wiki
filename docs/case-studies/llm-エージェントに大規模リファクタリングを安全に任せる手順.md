@@ -13,7 +13,7 @@ tags:
 <span class="pill">#claude-code</span>
 <span class="pill">#case-study</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">4 min read</span>
+<span class="pill">3 min read</span>
 </div>
 
 LLM エージェントに大規模な構造変更（リファクタリング）を任せる際、ナイーブに依頼すると既存挙動を壊す。**段階分けと挙動保証の仕組み**を先に作ってから進めるのが鉄則。
@@ -27,7 +27,6 @@ flowchart TD
     C -->|不十分| D[挙動が壊れる]
     C -->|十分| E[結果的に OK だが<br/>レビューが困難]
 
-    style D fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 成功させる 4 ステップ
@@ -39,8 +38,6 @@ flowchart LR
     S3 --> S4[4. レビュー + 差分]
     S4 --> S3
 
-    style S1 fill:#e8f5e9,stroke:#81c784,color:#000
-    style S3 fill:#fff3e0,stroke:#ffb74d,color:#000
 ```
 
 **1. 現状の挙動をテストで固定する**

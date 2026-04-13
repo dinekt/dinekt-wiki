@@ -29,7 +29,6 @@ flowchart LR
     C -.参照.-> F[レビュー]
     F -->|乖離検出| C
 
-    style C fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 ### なぜ必要か

@@ -13,7 +13,7 @@ tags:
 <span class="pill">#governance</span>
 <span class="pill">#concept</span>
 <span class="pill">updated 2026-04-13</span>
-<span class="pill">5 min read</span>
+<span class="pill">4 min read</span>
 </div>
 
 AI エージェントに仕事を任せる際、**「誰が何の責任を持つか」**を曖昧にすると、事故時に収拾がつかなくなる。責任分界を明示的に設計する。
@@ -31,9 +31,6 @@ flowchart TD
     E --> EA[誰が実行するか]
     V --> VA[誰が結果を確認するか]
 
-    style D fill:#fff3e0,stroke:#ffb74d,color:#000
-    style E fill:#e3f2fd,stroke:#64b5f6,color:#000
-    style V fill:#e8f5e9,stroke:#81c784,color:#000
 ```
 
 - **判断層**: 何をどうするか決める
@@ -67,9 +64,6 @@ flowchart LR
       D3[検証: AI]
     end
 
-    style D1 fill:#ffebee,stroke:#e57373,color:#000
-    style D2 fill:#ffebee,stroke:#e57373,color:#000
-    style D3 fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 - **人間中心**: 手作業。最も安全だが遅い
@@ -102,9 +96,6 @@ flowchart TD
     C -->|中| R[人間レビュー]
     C -->|低| E[人間へエスカレーション]
 
-    style A fill:#e8f5e9,stroke:#81c784,color:#000
-    style R fill:#fff9c4,stroke:#fff176,color:#000
-    style E fill:#ffebee,stroke:#e57373,color:#000
 ```
 
 ### 事故時の責任

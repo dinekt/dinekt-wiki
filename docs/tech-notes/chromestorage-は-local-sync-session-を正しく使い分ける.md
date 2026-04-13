@@ -28,8 +28,6 @@ flowchart TD
     B -->|はい| S[chrome.storage.sync]
     B -->|いいえ| L
 
-    style L fill:#e8f5e9,stroke:#81c784,color:#000
-    style S fill:#e3f2fd,stroke:#64b5f6,color:#000
 ```
 
 ### クォータ比較

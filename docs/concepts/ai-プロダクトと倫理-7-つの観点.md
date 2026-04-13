@@ -85,7 +85,6 @@ flowchart TD
     A --> V[ベンダー・モデル提供者]
     A --> B[組織]
 
-    style A fill:#262626,color:#fff
 ```
 
 法的・契約的な整理が必要。曖昧なまま運用しない。
@@ -123,7 +122,6 @@ flowchart LR
     T --> R[リリース前レビュー]
     R --> M[運用中のモニタリング]
 
-    style E fill:#262626,color:#fff,stroke:#0a0a0a
 ```
 
 **プロダクト設計時のチェックリスト**:
