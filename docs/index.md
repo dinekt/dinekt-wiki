@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>78 entries</span>
+  <span>79 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -41,7 +41,7 @@ pie showData title カテゴリの分布
     "Patterns" : 9
     "Case Studies" : 13
     "Tools" : 6
-    "Tech Notes" : 13
+    "Tech Notes" : 14
 ```
 
 ## はじめての方へ
@@ -105,13 +105,19 @@ pie showData title カテゴリの分布
 
     技術仕様・Tips・検証メモ
 
-    _13 entries_
+    _14 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[Claude Code の Slash Command と Skill の使い分け](tech-notes/claude-code-の-slash-command-と-skill-の使い分け.md)__
+
+    ---
+
+    Claude Code には で呼び出す Slash Command と、自然言語で起動される Skill がある。名前は似ているが役割も実装も違う。正しく使い分けると運用効率が大きく変わる。 違いの…
 
 -   __[Guardrails — LLM 出力を決定論的に制御する仕組み](techniques/guardrails-llm-出力を決定論的に制御する仕組み.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     AI 開発では「速く作る」と「品質を担保する」がトレードオフに見えるが、実は両立可能。評価セット・自動化・仕組みが速度を下げず、品質を上げる。 見かけのトレードオフ 「速く作ると雑」「丁寧にやると遅い…
-
--   __[LLM アプリのインシデント対応](tech-notes/llm-アプリのインシデント対応.md)__
-
-    ---
-
-    LLM アプリでインシデントが発生したときの初動対応を、事前に決めておく。インシデントの種類ごとに異なる対応手順を持つのが鉄則。 インシデントの分類 共通の初動フロー 1. 検知: アラート or ユ…
 
 </div>
 

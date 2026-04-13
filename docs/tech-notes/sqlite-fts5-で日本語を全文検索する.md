@@ -51,6 +51,6 @@ CREATE VIRTUAL TABLE entries_fts USING fts5(
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [OpenAI と Anthropic API の主要差分](openai-と-anthropic-api-の主要差分.md)</div>
+  <div class="prev">← [Claude Code の Slash Command と Skill の使い分け](claude-code-の-slash-command-と-skill-の使い分け.md)</div>
   <div class="next">[SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md) →</div>
 </div>

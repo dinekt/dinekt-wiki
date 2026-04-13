@@ -4,7 +4,7 @@
 
 特定の技術に関する小さな発見や設定ノウハウをまとめた、辞書的なカテゴリです。必要な項目だけを拾い読みしてください。
 
-**13 件のエントリ**
+**14 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -43,6 +43,12 @@
     ---
 
     OpenAI API と Anthropic API は多くの概念が共通するが、細かな仕様差がある。両方を扱う実装で引っかかるポイントを整理。 主要な差分マップ API 構造の違い メッセージとシステ…
+
+-   __[Claude Code の Slash Command と Skill の使い分け](claude-code-の-slash-command-と-skill-の使い分け.md)__
+
+    ---
+
+    Claude Code には で呼び出す Slash Command と、自然言語で起動される Skill がある。名前は似ているが役割も実装も違う。正しく使い分けると運用効率が大きく変わる。 違いの…
 
 -   __[SQLite FTS5 で日本語を全文検索する](sqlite-fts5-で日本語を全文検索する.md)__
 

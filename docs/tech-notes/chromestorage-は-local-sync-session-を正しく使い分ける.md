@@ -81,7 +81,7 @@ flowchart TD
 
 - [Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](../case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)
 - [AI エージェント運用の 10 メトリクス](ai-エージェント運用の-10-メトリクス.md)
-- [Edge Runtime vs Node Runtime の使い分け](edge-runtime-vs-node-runtime-の使い分け.md)
+- [Claude Code の Slash Command と Skill の使い分け](claude-code-の-slash-command-と-skill-の使い分け.md)
 
 
 <div class="dnk-prev-next" markdown>
