@@ -9,26 +9,46 @@ repo_url: https://github.com/dinekt/dinekt-wiki
 theme:
   name: material
   language: ja
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/lightbulb-on-outline
+    repo: fontawesome/brands/github
   palette:
-    - scheme: default
-      primary: indigo
-      accent: blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: indigo
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: ダークモードに切り替え
-    - scheme: slate
-      primary: indigo
-      accent: blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: ライトモードに切り替え
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.footer
     - navigation.indexes
+    - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - announce.dismiss
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search:
@@ -38,13 +58,43 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+      permalink_title: このセクションへのリンク
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
   - tables
   - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
 
 extra:
   social:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/dinekt
+      name: Dinekt on X
+    - icon: fontawesome/brands/github
+      link: https://github.com/dinekt
+      name: Dinekt on GitHub
+  generator: false
+
+copyright: Copyright &copy; 2026 Dinekt

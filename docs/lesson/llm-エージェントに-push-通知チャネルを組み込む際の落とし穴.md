@@ -1,9 +1,9 @@
 # LLM エージェントに push 通知チャネルを組み込む際の落とし穴
 
-**カテゴリ**: lesson  
-**登録日**: 2026-04-10  
-
----
+<div class="dnk-meta" markdown>
+<span class="pill cat">lesson</span>
+<span class="pill">2026-04-10</span>
+</div>
 
 Claude Code 等の対話型 LLM エージェントに Telegram などの外部チャネルを連携する際、MCP サーバーの設定だけでは不十分という教訓。
 
