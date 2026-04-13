@@ -32,6 +32,18 @@ flowchart TD
     style TN fill:#f6f6f6,stroke:#8a8a8a
 ```
 
+## カテゴリ別エントリ数
+
+```mermaid
+pie showData title カテゴリの分布
+    "Concepts" : 9
+    "Techniques" : 15
+    "Patterns" : 6
+    "Case Studies" : 9
+    "Tools" : 6
+    "Tech Notes" : 10
+```
+
 ## はじめての方へ
 
 **推奨の読み順**:
