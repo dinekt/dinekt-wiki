@@ -157,8 +157,8 @@ Claude Code での不具合調査は、**「再現 → 仮説 → 検証 → 根
 ## 関連エントリ
 
 - [LLM エージェントに大規模リファクタリングを安全に任せる手順](llm-エージェントに大規模リファクタリングを安全に任せる手順.md)
+- [Claude Code を日々使い倒す 10 の小技](../techniques/claude-code-を日々使い倒す-10-の小技.md)
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](claudemd-肥大化を-adr-分離で回復した事例.md)
-- [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
 
 
 <div class="dnk-prev-next" markdown>

@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>63 entries</span>
+  <span>64 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 11
-    "Techniques" : 17
+    "Techniques" : 18
     "Patterns" : 7
     "Case Studies" : 11
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _17 entries_
+    _18 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[Claude Code を日々使い倒す 10 の小技](techniques/claude-code-を日々使い倒す-10-の小技.md)__
+
+    ---
+
+    Claude Code を日々の開発で使い倒している中で気付いた、小さいけど効く 10 の実践。1 つ 1 つは小さいが、合計すると体感が大きく変わる。 10 の小技 1. 最初に「役割」を明示する…
+
 -   __[LLM レッドチーミング — 意図的な攻撃で安全性を検証する](techniques/llm-レッドチーミング-意図的な攻撃で安全性を検証する.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM の推論能力を引き出すパターンとして、Chain-of-Thought (CoT)、Tree-of-Thoughts (ToT)、ReAct が筆者的。用途に応じて使い分ける。 3 つのパターン…
-
--   __[AI プロダクト設計の 3 つの基本原則](concepts/ai-プロダクト設計の-3-つの基本原則.md)__
-
-    ---
-
-    AI を組み込んだプロダクトを設計するとき、「AI にどこを任せるか」の判断が本質的に重要。ここが曖昧だと、どれだけ頑張っても良い製品にならない。 設計の出発点 3 つの基本原則 1. AI は最後の…
 
 </div>
 
