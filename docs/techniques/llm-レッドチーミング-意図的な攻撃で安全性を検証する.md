@@ -188,5 +188,5 @@ flowchart LR
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [ハルシネーションを抑える 7 つの手法](ハルシネーションを抑える-7-つの手法.md)</div>
-  <div class="next">[エージェントのメモリ設計 (短期・中期・長期)](エージェントのメモリ設計-短期中期長期.md) →</div>
+  <div class="next">[Guardrails — LLM 出力を決定論的に制御する仕組み](guardrails-llm-出力を決定論的に制御する仕組み.md) →</div>
 </div>

@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>77 entries</span>
+  <span>78 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 14
-    "Techniques" : 22
+    "Techniques" : 23
     "Patterns" : 9
     "Case Studies" : 13
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _22 entries_
+    _23 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[Guardrails — LLM 出力を決定論的に制御する仕組み](techniques/guardrails-llm-出力を決定論的に制御する仕組み.md)__
+
+    ---
+
+    LLM の出力を決定論的に制御するための仕組みを総称して Guardrails（ガードレール）と呼ぶ。自由な生成と安全な運用の両立に必須。 Guardrails の 3 層 1. Input Guar…
+
 -   __[エージェント専用ワークスペースのディレクトリ設計](techniques/エージェント専用ワークスペースのディレクトリ設計.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM アプリでインシデントが発生したときの初動対応を、事前に決めておく。インシデントの種類ごとに異なる対応手順を持つのが鉄則。 インシデントの分類 共通の初動フロー 1. 検知: アラート or ユ…
-
--   __[LLM アプリの 5 つの典型アーキテクチャパターン](concepts/llm-アプリの-5-つの典型アーキテクチャパターン.md)__
-
-    ---
-
-    LLM を組み込んだアプリのアーキテクチャは、用途によって大きく 5 パターンに分類できる。自分のアプリがどのパターンかを意識すると、設計判断が迷わない。 パターンマップ パターン 1: シンプル応答…
 
 </div>
 
