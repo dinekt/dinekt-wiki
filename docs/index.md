@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>52 entries</span>
+  <span>53 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -93,13 +93,19 @@ flowchart TD
 
     技術仕様・Tips・検証メモ
 
-    _9 entries_
+    _10 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[OpenAI と Anthropic API の主要差分](tech-notes/openai-と-anthropic-api-の主要差分.md)__
+
+    ---
+
+    OpenAI API と Anthropic API は多くの概念が共通するが、細かな仕様差がある。両方を扱う実装で引っかかるポイントを整理。 主要な差分マップ API 構造の違い メッセージとシステ…
 
 -   __[エージェントのメモリ設計 (短期・中期・長期)](techniques/エージェントのメモリ設計-短期中期長期.md)__
 
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     Claude Code のサブエージェント機能は、専門分野に特化した別エージェントを呼び出す仕組み。うまく使えばメインのコンテキストを節約しつつ、専門的な判断を得られる。 基本構造 メインはオーケスト…
-
--   __[AI エージェントと人間の責任分界](concepts/ai-エージェントと人間の責任分界.md)__
-
-    ---
-
-    AI エージェントに仕事を任せる際、「誰が何の責任を持つか」を曖昧にすると、事故時に収拾がつかなくなる。責任分界を明示的に設計する。 責任の 3 層 - 判断層: 何をどうするか決める - 実行層:…
 
 </div>
 

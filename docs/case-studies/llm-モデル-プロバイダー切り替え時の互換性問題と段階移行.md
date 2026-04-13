@@ -147,9 +147,9 @@ LLM モデル切替は**アプリの再テスト**に近い労力がかかる。
 
 ## 関連エントリ
 
+- [OpenAI と Anthropic API の主要差分](../tech-notes/openai-と-anthropic-api-の主要差分.md)
 - [Next.js で LLM のストリーミング応答を扱う実装パターン](nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)
 - [Eval-Driven Development — LLM 機能開発は評価から始める](../concepts/eval-driven-development-llm-機能開発は評価から始める.md)
-- [LLM API のレート制限との付き合い方](../tech-notes/llm-api-のレート制限との付き合い方.md)
 
 
 <div class="dnk-prev-next" markdown>
