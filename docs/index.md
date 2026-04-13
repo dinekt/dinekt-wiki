@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>19 entries</span>
+  <span>22 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -41,7 +41,7 @@
 
     エージェントやプロンプトの設計手法
 
-    _3 entries_
+    _4 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -57,7 +57,7 @@
 
     実際に遭遇したケースと対応の記録
 
-    _3 entries_
+    _5 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -81,41 +81,41 @@
 
 <div class="grid cards" markdown>
 
+-   __[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)__
+
+    ---
+
+    Chrome 拡張 Manifest V3 で、Content Script（ページに注入するスクリプト）と Side Panel（ブラウザ右側のパネル UI）を連携させる際に遭遇した実装上の落とし穴…
+
+-   __[Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](case-studies/nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)__
+
+    ---
+
+    Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。 併用の基本構造 mermaid f…
+
+-   __[Python での PDF 処理: PyMuPDF と pikepdf の使い分け](techniques/python-での-pdf-処理-pymupdf-と-pikepdf-の使い分け.md)__
+
+    ---
+
+    Python で PDF を扱う際、PyMuPDF（fitz） と pikepdf は両方とも有力だが、得意領域が異なる。両方を使い分けると実装の見通しが良くなる。 役割分担のマップ mermaid…
+
+-   __[Drift Detection — 実装が意図から乖離する現象を検出する](concepts/drift-detection-実装が意図から乖離する現象を検出する.md)__
+
+    ---
+
+    AI エージェントによる実装が、当初の意図・仕様から徐々に乖離していく現象。これを検出して巻き戻す仕組みが driftdetection。 発生と検出のメカニズム mermaid flowchart…
+
+-   __[Intent Engineering — 意図を凍結してから設計する](concepts/intent-engineering-意図を凍結してから設計する.md)__
+
+    ---
+
+    AI エージェントへの依頼で、実装が意図から乖離する問題を減らす考え方。意図（intent）を明文化された中間表現に凍結してから設計・実装に進むというアプローチ。 全体フロー mermaid flow…
+
 -   __[コンテキストは有限で劣化する資源である](concepts/コンテキストは有限で劣化する資源である.md)__
 
     ---
 
-    LLM エージェントの回答品質は、渡されたコンテキスト量に比例しない。むしろ反比例する場面が多い。コンテキストは有限かつ劣化する資源として扱うのが、実運用での正しい前提。 観察される事実  長いセッシ…
-
--   __[LLM エージェントに push 通知チャネルを組み込む際の落とし穴](case-studies/llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)__
-
-    ---
-
-    Claude Code 等の対話型 LLM エージェントに Telegram などの外部チャネルを連携する際、MCP サーバーの設定だけでは不十分という教訓。 観察された問題  受信が無音で止まる:…
-
--   __[比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](case-studies/比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)__
-
-    ---
-
-    ユーザの指示に含まれる比喩的な語彙を、実装者（LLM）がリテラルに解釈することで発生する仕様 drift と、それを検出・巻き戻す仕組みの実証例。 発生した事象 設計セッションで、ユーザが「データベー…
-
--   __[エージェント運用の失敗モード一覧と対策マップ](patterns/エージェント運用の失敗モード一覧と対策マップ.md)__
-
-    ---
-
-    単一エージェント運用の典型的な 7 つのアンチパターンと、マルチエージェント運用で頻出する 8 つの失敗モードに対する、実装可能な対策の対応表。個別の解説は各エントリを参照。 単一エージェント運用…
-
--   __[マルチエージェントの8つの失敗モード](patterns/マルチエージェントの8つの失敗モード.md)__
-
-    ---
-
-    複数のエージェントやセッションを同時・並列に運用する際に現れる筆者的な失敗モード。 1. Context Compression Amnesia コンテキスト圧縮時にエージェントが重要な決定を忘れる。…
-
--   __[単一エージェントの7つのアンチパターン](patterns/単一エージェントの7つのアンチパターン.md)__
-
-    ---
-
-    Claude Code などシステムプロンプト主体のエージェント運用で繰り返し現れるアンチパターンと、その回避策。 1. システムプロンプトを 200 行以上書く 指示予算（実質 100〜150 命令…
+    LLM エージェントの回答品質は、渡されたコンテキスト量に比例しない。むしろ反比例する場面が多い。コンテキストは有限かつ劣化する資源として扱うのが、実運用での正しい前提。 コンテキスト量と品質の関係…
 
 </div>
 

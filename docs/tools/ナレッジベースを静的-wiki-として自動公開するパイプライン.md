@@ -15,36 +15,27 @@ tags:
 <span class="pill">updated 2026-04-13</span>
 </div>
 
-SQLite に蓄積したナレッジを、自動で静的 Wiki として公開するパイプライン。この Dinekt Knowledge Wiki そのものが実装例。
+SQLite に蓄積したナレッジを、静的 Wiki として自動公開するパイプライン。この Dinekt Knowledge Wiki そのものが実装例。
 
 ### 全体像
 
-```
-Claude Code セッション
-        │
-        ▼
- dinekt-add (SQLite 蓄積)
-        │
-        ▼
- knowledge.db（全件）
-        │
-        ├─► dinekt-filter（公開可否判定）
-        │
-        ▼
- 公開フラグ付きエントリ
-        │
-        ├─► novelty verification（独自性検証）
-        │
-        ▼
- generate_wiki.py
-        │
-        ▼
- docs/（Markdown）
-        │
-        ├─► MkDocs + Material
-        │
-        ▼
- GitHub Actions → GitHub Pages
+```mermaid
+flowchart TD
+    A[Claude Code セッション] --> B[dinekt-add<br/>SQLite 蓄積]
+    B --> C[(knowledge.db<br/>全件)]
+    C --> D{dinekt-filter<br/>公開可否判定}
+    D -->|公開| E[公開フラグ付きエントリ]
+    D -->|非公開| X[private.db へ]
+    E --> F[独自性検証<br/>novelty verification]
+    F --> G[generate_wiki.py]
+    G --> H[docs/ Markdown]
+    H --> I[MkDocs + Material]
+    I --> J[GitHub Actions]
+    J --> K[GitHub Pages 公開]
+
+    style C fill:#f6f6f6,stroke:#8a8a8a
+    style X fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5
+    style K fill:#0a0a0a,stroke:#0a0a0a,color:#fff
 ```
 
 ### 設計上のポイント
@@ -52,6 +43,24 @@ Claude Code セッション
 **1. 二層防御で非公開データを保護**
 
 公開用 DB（`knowledge.db`）と非公開 DB（`private.db`）を物理的に分離する。発信経路のスクリプトは公開 DB しか参照できない権限設計にする。
+
+```mermaid
+flowchart LR
+    subgraph 蓄積層
+      K[(knowledge.db<br/>公開可)]
+      P[(private.db<br/>非公開)]
+    end
+    subgraph 発信層
+      W[generate_wiki.py]
+      X[crosspost など]
+    end
+    K --> W
+    K --> X
+    P -. 到達不能 .-> W
+    P -. 到達不能 .-> X
+
+    style P fill:#fafafa,stroke:#c8c8c8,stroke-dasharray: 5 5
+```
 
 **2. フィルタと検証を分離する**
 

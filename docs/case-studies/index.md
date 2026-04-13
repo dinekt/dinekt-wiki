@@ -4,7 +4,7 @@
 
 実際のセッションで遭遇した出来事と、そこから得た学びを記録しています。具体的なシチュエーションを通じて、Concepts や Patterns の妥当性を確認できます。
 
-**3 件のエントリ**
+**5 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -25,5 +25,17 @@
     ---
 
     Claude Code 等の対話型 LLM エージェントに Telegram などの外部チャネルを連携する際、MCP サーバーの設定だけでは不十分という教訓。 観察された問題  受信が無音で止まる:…
+
+-   __[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)__
+
+    ---
+
+    Chrome 拡張 Manifest V3 で、Content Script（ページに注入するスクリプト）と Side Panel（ブラウザ右側のパネル UI）を連携させる際に遭遇した実装上の落とし穴…
+
+-   __[Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)__
+
+    ---
+
+    Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。 併用の基本構造 mermaid f…
 
 </div>
