@@ -1,7 +1,7 @@
 # LLM エージェントに push 通知チャネルを組み込む際の落とし穴
 
 <div class="dnk-meta" markdown>
-<span class="pill cat">lesson</span>
+<span class="pill cat">case-studies</span>
 <span class="pill">2026-04-10</span>
 </div>
 
