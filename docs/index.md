@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>69 entries</span>
+  <span>70 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -41,7 +41,7 @@ pie showData title カテゴリの分布
     "Patterns" : 8
     "Case Studies" : 12
     "Tools" : 6
-    "Tech Notes" : 11
+    "Tech Notes" : 12
 ```
 
 ## はじめての方へ
@@ -105,13 +105,19 @@ pie showData title カテゴリの分布
 
     技術仕様・Tips・検証メモ
 
-    _11 entries_
+    _12 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[AI エージェント運用の 10 メトリクス](tech-notes/ai-エージェント運用の-10-メトリクス.md)__
+
+    ---
+
+    AI エージェントを本番運用する際、何を計測すべきかが曖昧だと改善できない。重要な 10 のメトリクスを 4 層で整理。 メトリクスの 4 層 品質層 1. 正答率（Accuracy） 評価セットでの…
 
 -   __[情報過多コンテキストの 4 つの失敗モード](patterns/情報過多コンテキストの-4-つの失敗モード.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     AI エージェントが参照するドキュメントは、人間向けと書き方を変えると精度が大きく上がる。人間が読みやすい文章と、AI が解釈しやすい文章は、重なるが同じではない。 AI が解釈しやすい書き方 8 つ…
-
--   __[Claude Code を日々使い倒す 10 の小技](techniques/claude-code-を日々使い倒す-10-の小技.md)__
-
-    ---
-
-    Claude Code を日々の開発で使い倒している中で気付いた、小さいけど効く 10 の実践。1 つ 1 つは小さいが、合計すると体感が大きく変わる。 10 の小技 1. 最初に「役割」を明示する…
 
 </div>
 

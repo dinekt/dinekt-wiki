@@ -118,9 +118,9 @@ LLM アプリの品質改善は**ログの質**に直結する。本番投入の
 
 ## 関連エントリ
 
+- [AI エージェント運用の 10 メトリクス](ai-エージェント運用の-10-メトリクス.md)
 - [LLM API のレート制限との付き合い方](llm-api-のレート制限との付き合い方.md)
 - [LLM 機能を本番リリースする前のチェックリスト](llm-機能を本番リリースする前のチェックリスト.md)
-- [Eval-Driven Development — LLM 機能開発は評価から始める](../concepts/eval-driven-development-llm-機能開発は評価から始める.md)
 
 
 <div class="dnk-prev-next" markdown>
