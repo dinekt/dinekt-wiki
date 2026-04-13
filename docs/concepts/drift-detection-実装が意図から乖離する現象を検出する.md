@@ -1,3 +1,10 @@
+---
+tags:
+  - drift
+  - review
+  - concept
+---
+
 # Drift Detection — 実装が意図から乖離する現象を検出する
 
 <div class="dnk-meta" markdown>
@@ -34,3 +41,4 @@ drift は早期に検出するほど修復コストが低い。設計段階（Ph
 
 - [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
 - [二役レビューの実装パターン](../techniques/二役レビューの実装パターン.md)
+- [比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](../case-studies/比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)

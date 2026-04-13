@@ -1,3 +1,10 @@
+---
+tags:
+  - forge
+  - harness
+  - claude-code
+---
+
 # forge — ハーネス設計フレームワーク
 
 <div class="dnk-meta" markdown>
@@ -56,4 +63,4 @@
 
 - [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](../case-studies/claudemd-肥大化を-adr-分離で回復した事例.md)
-- [比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](../case-studies/比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)
+- [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](../case-studies/llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)

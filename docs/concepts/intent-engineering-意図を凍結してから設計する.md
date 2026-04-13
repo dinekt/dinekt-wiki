@@ -1,3 +1,10 @@
+---
+tags:
+  - intent
+  - drift
+  - concept
+---
+
 # Intent Engineering — 意図を凍結してから設計する
 
 <div class="dnk-meta" markdown>
@@ -40,4 +47,5 @@ Dinekt では forge というハーネス設計フレームワークで実装し
 ## 関連エントリ
 
 - [Drift Detection — 実装が意図から乖離する現象を検出する](drift-detection-実装が意図から乖離する現象を検出する.md)
+- [比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](../case-studies/比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)
 - [ヒアリングテンプレートの設計](../techniques/ヒアリングテンプレートの設計.md)

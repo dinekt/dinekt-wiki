@@ -1,3 +1,10 @@
+---
+tags:
+  - wiki
+  - sqlite
+  - mkdocs
+---
+
 # ナレッジベースを静的 Wiki として自動公開するパイプライン
 
 <div class="dnk-meta" markdown>
@@ -83,5 +90,5 @@ Claude Code セッション
 ## 関連エントリ
 
 - [SQLite FTS5 で日本語を全文検索する](../tech-notes/sqlite-fts5-で日本語を全文検索する.md)
-- [実装言語を選ぶ前に環境前提を確認する](../tech-notes/実装言語を選ぶ前に環境前提を確認する.md)
+- [SQLite FTS5 クエリは phrase 化して安全に渡す](../tech-notes/sqlite-fts5-クエリは-phrase-化して安全に渡す.md)
 - [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)

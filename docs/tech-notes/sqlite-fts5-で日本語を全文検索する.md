@@ -1,3 +1,10 @@
+---
+tags:
+  - sqlite
+  - fts5
+  - japanese
+---
+
 # SQLite FTS5 で日本語を全文検索する
 
 <div class="dnk-meta" markdown>
@@ -5,8 +12,6 @@
 <span class="pill">#sqlite</span>
 <span class="pill">#fts5</span>
 <span class="pill">#japanese</span>
-<span class="pill">#2026-04-10</span>
-<span class="pill">#tech-fact</span>
 <span class="pill">updated 2026-04-13</span>
 </div>
 
@@ -40,5 +45,5 @@ CREATE VIRTUAL TABLE entries_fts USING fts5(
 ## 関連エントリ
 
 - [SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md)
-- [実装言語を選ぶ前に環境前提を確認する](実装言語を選ぶ前に環境前提を確認する.md)
 - [ナレッジベースを静的 Wiki として自動公開するパイプライン](../tools/ナレッジベースを静的-wiki-として自動公開するパイプライン.md)
+- [ナレッジベースのファイル命名規則とテキスト規約](ナレッジベースのファイル命名規則とテキスト規約.md)

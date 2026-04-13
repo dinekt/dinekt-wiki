@@ -1,3 +1,10 @@
+---
+tags:
+  - claude-code
+  - context
+  - adr
+---
+
 # CLAUDE.md 肥大化を ADR 分離で回復した事例
 
 <div class="dnk-meta" markdown>
@@ -52,5 +59,5 @@ CLAUDE.md を「索引」に徹させ、個別の意思決定は ADR（Architect
 ## 関連エントリ
 
 - [ADR 参照コマンドによる意思決定の継承](../tools/adr-参照コマンドによる意思決定の継承.md)
-- [forge — ハーネス設計フレームワーク](../tools/forge-ハーネス設計フレームワーク.md)
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
+- [forge — ハーネス設計フレームワーク](../tools/forge-ハーネス設計フレームワーク.md)

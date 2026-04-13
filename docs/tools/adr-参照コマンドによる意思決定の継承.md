@@ -1,3 +1,10 @@
+---
+tags:
+  - adr
+  - claude-code
+  - context
+---
+
 # ADR 参照コマンドによる意思決定の継承
 
 <div class="dnk-meta" markdown>
@@ -52,4 +59,4 @@ ADR コマンドは次の 2 ステップで動く。
 
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](../case-studies/claudemd-肥大化を-adr-分離で回復した事例.md)
 - [forge — ハーネス設計フレームワーク](forge-ハーネス設計フレームワーク.md)
-- [ナレッジベースを静的 Wiki として自動公開するパイプライン](ナレッジベースを静的-wiki-として自動公開するパイプライン.md)
+- [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](../case-studies/llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
