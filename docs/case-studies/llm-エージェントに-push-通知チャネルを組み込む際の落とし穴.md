@@ -15,6 +15,7 @@ tags:
 <span class="pill">#push-notification</span>
 <span class="pill">#claude-code</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">1 min read</span>
 </div>
 
 Claude Code 等の対話型 LLM エージェントに Telegram などの外部チャネルを連携する際、MCP サーバーの設定だけでは不十分という教訓。

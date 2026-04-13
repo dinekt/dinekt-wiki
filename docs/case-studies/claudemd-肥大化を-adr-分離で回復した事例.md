@@ -13,6 +13,7 @@ tags:
 <span class="pill">#context</span>
 <span class="pill">#adr</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">2 min read</span>
 </div>
 
 Claude Code のシステムプロンプト（CLAUDE.md）が肥大化して指示遵守率が下がった状況を、ADR パターンの導入で回復させたケース。

@@ -15,6 +15,7 @@ tags:
 <span class="pill">#prisma</span>
 <span class="pill">#rls</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。

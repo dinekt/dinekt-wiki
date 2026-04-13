@@ -496,6 +496,33 @@ body, .md-typeset {
   letter-spacing: 0.01em;
 }
 
+/* ---------- Mermaid diagrams ---------- */
+
+.md-typeset .mermaid {
+  background: var(--dnk-bg-soft);
+  border: 1px solid var(--dnk-border);
+  border-radius: 4px;
+  padding: 1.6rem 1rem;
+  margin: 1.2rem 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.md-typeset .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .mermaid {
+  background: #161616;
+}
+
+/* Ensure mermaid node text inherits readable color in dark mode */
+[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .edgeLabel {
+  color: var(--dnk-fg) !important;
+}
+
 /* ---------- Disable fade-in ---------- */
 
 .md-content {

@@ -15,6 +15,7 @@ tags:
 <span class="pill">#tdd</span>
 <span class="pill">#concept</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 LLM を使った機能を作る際、目視確認だけに頼ると品質が安定しない。**評価を先に書き、評価が通ることを目指して実装する**という進め方が、LLM 時代の TDD に相当する。Eval-Driven Development（EDD）と呼ばれる。

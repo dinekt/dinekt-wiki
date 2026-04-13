@@ -13,6 +13,7 @@ tags:
 <span class="pill">#manifest-v3</span>
 <span class="pill">#service-worker</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 Chrome 拡張 Manifest V3 で、Content Script（ページに注入するスクリプト）と Side Panel（ブラウザ右側のパネル UI）を連携させる際に遭遇した実装上の落とし穴と対処。

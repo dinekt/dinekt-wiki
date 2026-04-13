@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>27 entries</span>
+  <span>28 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -41,7 +41,7 @@
 
     エージェントやプロンプトの設計手法
 
-    _4 entries_
+    _5 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -81,6 +81,18 @@
 
 <div class="grid cards" markdown>
 
+-   __[プロンプトキャッシュを壊さない書き方](techniques/プロンプトキャッシュを壊さない書き方.md)__
+
+    ---
+
+    LLM API の多くは同じ先頭プロンプトを再利用することでプロンプトキャッシュを効かせ、レイテンシとコストを劇的に下げられる。ただしキャッシュは「先頭から完全一致」が前提なので、わずかな変動で無効化…
+
+-   __[マルチエージェント組織の4つの設計教訓](techniques/マルチエージェント組織の4つの設計教訓.md)__
+
+    ---
+
+    AI エージェントを複数ロールで運用する際に得た設計上の教訓。 組織構造の比喩 mermaid flowchart TD H[ユーザー / 発注者] I[索引エージェント<br/index only]…
+
 -   __[Next.js で LLM のストリーミング応答を扱う実装パターン](case-studies/nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)__
 
     ---
@@ -104,18 +116,6 @@
     ---
 
     アーキテクチャ上の意思決定を Architecture Decision Record（ADR）として残し、Claude Code の作業前に自動で参照させる運用パターン。 ADR 参照の流れ mer…
-
--   __[forge — ハーネス設計フレームワーク](tools/forge-ハーネス設計フレームワーク.md)__
-
-    ---
-
-    ユーザーの「やりたいこと」を受け取り、ヒアリング → 設計 → 自己レビュー → 改善を自動で回して、そのタスクに最適なエージェントハーネス（システムプロンプト、スクリプト、設定一式）を出力するフレー…
-
--   __[Stripe Webhook を Next.js で安全に実装する](case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)__
-
-    ---
-
-    Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。 Webhook…
 
 </div>
 

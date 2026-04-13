@@ -15,6 +15,7 @@ tags:
 <span class="pill">#nextjs</span>
 <span class="pill">#security</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">4 min read</span>
 </div>
 
 Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。

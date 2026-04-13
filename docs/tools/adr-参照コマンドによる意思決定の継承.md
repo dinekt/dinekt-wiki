@@ -13,6 +13,7 @@ tags:
 <span class="pill">#claude-code</span>
 <span class="pill">#context</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 アーキテクチャ上の意思決定を Architecture Decision Record（ADR）として残し、Claude Code の作業前に自動で参照させる運用パターン。

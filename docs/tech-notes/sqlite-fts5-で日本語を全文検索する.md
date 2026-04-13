@@ -13,6 +13,7 @@ tags:
 <span class="pill">#fts5</span>
 <span class="pill">#japanese</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">1 min read</span>
 </div>
 
 SQLite FTS5 のデフォルト tokenizer (`unicode61`) は日本語の分かち書きを行わず、「テスト」のようなクエリでは期待通りの結果が得られない。SQLite 3.34 以降で利用できる trigram tokenizer に切り替えれば、CJK 言語の全文検索が機能する。

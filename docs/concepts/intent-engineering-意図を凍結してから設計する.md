@@ -13,6 +13,7 @@ tags:
 <span class="pill">#drift</span>
 <span class="pill">#concept</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">2 min read</span>
 </div>
 
 AI エージェントへの依頼で、実装が意図から乖離する問題を減らす考え方。**意図（intent）を明文化された中間表現に凍結してから設計・実装に進む**というアプローチ。

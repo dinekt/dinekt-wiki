@@ -15,6 +15,7 @@ tags:
 <span class="pill">#streaming</span>
 <span class="pill">#sse</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">5 min read</span>
 </div>
 
 OpenAI（や Anthropic）の Chat Completions API でストリーミング応答を Next.js サーバーから受けて、ブラウザにリアルタイム表示する実装パターン。**Server-Sent Events（SSE）** が標準解。

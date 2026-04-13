@@ -13,6 +13,7 @@ tags:
 <span class="pill">#fts5</span>
 <span class="pill">#cli-design</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">1 min read</span>
 </div>
 
 FTS5 のクエリ構文では `-` `"` `(` `)` `*` などが演算子として解釈される。ユーザー入力をそのまま渡すとクエリエラーや意図しない検索結果を招く。たとえば `tech-news` は `tech NOT news` と解釈される。

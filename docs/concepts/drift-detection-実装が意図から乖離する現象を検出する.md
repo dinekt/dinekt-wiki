@@ -13,6 +13,7 @@ tags:
 <span class="pill">#review</span>
 <span class="pill">#concept</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 AI エージェントによる実装が、当初の意図・仕様から徐々に乖離していく現象。これを検出して巻き戻す仕組みが **drift-detection**。

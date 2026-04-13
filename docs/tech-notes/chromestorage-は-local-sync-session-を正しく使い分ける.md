@@ -13,6 +13,7 @@ tags:
 <span class="pill">#storage</span>
 <span class="pill">#quota</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 Chrome 拡張で状態を保存する際、`chrome.storage.local` と `chrome.storage.sync` のどちらを使うかは意外と間違えやすい。誤って `sync` を選ぶと、クォータ制限にすぐ引っかかる。

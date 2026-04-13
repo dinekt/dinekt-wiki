@@ -13,6 +13,7 @@ tags:
 <span class="pill">#sqlite</span>
 <span class="pill">#mkdocs</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">4 min read</span>
 </div>
 
 SQLite に蓄積したナレッジを、静的 Wiki として自動公開するパイプライン。この Dinekt Knowledge Wiki そのものが実装例。

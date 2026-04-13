@@ -13,6 +13,7 @@ tags:
 <span class="pill">#harness</span>
 <span class="pill">#claude-code</span>
 <span class="pill">updated 2026-04-13</span>
+<span class="pill">3 min read</span>
 </div>
 
 ユーザーの「やりたいこと」を受け取り、ヒアリング → 設計 → 自己レビュー → 改善を自動で回して、そのタスクに最適なエージェントハーネス（システムプロンプト、スクリプト、設定一式）を出力するフレームワーク。Dinekt の forge コマンドとして実装している。
