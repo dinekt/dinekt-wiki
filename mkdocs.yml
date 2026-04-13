@@ -1,24 +1,39 @@
 site_name: Dinekt Knowledge Wiki
-site_description: 技術ナレッジの検証済みコレクション
 site_url: https://dinekt.github.io/dinekt-wiki/
+site_description: Claude Code と AI 開発の実践知識ベース by Dinekt
+site_author: Dinekt
+
+repo_name: dinekt/dinekt-wiki
+repo_url: https://github.com/dinekt/dinekt-wiki
 
 theme:
   name: material
   language: ja
-  features:
-    - navigation.tabs
-    - navigation.top
-    - navigation.expand
-    - search.suggest
-    - search.highlight
   palette:
     - scheme: default
       primary: indigo
-      accent: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
 
 plugins:
   - search:
       lang: ja
+  - tags
 
 markdown_extensions:
   - toc:
@@ -26,3 +41,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - tables
+  - attr_list
+
+extra:
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/dinekt
