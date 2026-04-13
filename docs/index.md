@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>57 entries</span>
+  <span>58 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -36,7 +36,7 @@ flowchart TD
 
 ```mermaid
 pie showData title カテゴリの分布
-    "Concepts" : 9
+    "Concepts" : 10
     "Techniques" : 15
     "Patterns" : 7
     "Case Studies" : 10
@@ -65,7 +65,7 @@ pie showData title カテゴリの分布
 
     AI 開発の根底にある概念・思想
 
-    _9 entries_
+    _10 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[AI プロダクト設計の 3 つの基本原則](concepts/ai-プロダクト設計の-3-つの基本原則.md)__
+
+    ---
+
+    AI を組み込んだプロダクトを設計するとき、「AI にどこを任せるか」の判断が本質的に重要。ここが曖昧だと、どれだけ頑張っても良い製品にならない。 設計の出発点 3 つの基本原則 1. AI は最後の…
+
 -   __[長い出力を生成させるときの 5 つの失敗](patterns/長い出力を生成させるときの-5-つの失敗.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     OpenAI API と Anthropic API は多くの概念が共通するが、細かな仕様差がある。両方を扱う実装で引っかかるポイントを整理。 主要な差分マップ API 構造の違い メッセージとシステ…
-
--   __[エージェントのメモリ設計 (短期・中期・長期)](techniques/エージェントのメモリ設計-短期中期長期.md)__
-
-    ---
-
-    エージェントに「記憶」を持たせる設計は、セッションをまたいだ継続的な会話・学習・作業を実現するために必須。どこに・何を・どう保持するかを整理する。 メモリの 3 種類 短期メモリ（セッション中） 保存…
 
 </div>
 
