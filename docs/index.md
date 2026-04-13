@@ -154,6 +154,7 @@ pie showData title カテゴリの分布
 ## 関連リンク
 
 - [ナレッジマップ](map.md) — 概念の全体像を俯瞰する
+- [チートシート](cheatsheet.md) — 忙しいときの早見表
 - [用語集](glossary.md)
 - [タグ一覧](tags.md)
 - [Dinekt 公式サイト](https://dinekt.com)
