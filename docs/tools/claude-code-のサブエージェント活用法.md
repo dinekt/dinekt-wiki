@@ -126,5 +126,5 @@ flowchart LR
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [Claude Code settings.json を使いこなす](claude-code-settingsjson-を使いこなす.md)</div>
-  <div class="next">[ナレッジベースを静的 Wiki として自動公開するパイプライン](ナレッジベースを静的-wiki-として自動公開するパイプライン.md) →</div>
+  <div class="next">[評価ハーネスの設計 — プロンプトを育てる仕組み](評価ハーネスの設計-プロンプトを育てる仕組み.md) →</div>
 </div>

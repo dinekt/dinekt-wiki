@@ -105,6 +105,6 @@ flowchart LR
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [Claude Code のサブエージェント活用法](claude-code-のサブエージェント活用法.md)</div>
+  <div class="prev">← [評価ハーネスの設計 — プロンプトを育てる仕組み](評価ハーネスの設計-プロンプトを育てる仕組み.md)</div>
   <div class="next"></div>
 </div>
