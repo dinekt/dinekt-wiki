@@ -76,8 +76,11 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/x-twitter
-      link: https://x.com/dinekt
+      link: https://x.com/dinekt_dev
       name: Dinekt on X
+    - icon: material/web
+      link: https://dinekt.com
+      name: Dinekt 公式サイト
   generator: false
 
 copyright: "&copy; 2026 Dinekt"

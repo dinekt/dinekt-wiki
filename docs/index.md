@@ -150,4 +150,9 @@ pie showData title カテゴリの分布
 - [チートシート](cheatsheet.md) — 忙しいときの早見表
 - [用語集](glossary.md)
 - [タグ一覧](tags.md)
+
+## Dinekt について
+
 - [Dinekt 公式サイト](https://dinekt.com)
+- [X (@dinekt_dev)](https://x.com/dinekt_dev)
+- [Zenn](https://zenn.dev/dinekt)
