@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>18 entries</span>
+  <span>19 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -33,7 +33,7 @@
 
     AI 開発の根底にある概念・思想
 
-    _2 entries_
+    _3 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -81,6 +81,12 @@
 
 <div class="grid cards" markdown>
 
+-   __[コンテキストは有限で劣化する資源である](concepts/コンテキストは有限で劣化する資源である.md)__
+
+    ---
+
+    LLM エージェントの回答品質は、渡されたコンテキスト量に比例しない。むしろ反比例する場面が多い。コンテキストは有限かつ劣化する資源として扱うのが、実運用での正しい前提。 観察される事実  長いセッシ…
+
 -   __[LLM エージェントに push 通知チャネルを組み込む際の落とし穴](case-studies/llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)__
 
     ---
@@ -110,12 +116,6 @@
     ---
 
     Claude Code などシステムプロンプト主体のエージェント運用で繰り返し現れるアンチパターンと、その回避策。 1. システムプロンプトを 200 行以上書く 指示予算（実質 100〜150 命令…
-
--   __[SQLite FTS5 で日本語を全文検索する](tech-notes/sqlite-fts5-で日本語を全文検索する.md)__
-
-    ---
-
-    SQLite FTS5 のデフォルト tokenizer (unicode61) は日本語の分かち書きを行わず、「テスト」のようなクエリでは期待通りの結果が得られない。SQLite 3.34 以降で利…
 
 </div>
 
