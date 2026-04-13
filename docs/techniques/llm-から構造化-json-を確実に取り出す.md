@@ -130,6 +130,6 @@ flowchart TD
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)</div>
+  <div class="prev">← [CoT・ToT・ReAct — 推論パターンの使い分け](cottotreact-推論パターンの使い分け.md)</div>
   <div class="next">[プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md) →</div>
 </div>

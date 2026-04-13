@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>58 entries</span>
+  <span>59 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 10
-    "Techniques" : 15
+    "Techniques" : 16
     "Patterns" : 7
     "Case Studies" : 10
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _15 entries_
+    _16 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[CoT・ToT・ReAct — 推論パターンの使い分け](techniques/cottotreact-推論パターンの使い分け.md)__
+
+    ---
+
+    LLM の推論能力を引き出すパターンとして、Chain-of-Thought (CoT)、Tree-of-Thoughts (ToT)、ReAct が筆者的。用途に応じて使い分ける。 3 つのパターン…
+
 -   __[AI プロダクト設計の 3 つの基本原則](concepts/ai-プロダクト設計の-3-つの基本原則.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     プロンプトはコード同様にバージョン管理の対象。Git で管理するだけでは不十分で、評価・差分・ロールバックの仕組みが要る。 バージョン管理の基本構造 やるべきこと 1. ファイル分離 プロンプトをコー…
-
--   __[OpenAI と Anthropic API の主要差分](tech-notes/openai-と-anthropic-api-の主要差分.md)__
-
-    ---
-
-    OpenAI API と Anthropic API は多くの概念が共通するが、細かな仕様差がある。両方を扱う実装で引っかかるポイントを整理。 主要な差分マップ API 構造の違い メッセージとシステ…
 
 </div>
 
