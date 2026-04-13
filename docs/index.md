@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>60 entries</span>
+  <span>61 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -36,7 +36,7 @@ flowchart TD
 
 ```mermaid
 pie showData title カテゴリの分布
-    "Concepts" : 10
+    "Concepts" : 11
     "Techniques" : 16
     "Patterns" : 7
     "Case Studies" : 10
@@ -65,7 +65,7 @@ pie showData title カテゴリの分布
 
     AI 開発の根底にある概念・思想
 
-    _10 entries_
+    _11 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[ファインチューニング vs プロンプト — どちらを選ぶか](concepts/ファインチューニング-vs-プロンプト-どちらを選ぶか.md)__
+
+    ---
+
+    「モデルをファインチューニングすべきか、プロンプトで頑張るか」は AI 機能開発でよく議論になる。結論から言うと、プロンプトエンジニアリングで行けるところまで行くのが基本。ファインチューニングは最後の…
+
 -   __[LLM API キーの管理と漏洩防止](tech-notes/llm-api-キーの管理と漏洩防止.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     不具合調査で Claude Code を使うと、「何となく修正して動いた」では終わらず、根本原因まで特定できる確率が大きく上がる。ただしやり方を間違えるとむしろ遅くなる。効率的な進め方を整理。 調査フ…
-
--   __[評価ハーネスの設計 — プロンプトを育てる仕組み](tools/評価ハーネスの設計-プロンプトを育てる仕組み.md)__
-
-    ---
-
-    LLM 機能の評価セットを継続運用するには、専用のハーネス（実行基盤）が要る。評価セットの作成・実行・スコアリング・比較を 1 つの仕組みに集約する。 評価ハーネスの全体像 最低限の構成要素 1. 評…
 
 </div>
 

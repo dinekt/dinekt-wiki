@@ -131,5 +131,5 @@ LLM の出力に、センシティブ情報（API キー、個人情報、シス
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)</div>
-  <div class="next">[技術選定の5軸評価フレームワーク](技術選定の5軸評価フレームワーク.md) →</div>
+  <div class="next">[ファインチューニング vs プロンプト — どちらを選ぶか](ファインチューニング-vs-プロンプト-どちらを選ぶか.md) →</div>
 </div>
