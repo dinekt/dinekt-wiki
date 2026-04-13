@@ -147,9 +147,9 @@ API キー管理は**プロジェクト最初のコミット**から仕組み化
 
 ## 関連エントリ
 
+- [LLM アプリのインシデント対応](llm-アプリのインシデント対応.md)
 - [LLM レッドチーミング — 意図的な攻撃で安全性を検証する](../techniques/llm-レッドチーミング-意図的な攻撃で安全性を検証する.md)
 - [Stripe Webhook を Next.js で安全に実装する](../case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)
-- [プロンプトインジェクション — LLM アプリの最重要セキュリティ論点](../concepts/プロンプトインジェクション-llm-アプリの最重要セキュリティ論点.md)
 
 
 <div class="dnk-prev-next" markdown>

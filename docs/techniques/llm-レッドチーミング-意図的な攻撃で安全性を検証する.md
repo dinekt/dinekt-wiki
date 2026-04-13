@@ -182,8 +182,8 @@ flowchart LR
 ## 関連エントリ
 
 - [LLM API キーの管理と漏洩防止](../tech-notes/llm-api-キーの管理と漏洩防止.md)
+- [LLM アプリのインシデント対応](../tech-notes/llm-アプリのインシデント対応.md)
 - [Stripe Webhook を Next.js で安全に実装する](../case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)
-- [プロンプトインジェクション — LLM アプリの最重要セキュリティ論点](../concepts/プロンプトインジェクション-llm-アプリの最重要セキュリティ論点.md)
 
 
 <div class="dnk-prev-next" markdown>
