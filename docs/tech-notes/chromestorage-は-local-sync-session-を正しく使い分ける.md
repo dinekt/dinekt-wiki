@@ -81,7 +81,7 @@ flowchart TD
 
 - [Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](../case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)
 - [Edge Runtime vs Node Runtime の使い分け](edge-runtime-vs-node-runtime-の使い分け.md)
-- [SQLite FTS5 で日本語を全文検索する](sqlite-fts5-で日本語を全文検索する.md)
+- [LLM API のレート制限との付き合い方](llm-api-のレート制限との付き合い方.md)
 
 
 <div class="dnk-prev-next" markdown>

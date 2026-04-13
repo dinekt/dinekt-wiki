@@ -105,5 +105,5 @@ Next.js では route ごとに `export const runtime = 'edge'` または `'nodej
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md)</div>
-  <div class="next">[ナレッジベースのファイル命名規則とテキスト規約](ナレッジベースのファイル命名規則とテキスト規約.md) →</div>
+  <div class="next">[LLM API のレート制限との付き合い方](llm-api-のレート制限との付き合い方.md) →</div>
 </div>

@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>34 entries</span>
+  <span>37 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -61,7 +61,7 @@ flowchart TD
 
     エージェントやプロンプトの設計手法
 
-    _9 entries_
+    _10 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -93,13 +93,31 @@ flowchart TD
 
     技術仕様・Tips・検証メモ
 
-    _6 entries_
+    _8 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[LLM API のレート制限との付き合い方](tech-notes/llm-api-のレート制限との付き合い方.md)__
+
+    ---
+
+    LLM API（OpenAI・Anthropic 等）のレート制限は、負荷時に必ず遭遇する。事前にリトライ戦略・バックオフ・キューを組み込んでおかないと、本番で落ちる。 主なレート制限の種類 merm…
+
+-   __[LLM ツール定義のスキーマ設計](techniques/llm-ツール定義のスキーマ設計.md)__
+
+    ---
+
+    LLM にツール（関数）を使わせる際、ツールのスキーマ（名前・説明・パラメータ）が LLM の使いこなしに直結する。プロンプトエンジニアリングと同じくらい重要。 良いツール定義の条件 mermaid…
+
+-   __[LLM アプリのログ設計で残すべき 5 項目](tech-notes/llm-アプリのログ設計で残すべき-5-項目.md)__
+
+    ---
+
+    LLM を組み込んだアプリは、従来のアプリよりログ設計が重要。非決定的な応答・高コスト・予測不能な失敗を相手にするため、何が起きたかを後から再現できないと改善が進まない。 記録すべき 5 項目 mer…
 
 -   __[プロンプトインジェクション — LLM アプリの最重要セキュリティ論点](concepts/プロンプトインジェクション-llm-アプリの最重要セキュリティ論点.md)__
 
@@ -118,24 +136,6 @@ flowchart TD
     ---
 
     LLM から構造化データ（JSON）を取り出す際、JSON Mode や Function Calling を使わないと、プレーンテキストの中に JSON が混じって返ってきて、パースに失敗しやすい。…
-
--   __[マルチエージェントの8つの失敗モード](patterns/マルチエージェントの8つの失敗モード.md)__
-
-    ---
-
-    複数のエージェントやセッションを同時・並列に運用する際に現れる筆者的な失敗モード。 8 つの失敗モード 一覧 mermaid mindmap root((マルチエージェント<br/失敗モード)) 記憶…
-
--   __[単一エージェントの7つのアンチパターン](patterns/単一エージェントの7つのアンチパターン.md)__
-
-    ---
-
-    Claude Code などシステムプロンプト主体のエージェント運用で繰り返し現れるアンチパターンと、その回避策。 7 つのアンチパターン 一覧 mermaid mindmap root((単一エージ…
-
--   __[Edge Runtime vs Node Runtime の使い分け](tech-notes/edge-runtime-vs-node-runtime-の使い分け.md)__
-
-    ---
-
-    Vercel（や Cloudflare Workers）の Edge Runtime は起動が速くグローバル分散できるが、Node.js API の大半が使えない。Node Runtime との使い分…
 
 </div>
 

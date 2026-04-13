@@ -105,8 +105,8 @@ LLM-as-Judge は**完全な代替ではなく、人間の目を補う仕組み**
 ## 関連エントリ
 
 - [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)
+- [LLM ツール定義のスキーマ設計](llm-ツール定義のスキーマ設計.md)
 - [RAG のチャンクサイズを選ぶ基準](rag-のチャンクサイズを選ぶ基準.md)
-- [ヒアリングテンプレートの設計](ヒアリングテンプレートの設計.md)
 
 
 <div class="dnk-prev-next" markdown>

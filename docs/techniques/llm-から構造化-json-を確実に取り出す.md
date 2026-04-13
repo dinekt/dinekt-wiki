@@ -124,9 +124,9 @@ flowchart TD
 
 ## 関連エントリ
 
+- [LLM ツール定義のスキーマ設計](llm-ツール定義のスキーマ設計.md)
 - [RAG のチャンクサイズを選ぶ基準](rag-のチャンクサイズを選ぶ基準.md)
 - [プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md)
-- [Eval-Driven Development — LLM 機能開発は評価から始める](../concepts/eval-driven-development-llm-機能開発は評価から始める.md)
 
 
 <div class="dnk-prev-next" markdown>

@@ -125,8 +125,8 @@ LLM の出力に、センシティブ情報（API キー、個人情報、シス
 ## 関連エントリ
 
 - [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
+- [LLM API のレート制限との付き合い方](../tech-notes/llm-api-のレート制限との付き合い方.md)
 - [LLM から構造化 JSON を確実に取り出す](../techniques/llm-から構造化-json-を確実に取り出す.md)
-- [RAG のチャンクサイズを選ぶ基準](../techniques/rag-のチャンクサイズを選ぶ基準.md)
 
 
 <div class="dnk-prev-next" markdown>
