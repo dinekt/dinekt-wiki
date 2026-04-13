@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>44 entries</span>
+  <span>45 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -69,7 +69,7 @@ flowchart TD
 
     失敗モードと再発防止のパターン集
 
-    _4 entries_
+    _5 entries_
 
 -   __[Case Studies](case-studies/index.md)__
 
@@ -101,6 +101,12 @@ flowchart TD
 
 <div class="grid cards" markdown>
 
+-   __[評価セット設計の 6 つのアンチパターン](patterns/評価セット設計の-6-つのアンチパターン.md)__
+
+    ---
+
+    LLM 機能の品質を保つには評価セットが要だが、評価セットの設計自体にアンチパターンがある。よく遭遇する 6 つを挙げる。 典型的な失敗の分類 1. サンプルが少なすぎる 症状: 評価セットが 5〜1…
+
 -   __[LLM コストを減らす 7 つの手法 (優先順位つき)](techniques/llm-コストを減らす-7-つの手法-優先順位つき.md)__
 
     ---
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     LLM エージェントとのセッションが長時間化すると、品質が劣化し、コストが膨らみ、判断が不安定になる。長時間セッションで繰り返し遭遇する 6 つの失敗パターンと、対処方針。 6 パターンの分布 1.…
-
--   __[Claude Code settings.json を使いこなす](tools/claude-code-settingsjson-を使いこなす.md)__
-
-    ---
-
-    Claude Code は でツール権限・hooks・環境変数・MCP サーバーを集中管理できる。この 1 ファイルを使いこなせるかで、日々の運用効率が大きく変わる。 管理できる主な項目 permis…
 
 </div>
 

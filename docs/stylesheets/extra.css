@@ -538,6 +538,38 @@ body, .md-typeset {
   background: transparent;
 }
 
+/* ---------- Responsive ---------- */
+
+@media (max-width: 76.1875em) {
+  .md-typeset .grid.cards > ul,
+  .md-typeset .grid.cards > ol {
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  }
+  .dnk-hero h1 {
+    font-size: 2rem;
+  }
+  .dnk-hero-tagline {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 44.9375em) {
+  .md-typeset .grid.cards > ul,
+  .md-typeset .grid.cards > ol {
+    grid-template-columns: 1fr;
+  }
+  .dnk-hero h1 {
+    font-size: 1.8rem;
+    letter-spacing: -0.02em;
+  }
+  .dnk-prev-next {
+    grid-template-columns: 1fr;
+  }
+  .dnk-prev-next .next {
+    text-align: left;
+  }
+}
+
 /* ---------- Mermaid diagrams ---------- */
 
 .md-typeset .mermaid {
