@@ -112,9 +112,9 @@ Markdown なら見出し、HTML なら要素、コードなら関数単位で切
 
 ## 関連エントリ
 
+- [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)
+- [LLM から構造化 JSON を確実に取り出す](llm-から構造化-json-を確実に取り出す.md)
 - [LLM-as-Judge — 評価者 LLM の組み立て方](llm-as-judge-評価者-llm-の組み立て方.md)
-- [ヒアリングテンプレートの設計](ヒアリングテンプレートの設計.md)
-- [プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md)
 
 
 <div class="dnk-prev-next" markdown>

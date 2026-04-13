@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>31 entries</span>
+  <span>33 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -61,7 +61,7 @@ flowchart TD
 
     エージェントやプロンプトの設計手法
 
-    _7 entries_
+    _9 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -101,6 +101,30 @@ flowchart TD
 
 <div class="grid cards" markdown>
 
+-   __[Few-shot Examples の効果的な設計](techniques/few-shot-examples-の効果的な設計.md)__
+
+    ---
+
+    LLM に「こういう形式で答えてほしい」と伝える最強の手段は、例を見せること。Fewshot examples を正しく設計すると、出力の品質と一貫性が大きく変わる。 なぜ例示が効くか 自然言語の指示…
+
+-   __[LLM から構造化 JSON を確実に取り出す](techniques/llm-から構造化-json-を確実に取り出す.md)__
+
+    ---
+
+    LLM から構造化データ（JSON）を取り出す際、JSON Mode や Function Calling を使わないと、プレーンテキストの中に JSON が混じって返ってきて、パースに失敗しやすい。…
+
+-   __[マルチエージェントの8つの失敗モード](patterns/マルチエージェントの8つの失敗モード.md)__
+
+    ---
+
+    複数のエージェントやセッションを同時・並列に運用する際に現れる筆者的な失敗モード。 8 つの失敗モード 一覧 mermaid mindmap root((マルチエージェント<br/失敗モード)) 記憶…
+
+-   __[単一エージェントの7つのアンチパターン](patterns/単一エージェントの7つのアンチパターン.md)__
+
+    ---
+
+    Claude Code などシステムプロンプト主体のエージェント運用で繰り返し現れるアンチパターンと、その回避策。 7 つのアンチパターン 一覧 mermaid mindmap root((単一エージ…
+
 -   __[Edge Runtime vs Node Runtime の使い分け](tech-notes/edge-runtime-vs-node-runtime-の使い分け.md)__
 
     ---
@@ -112,30 +136,6 @@ flowchart TD
     ---
 
     LLM の出力品質を別の LLM に評価させる手法。主観的な評価軸（トーン、読みやすさ、含意の適切さ）を自動化できる。ただし評価者自身にバイアスがあるため、実装には注意が要る。 基本構造 mermai…
-
--   __[RAG のチャンクサイズを選ぶ基準](techniques/rag-のチャンクサイズを選ぶ基準.md)__
-
-    ---
-
-    RAG（RetrievalAugmented Generation）で文書をベクトル検索用にチャンク分割する際、チャンクサイズの選定は検索精度と応答品質に直結する。大きすぎても小さすぎても失敗する。…
-
--   __[プロンプトキャッシュを壊さない書き方](techniques/プロンプトキャッシュを壊さない書き方.md)__
-
-    ---
-
-    LLM API の多くは同じ先頭プロンプトを再利用することでプロンプトキャッシュを効かせ、レイテンシとコストを劇的に下げられる。ただしキャッシュは「先頭から完全一致」が前提なので、わずかな変動で無効化…
-
--   __[マルチエージェント組織の4つの設計教訓](techniques/マルチエージェント組織の4つの設計教訓.md)__
-
-    ---
-
-    AI エージェントを複数ロールで運用する際に得た設計上の教訓。 組織構造の比喩 mermaid flowchart TD H[ユーザー / 発注者] I[索引エージェント<br/index only]…
-
--   __[Next.js で LLM のストリーミング応答を扱う実装パターン](case-studies/nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)__
-
-    ---
-
-    OpenAI（や Anthropic）の Chat Completions API でストリーミング応答を Next.js サーバーから受けて、ブラウザにリアルタイム表示する実装パターン。Server…
 
 </div>
 
