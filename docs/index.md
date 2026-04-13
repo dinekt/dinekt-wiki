@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>62 entries</span>
+  <span>63 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 11
-    "Techniques" : 16
+    "Techniques" : 17
     "Patterns" : 7
     "Case Studies" : 11
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _16 entries_
+    _17 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[LLM レッドチーミング — 意図的な攻撃で安全性を検証する](techniques/llm-レッドチーミング-意図的な攻撃で安全性を検証する.md)__
+
+    ---
+
+    LLM を組み込んだアプリの安全性を検証するには、意図的に攻撃を試みるレッドチーミングが有効。実運用前に必ず通す工程にする。 レッドチーミングの位置づけ 評価セット（正常系の確認）と別物。攻撃者視点で…
+
 -   __[評価セットを後回しにしてリリース後に立て直した事例](case-studies/評価セットを後回しにしてリリース後に立て直した事例.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     AI を組み込んだプロダクトを設計するとき、「AI にどこを任せるか」の判断が本質的に重要。ここが曖昧だと、どれだけ頑張っても良い製品にならない。 設計の出発点 3 つの基本原則 1. AI は最後の…
-
--   __[長い出力を生成させるときの 5 つの失敗](patterns/長い出力を生成させるときの-5-つの失敗.md)__
-
-    ---
-
-    LLM に長文（ブログ記事、ドキュメント、レポート等）を書かせる際、短い出力より桁違いに失敗する。中途終了・繰り返し・矛盾・尻すぼみなどの失敗モードが典型。 5 つの典型的な失敗 1. 尻すぼみ 症状…
 
 </div>
 
