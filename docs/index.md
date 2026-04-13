@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>59 entries</span>
+  <span>60 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -41,7 +41,7 @@ pie showData title カテゴリの分布
     "Patterns" : 7
     "Case Studies" : 10
     "Tools" : 6
-    "Tech Notes" : 10
+    "Tech Notes" : 11
 ```
 
 ## はじめての方へ
@@ -105,13 +105,19 @@ pie showData title カテゴリの分布
 
     技術仕様・Tips・検証メモ
 
-    _10 entries_
+    _11 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[LLM API キーの管理と漏洩防止](tech-notes/llm-api-キーの管理と漏洩防止.md)__
+
+    ---
+
+    LLM の API キー（OpenAI, Anthropic 等）は高価・攻撃対象・漏洩時の影響が大きい。最初から管理の仕組みを整えないと、事故を起こす。 漏洩の主な経路 基本の守り方 1. 環境変数…
 
 -   __[CoT・ToT・ReAct — 推論パターンの使い分け](techniques/cottotreact-推論パターンの使い分け.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM 機能の評価セットを継続運用するには、専用のハーネス（実行基盤）が要る。評価セットの作成・実行・スコアリング・比較を 1 つの仕組みに集約する。 評価ハーネスの全体像 最低限の構成要素 1. 評…
-
--   __[プロンプトのバージョン管理とデプロイ戦略](techniques/プロンプトのバージョン管理とデプロイ戦略.md)__
-
-    ---
-
-    プロンプトはコード同様にバージョン管理の対象。Git で管理するだけでは不十分で、評価・差分・ロールバックの仕組みが要る。 バージョン管理の基本構造 やるべきこと 1. ファイル分離 プロンプトをコー…
 
 </div>
 
