@@ -115,9 +115,9 @@ flowchart LR
 
 ## 関連エントリ
 
+- [Claude Code を使った効率的な不具合調査](claude-code-を使った効率的な不具合調査.md)
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](claudemd-肥大化を-adr-分離で回復した事例.md)
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
-- [比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)
 
 
 <div class="dnk-prev-next" markdown>

@@ -60,8 +60,8 @@ CLAUDE.md を「索引」に徹させ、個別の意思決定は ADR（Architect
 ## 関連エントリ
 
 - [ADR 参照コマンドによる意思決定の継承](../tools/adr-参照コマンドによる意思決定の継承.md)
+- [Claude Code を使った効率的な不具合調査](claude-code-を使った効率的な不具合調査.md)
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
-- [LLM エージェントに大規模リファクタリングを安全に任せる手順](llm-エージェントに大規模リファクタリングを安全に任せる手順.md)
 
 
 <div class="dnk-prev-next" markdown>

@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>55 entries</span>
+  <span>56 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -39,7 +39,7 @@ pie showData title カテゴリの分布
     "Concepts" : 9
     "Techniques" : 15
     "Patterns" : 6
-    "Case Studies" : 9
+    "Case Studies" : 10
     "Tools" : 6
     "Tech Notes" : 10
 ```
@@ -89,7 +89,7 @@ pie showData title カテゴリの分布
 
     実際に遭遇したケースと対応の記録
 
-    _9 entries_
+    _10 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -112,6 +112,12 @@ pie showData title カテゴリの分布
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[Claude Code を使った効率的な不具合調査](case-studies/claude-code-を使った効率的な不具合調査.md)__
+
+    ---
+
+    不具合調査で Claude Code を使うと、「何となく修正して動いた」では終わらず、根本原因まで特定できる確率が大きく上がる。ただしやり方を間違えるとむしろ遅くなる。効率的な進め方を整理。 調査フ…
 
 -   __[評価ハーネスの設計 — プロンプトを育てる仕組み](tools/評価ハーネスの設計-プロンプトを育てる仕組み.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM にツール（関数）を使わせる設計は、ツール呼び出し特有の失敗モードを抱える。筆者的な 5 パターンと対策を整理。 5 つの失敗モード 1. 無関係なツールを選ぶ 症状: 「天気を知りたい」と言わ…
-
--   __[LLM 機能を本番リリースする前のチェックリスト](tech-notes/llm-機能を本番リリースする前のチェックリスト.md)__
-
-    ---
-
-    LLM を組み込んだ機能を本番にリリースする前に、従来のアプリと違う観点でチェックする項目がある。見落とすと、本番で想定外の事故を起こす。 リリース前チェックの構造 カテゴリ別チェックリスト 評価 -…
 
 </div>
 
