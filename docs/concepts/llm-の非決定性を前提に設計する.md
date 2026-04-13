@@ -128,8 +128,8 @@ LLM の非決定性は**治すべきバグではなく、前提条件**。前提
 ## 関連エントリ
 
 - [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
+- [LLM アプリの 5 つの典型アーキテクチャパターン](llm-アプリの-5-つの典型アーキテクチャパターン.md)
 - [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
-- [AI プロダクトと倫理 — 7 つの観点](ai-プロダクトと倫理-7-つの観点.md)
 
 
 <div class="dnk-prev-next" markdown>

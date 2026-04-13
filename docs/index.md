@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>71 entries</span>
+  <span>72 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -36,7 +36,7 @@ flowchart TD
 
 ```mermaid
 pie showData title カテゴリの分布
-    "Concepts" : 12
+    "Concepts" : 13
     "Techniques" : 21
     "Patterns" : 8
     "Case Studies" : 12
@@ -65,7 +65,7 @@ pie showData title カテゴリの分布
 
     AI 開発の根底にある概念・思想
 
-    _12 entries_
+    _13 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[LLM アプリの 5 つの典型アーキテクチャパターン](concepts/llm-アプリの-5-つの典型アーキテクチャパターン.md)__
+
+    ---
+
+    LLM を組み込んだアプリのアーキテクチャは、用途によって大きく 5 パターンに分類できる。自分のアプリがどのパターンかを意識すると、設計判断が迷わない。 パターンマップ パターン 1: シンプル応答…
+
 -   __[推論モデル (o1/o3/Extended Thinking) の使いどころ](techniques/推論モデル-o1o3extended-thinking-の使いどころ.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     AI エージェントと日常的に協業する開発者の、典型的な 1 日の流れ。実践的にエージェントをどう使いこなすかを時系列で示す。 1 日の流れ（俯瞰） 朝: ブリーフィング (30 分) 目的: 今日やる…
-
--   __[複雑なタスクを LLM に段階分解させて精度を上げた事例](case-studies/複雑なタスクを-llm-に段階分解させて精度を上げた事例.md)__
-
-    ---
-
-    「このデータから〇〇を抽出して」のような複雑な要求を 1 リクエストで処理しようとすると、精度が不安定になる。タスクを段階分解することで劇的に改善した事例。 発生した問題 ユーザーが「過去 3 ヶ月の…
 
 </div>
 
