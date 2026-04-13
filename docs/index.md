@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>76 entries</span>
+  <span>77 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 14
-    "Techniques" : 21
+    "Techniques" : 22
     "Patterns" : 9
     "Case Studies" : 13
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _21 entries_
+    _22 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[エージェント専用ワークスペースのディレクトリ設計](techniques/エージェント専用ワークスペースのディレクトリ設計.md)__
+
+    ---
+
+    エージェントに仕事を任せる際、作業する専用のディレクトリ構造を設計すると、混乱が減り、追跡性が上がる。「ワークスペース」という発想で整理する。 基本構造 各ディレクトリの役割 tasks/ — 1 タ…
+
 -   __[LLM 開発で避けるべき落とし穴 TOP 10](patterns/llm-開発で避けるべき落とし穴-top-10.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM を組み込んだアプリのアーキテクチャは、用途によって大きく 5 パターンに分類できる。自分のアプリがどのパターンかを意識すると、設計判断が迷わない。 パターンマップ パターン 1: シンプル応答…
-
--   __[推論モデル (o1/o3/Extended Thinking) の使いどころ](techniques/推論モデル-o1o3extended-thinking-の使いどころ.md)__
-
-    ---
-
-    OpenAI の o1・o3、Anthropic の Extended Thinking、Google の Deep Thinking など、明示的に推論時間を使うモデル（Reasoning Mode…
 
 </div>
 
