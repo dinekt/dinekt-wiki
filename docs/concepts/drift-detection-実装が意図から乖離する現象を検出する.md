@@ -71,5 +71,5 @@ drift は早期に検出するほど修復コストが低い。設計段階（Ph
 ## 関連エントリ
 
 - [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
+- [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
 - [コンテキストは有限で劣化する資源である](コンテキストは有限で劣化する資源である.md)
-- [技術選定の5軸評価フレームワーク](技術選定の5軸評価フレームワーク.md)

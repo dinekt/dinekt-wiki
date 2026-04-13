@@ -17,6 +17,25 @@ tags:
 
 アーキテクチャ上の意思決定を Architecture Decision Record（ADR）として残し、Claude Code の作業前に自動で参照させる運用パターン。
 
+### ADR 参照の流れ
+
+```mermaid
+flowchart TD
+    T[タスク開始] --> R[docs/decisions/<br/>既存 ADR 読み込み]
+    R --> D{新規意思決定が<br/>必要?}
+    D -->|はい| P[ADR 起案]
+    D -->|いいえ| E[既存 ADR を前提に<br/>作業実行]
+    P --> A{ユーザー承認}
+    A -->|OK| M[ADR を記録]
+    A -->|NG| P
+    M --> E
+    E --> F[作業完了]
+
+    style R fill:#e3f2fd,stroke:#64b5f6
+    style P fill:#fff3e0,stroke:#ffb74d
+    style M fill:#e8f5e9,stroke:#81c784
+```
+
 ### コマンドの中身
 
 ADR コマンドは次の 2 ステップで動く。
@@ -46,6 +65,20 @@ ADR コマンドは次の 2 ステップで動く。
 
     ## トレードオフ
     （代替案と、それを採らなかった理由）
+
+### ADR のライフサイクル
+
+```mermaid
+flowchart LR
+    D[Draft] --> P[Proposed]
+    P --> A[Accepted]
+    A --> S[Superseded]
+    A --> R[Rejected]
+
+    style A fill:#e8f5e9,stroke:#81c784
+    style S fill:#f6f6f6,stroke:#c8c8c8
+    style R fill:#ffebee,stroke:#e57373
+```
 
 ### 運用のコツ
 

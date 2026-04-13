@@ -17,7 +17,26 @@ tags:
 
 ユーザーの「やりたいこと」を受け取り、ヒアリング → 設計 → 自己レビュー → 改善を自動で回して、そのタスクに最適なエージェントハーネス（システムプロンプト、スクリプト、設定一式）を出力するフレームワーク。Dinekt の forge コマンドとして実装している。
 
-### 5 フェーズ構成
+### 5 フェーズパイプライン
+
+```mermaid
+flowchart LR
+    U[ユーザー入力<br/>やりたいこと] --> P1
+    P1[Phase 1<br/>ヒアリング]
+    P2[Phase 2<br/>変数確定]
+    P3[Phase 3<br/>構造生成]
+    P4[Phase 4<br/>自己レビュー]
+    P5[Phase 5<br/>最終出力]
+    P1 --> P2 --> P3 --> P4
+    P4 -->|改善| P3
+    P4 -->|OK| P5
+    P5 --> O[ハーネス設計書<br/>+ ファイル群]
+
+    style P4 fill:#fff3e0,stroke:#ffb74d
+    style P5 fill:#e8f5e9,stroke:#81c784
+```
+
+### フェーズ別の役割
 
 | Phase | 役割 | 出力 |
 |-------|------|------|
@@ -29,15 +48,18 @@ tags:
 
 ### 7 つの設計変数
 
-| 変数 | 意味 |
-|------|------|
-| mutation_target | 何を変えるか |
-| evaluation_method | どう測るか |
-| variance_level | 評価のノイズ量 |
-| iteration_cost | 1 回のコスト感 |
-| critic_source | 別軸の検証方法 |
-| constraints | 変えてはいけないもの |
-| frequency | 1 回か継続か |
+```mermaid
+flowchart TD
+    C[設計変数] --> V1[mutation_target<br/>何を変えるか]
+    C --> V2[evaluation_method<br/>どう測るか]
+    C --> V3[variance_level<br/>ノイズ量]
+    C --> V4[iteration_cost<br/>1 回のコスト]
+    C --> V5[critic_source<br/>別軸の検証]
+    C --> V6[constraints<br/>変えないもの]
+    C --> V7[frequency<br/>1 回か継続か]
+
+    style C fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+```
 
 ### 内蔵している設計原則
 

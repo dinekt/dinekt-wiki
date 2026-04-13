@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>25 entries</span>
+  <span>27 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -33,7 +33,7 @@
 
     AI 開発の根底にある概念・思想
 
-    _4 entries_
+    _5 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -57,7 +57,7 @@
 
     実際に遭遇したケースと対応の記録
 
-    _6 entries_
+    _7 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -81,41 +81,41 @@
 
 <div class="grid cards" markdown>
 
+-   __[Next.js で LLM のストリーミング応答を扱う実装パターン](case-studies/nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)__
+
+    ---
+
+    OpenAI（や Anthropic）の Chat Completions API でストリーミング応答を Next.js サーバーから受けて、ブラウザにリアルタイム表示する実装パターン。Server…
+
+-   __[Eval-Driven Development — LLM 機能開発は評価から始める](concepts/eval-driven-development-llm-機能開発は評価から始める.md)__
+
+    ---
+
+    LLM を使った機能を作る際、目視確認だけに頼ると品質が安定しない。評価を先に書き、評価が通ることを目指して実装するという進め方が、LLM 時代の TDD に相当する。EvalDriven Devel…
+
+-   __[エージェント運用の失敗モード一覧と対策マップ](patterns/エージェント運用の失敗モード一覧と対策マップ.md)__
+
+    ---
+
+    単一エージェント運用の典型的な 7 つのアンチパターンと、マルチエージェント運用で頻出する 8 つの失敗モードに対する、実装可能な対策の対応表。個別の解説は各エントリを参照。 パターンと対策の対応図…
+
+-   __[ADR 参照コマンドによる意思決定の継承](tools/adr-参照コマンドによる意思決定の継承.md)__
+
+    ---
+
+    アーキテクチャ上の意思決定を Architecture Decision Record（ADR）として残し、Claude Code の作業前に自動で参照させる運用パターン。 ADR 参照の流れ mer…
+
+-   __[forge — ハーネス設計フレームワーク](tools/forge-ハーネス設計フレームワーク.md)__
+
+    ---
+
+    ユーザーの「やりたいこと」を受け取り、ヒアリング → 設計 → 自己レビュー → 改善を自動で回して、そのタスクに最適なエージェントハーネス（システムプロンプト、スクリプト、設定一式）を出力するフレー…
+
 -   __[Stripe Webhook を Next.js で安全に実装する](case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)__
 
     ---
 
     Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。 Webhook…
-
--   __[技術選定の5軸評価フレームワーク](concepts/技術選定の5軸評価フレームワーク.md)__
-
-    ---
-
-    新しいプロジェクトで技術スタックを選ぶ際、場当たり的に「流行ってるから」「使ったことあるから」で選ぶと後で痛い目を見る。判断軸を言語化しておくと、同じ失敗を繰り返さずに済む。 5 つの判断軸 merm…
-
--   __[chrome.storage は local / sync / session を正しく使い分ける](tech-notes/chromestorage-は-local-sync-session-を正しく使い分ける.md)__
-
-    ---
-
-    Chrome 拡張で状態を保存する際、chrome.storage.local と chrome.storage.sync のどちらを使うかは意外と間違えやすい。誤って sync を選ぶと、クォータ制…
-
--   __[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)__
-
-    ---
-
-    Chrome 拡張 Manifest V3 で、Content Script（ページに注入するスクリプト）と Side Panel（ブラウザ右側のパネル UI）を連携させる際に遭遇した実装上の落とし穴…
-
--   __[Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](case-studies/nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)__
-
-    ---
-
-    Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。 併用の基本構造 mermaid f…
-
--   __[Python での PDF 処理: PyMuPDF と pikepdf の使い分け](techniques/python-での-pdf-処理-pymupdf-と-pikepdf-の使い分け.md)__
-
-    ---
-
-    Python で PDF を扱う際、PyMuPDF（fitz） と pikepdf は両方とも有力だが、得意領域が異なる。両方を使い分けると実装の見通しが良くなる。 役割分担のマップ mermaid…
 
 </div>
 

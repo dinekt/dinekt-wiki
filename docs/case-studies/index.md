@@ -4,7 +4,7 @@
 
 実際のセッションで遭遇した出来事と、そこから得た学びを記録しています。具体的なシチュエーションを通じて、Concepts や Patterns の妥当性を確認できます。
 
-**6 件のエントリ**
+**7 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -43,5 +43,11 @@
     ---
 
     Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。 Webhook…
+
+-   __[Next.js で LLM のストリーミング応答を扱う実装パターン](nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)__
+
+    ---
+
+    OpenAI（や Anthropic）の Chat Completions API でストリーミング応答を Next.js サーバーから受けて、ブラウザにリアルタイム表示する実装パターン。Server…
 
 </div>
