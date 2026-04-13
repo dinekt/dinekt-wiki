@@ -1,40 +1,44 @@
 /* ============================================================
    Dinekt Knowledge Wiki — Minimal Monochrome Theme
-   コーポレートサイト dinekt.com に揃えたミニマル設計
    ============================================================ */
 
 :root {
   --md-text-font: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, sans-serif;
   --md-code-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
 
+[data-md-color-scheme="default"] {
   --dnk-fg: #0a0a0a;
   --dnk-fg-soft: #525252;
   --dnk-fg-mute: #8a8a8a;
   --dnk-bg: #ffffff;
-  --dnk-bg-soft: #fafafa;
+  --dnk-bg-soft: #f6f6f6;
   --dnk-border: #e5e5e5;
   --dnk-border-strong: #c8c8c8;
-}
 
-[data-md-color-scheme="default"] {
-  --md-default-bg-color: #ffffff;
-  --md-default-fg-color: #0a0a0a;
-  --md-default-fg-color--light: #525252;
-  --md-typeset-a-color: #0a0a0a;
+  --md-default-bg-color: var(--dnk-bg);
+  --md-default-fg-color: var(--dnk-fg);
+  --md-default-fg-color--light: var(--dnk-fg-soft);
+  --md-default-fg-color--lighter: var(--dnk-fg-mute);
+  --md-typeset-a-color: var(--dnk-fg);
 }
 
 [data-md-color-scheme="slate"] {
-  --dnk-fg: #f5f5f5;
+  --dnk-fg: #ededed;
   --dnk-fg-soft: #b0b0b0;
-  --dnk-fg-mute: #6a6a6a;
+  --dnk-fg-mute: #7a7a7a;
   --dnk-bg: #0a0a0a;
   --dnk-bg-soft: #161616;
   --dnk-border: #2a2a2a;
   --dnk-border-strong: #3a3a3a;
 
-  --md-default-bg-color: #0a0a0a;
-  --md-default-fg-color: #f5f5f5;
-  --md-typeset-a-color: #f5f5f5;
+  --md-default-bg-color: var(--dnk-bg);
+  --md-default-fg-color: var(--dnk-fg);
+  --md-default-fg-color--light: var(--dnk-fg-soft);
+  --md-default-fg-color--lighter: var(--dnk-fg-mute);
+  --md-typeset-a-color: var(--dnk-fg);
+  --md-code-bg-color: #161616;
+  --md-code-fg-color: #ededed;
 }
 
 /* ---------- Base typography ---------- */
@@ -47,32 +51,36 @@ body, .md-typeset {
 
 .md-typeset {
   font-size: 0.78rem;
+  color: var(--dnk-fg);
 }
 
 .md-typeset h1 {
   font-weight: 700;
-  font-size: 2.1rem;
+  font-size: 2rem;
   letter-spacing: -0.025em;
   line-height: 1.2;
-  margin: 0 0 1.6rem;
+  margin: 0 0 1.4rem;
   color: var(--dnk-fg);
 }
 
 .md-typeset h2 {
   font-weight: 600;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   letter-spacing: -0.015em;
-  margin-top: 3rem;
-  padding-top: 0;
+  margin-top: 2.6rem;
   border-bottom: none;
   color: var(--dnk-fg);
 }
 
 .md-typeset h3 {
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1rem;
   letter-spacing: -0.01em;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
+  color: var(--dnk-fg);
+}
+
+.md-typeset p {
   color: var(--dnk-fg);
 }
 
@@ -87,11 +95,33 @@ body, .md-typeset {
   text-decoration-color: var(--dnk-fg);
 }
 
+/* ---------- Layout: tighten width ---------- */
+
+.md-grid {
+  max-width: 64rem;
+}
+
+.md-main__inner {
+  margin-top: 1.4rem;
+}
+
+.md-content {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+/* Landing page should use full grid width for cards */
+.md-content article.md-content__inner > .dnk-hero,
+.md-content article.md-content__inner > .grid {
+  max-width: 64rem;
+}
+
 /* ---------- Header ---------- */
+/* primary: white in light → Material auto-sets dark text.
+   primary: black in dark → Material auto-sets light text.
+   Just refine border + spacing here. */
 
 .md-header {
-  background: var(--dnk-bg);
-  color: var(--dnk-fg);
   border-bottom: 1px solid var(--dnk-border);
   box-shadow: none;
 }
@@ -112,6 +142,14 @@ body, .md-typeset {
   border-radius: 6px;
 }
 
+.md-search__input {
+  color: var(--dnk-fg);
+}
+
+.md-search__input::placeholder {
+  color: var(--dnk-fg-mute);
+}
+
 /* ---------- Tabs ---------- */
 
 .md-tabs {
@@ -121,38 +159,38 @@ body, .md-typeset {
 }
 
 .md-tabs__link {
+  color: var(--dnk-fg);
   font-weight: 500;
   font-size: 0.78rem;
-  opacity: 0.65;
+  opacity: 0.6;
   transition: opacity 0.15s ease;
 }
 
 .md-tabs__link:hover,
 .md-tabs__link--active {
   opacity: 1;
+  color: var(--dnk-fg);
 }
 
 /* ---------- Hero (landing) ---------- */
 
 .dnk-hero {
-  margin: 1rem 0 4rem;
-  padding: 0 0 2.4rem;
+  margin: 0.6rem 0 2.6rem;
+  padding: 0 0 1.8rem;
   border-bottom: 1px solid var(--dnk-border);
 }
 
 .dnk-hero h1 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.1;
-  margin: 0 0 1rem;
-  background: none;
-  -webkit-text-fill-color: var(--dnk-fg);
+  margin: 0 0 0.9rem;
   color: var(--dnk-fg);
 }
 
 .dnk-hero-tagline {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--dnk-fg-soft);
   margin: 0;
   max-width: 36rem;
@@ -161,8 +199,8 @@ body, .md-typeset {
 
 .dnk-hero-meta {
   display: flex;
-  gap: 1.6rem;
-  margin-top: 2rem;
+  gap: 1.4rem;
+  margin-top: 1.4rem;
   flex-wrap: wrap;
   font-family: var(--md-code-font);
   font-size: 0.7rem;
@@ -170,16 +208,9 @@ body, .md-typeset {
   letter-spacing: 0.02em;
 }
 
-.dnk-hero-meta span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
 .dnk-hero-meta span::before {
-  content: "$";
+  content: "$ ";
   color: var(--dnk-fg-mute);
-  margin-right: 0.2rem;
 }
 
 /* ---------- Section headings ---------- */
@@ -188,67 +219,75 @@ body, .md-typeset {
   margin-top: 0;
 }
 
-/* ---------- Grid cards (flat, minimal) ---------- */
+/* ---------- Grid cards ---------- */
 
-.md-typeset .grid {
-  grid-gap: 0;
-  border-top: 1px solid var(--dnk-border);
-  border-left: 1px solid var(--dnk-border);
+.md-typeset .grid.cards {
+  display: block;
+  margin: 1rem 0 2rem;
 }
 
-.md-typeset .grid.cards > :is(ul, ol) {
+.md-typeset .grid.cards > ul,
+.md-typeset .grid.cards > ol {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   gap: 0;
   margin: 0;
   padding: 0;
   list-style: none;
+  border-top: 1px solid var(--dnk-border);
+  border-left: 1px solid var(--dnk-border);
 }
 
-.md-typeset .grid.cards > :is(ul, ol) > li {
+.md-typeset .grid.cards > ul > li {
   border: none;
   border-right: 1px solid var(--dnk-border);
   border-bottom: 1px solid var(--dnk-border);
   border-radius: 0;
-  padding: 1.6rem 1.4rem;
+  padding: 1.2rem 1.2rem 1.4rem;
   margin: 0;
   background: var(--dnk-bg);
-  transition: background 0.15s ease;
+  transition: background 0.12s ease;
   box-shadow: none;
+  list-style: none;
 }
 
-.md-typeset .grid.cards > :is(ul, ol) > li:hover {
+.md-typeset .grid.cards > ul > li:hover {
   background: var(--dnk-bg-soft);
   transform: none;
   box-shadow: none;
-  border-color: var(--dnk-border);
 }
 
-.md-typeset .grid.cards > :is(ul, ol) > li > p {
-  margin: 0 0 0.4rem;
-}
-
-.md-typeset .grid.cards > :is(ul, ol) > li > hr {
-  border: none;
-  border-top: 1px solid var(--dnk-border);
-  margin: 0.8rem 0;
-}
-
-.md-typeset .grid.cards > :is(ul, ol) > li a {
-  text-decoration: none;
+.md-typeset .grid.cards > ul > li > p {
+  margin: 0;
   color: var(--dnk-fg);
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child {
   font-weight: 600;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
 }
 
-.md-typeset .grid.cards > :is(ul, ol) > li a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--dnk-fg);
+.md-typeset .grid.cards > ul > li > hr {
+  display: none;
 }
 
-.md-typeset .grid.cards > :is(ul, ol) > li > p:last-of-type {
+.md-typeset .grid.cards > ul > li > p:last-child {
   color: var(--dnk-fg-soft);
   font-size: 0.74rem;
   line-height: 1.65;
+}
+
+.md-typeset .grid.cards > ul > li a {
+  color: var(--dnk-fg);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.md-typeset .grid.cards > ul > li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--dnk-fg);
 }
 
 /* ---------- Entry meta pills ---------- */
@@ -257,9 +296,8 @@ body, .md-typeset {
   display: flex;
   gap: 0.4rem;
   flex-wrap: wrap;
-  margin: -0.4rem 0 2.4rem;
+  margin: -0.6rem 0 2rem;
   padding: 0;
-  border-bottom: none;
 }
 
 .dnk-meta .pill {
@@ -289,20 +327,24 @@ body, .md-typeset {
   border: 1px solid var(--dnk-border);
   box-shadow: none;
   font-size: 0.74rem;
+  color: var(--dnk-fg);
 }
 
 .md-typeset table:not([class]) th {
   background: var(--dnk-bg-soft);
+  color: var(--dnk-fg);
   font-weight: 600;
   letter-spacing: 0.01em;
   border-bottom: 1px solid var(--dnk-border);
 }
 
 .md-typeset table:not([class]) td {
+  color: var(--dnk-fg);
   border-bottom: 1px solid var(--dnk-border);
+  background: var(--dnk-bg);
 }
 
-.md-typeset table:not([class]) tr:hover {
+.md-typeset table:not([class]) tr:hover td {
   background: var(--dnk-bg-soft);
 }
 
@@ -314,12 +356,15 @@ body, .md-typeset {
   border-radius: 3px;
   padding: 0.05rem 0.35rem;
   font-size: 0.85em;
+  color: var(--dnk-fg);
 }
 
 .md-typeset pre > code {
   border: none;
   border-radius: 0;
   padding: 1rem 1.2rem;
+  background: var(--dnk-bg-soft);
+  color: var(--dnk-fg);
 }
 
 .md-typeset .highlight {
@@ -328,7 +373,7 @@ body, .md-typeset {
   overflow: hidden;
 }
 
-/* ---------- Admonitions (minimal) ---------- */
+/* ---------- Admonitions ---------- */
 
 .md-typeset .admonition,
 .md-typeset details {
@@ -337,6 +382,14 @@ body, .md-typeset {
   border-radius: 0;
   box-shadow: none;
   font-size: 0.76rem;
+  background: var(--dnk-bg);
+  color: var(--dnk-fg);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background: var(--dnk-bg-soft);
+  color: var(--dnk-fg);
 }
 
 /* ---------- Footer ---------- */
@@ -357,7 +410,15 @@ body, .md-typeset {
   font-size: 0.7rem;
 }
 
+.md-footer-meta a {
+  color: var(--dnk-fg-soft);
+}
+
 /* ---------- Sidebar ---------- */
+
+.md-sidebar {
+  color: var(--dnk-fg);
+}
 
 .md-nav__title {
   font-weight: 600;
@@ -365,10 +426,17 @@ body, .md-typeset {
   letter-spacing: 0.02em;
   color: var(--dnk-fg-mute);
   text-transform: uppercase;
+  background: transparent;
 }
 
 .md-nav__link {
   font-size: 0.76rem;
+  color: var(--dnk-fg);
+}
+
+.md-nav__link:hover {
+  color: var(--dnk-fg);
+  opacity: 0.7;
 }
 
 .md-nav__link--active {
@@ -381,11 +449,18 @@ body, .md-typeset {
 .md-typeset hr {
   border: none;
   border-top: 1px solid var(--dnk-border);
-  margin: 2.4rem 0;
+  margin: 2.2rem 0;
 }
 
-/* ---------- Remove fade-in / animations for snappier feel ---------- */
+/* ---------- Disable fade-in ---------- */
 
 .md-content {
   animation: none;
+}
+
+/* ---------- List markers ---------- */
+
+.md-typeset ul li::marker,
+.md-typeset ol li::marker {
+  color: var(--dnk-fg-mute);
 }
