@@ -496,6 +496,48 @@ body, .md-typeset {
   letter-spacing: 0.01em;
 }
 
+/* ---------- Prev / Next navigation ---------- */
+
+.dnk-prev-next {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 3rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--dnk-border);
+  font-size: 0.8rem;
+}
+
+.dnk-prev-next .prev,
+.dnk-prev-next .next {
+  padding: 1rem;
+  border: 1px solid var(--dnk-border);
+  border-radius: 4px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.dnk-prev-next .next {
+  text-align: right;
+}
+
+.dnk-prev-next a {
+  text-decoration: none;
+  color: var(--dnk-fg);
+  font-weight: 600;
+}
+
+.dnk-prev-next .prev:hover,
+.dnk-prev-next .next:hover {
+  background: var(--dnk-bg-soft);
+  border-color: var(--dnk-fg-soft);
+}
+
+.dnk-prev-next .prev:empty,
+.dnk-prev-next .next:empty {
+  border: none;
+  background: transparent;
+}
+
 /* ---------- Mermaid diagrams ---------- */
 
 .md-typeset .mermaid {

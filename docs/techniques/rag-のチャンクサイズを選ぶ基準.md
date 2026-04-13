@@ -115,3 +115,9 @@ Markdown なら見出し、HTML なら要素、コードなら関数単位で切
 - [LLM-as-Judge — 評価者 LLM の組み立て方](llm-as-judge-評価者-llm-の組み立て方.md)
 - [ヒアリングテンプレートの設計](ヒアリングテンプレートの設計.md)
 - [プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md)
+
+
+<div class="dnk-prev-next" markdown>
+  <div class="prev">← [LLM-as-Judge — 評価者 LLM の組み立て方](llm-as-judge-評価者-llm-の組み立て方.md)</div>
+  <div class="next">[Python での PDF 処理: PyMuPDF と pikepdf の使い分け](python-での-pdf-処理-pymupdf-と-pikepdf-の使い分け.md) →</div>
+</div>

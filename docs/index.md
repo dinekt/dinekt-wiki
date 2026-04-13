@@ -12,6 +12,26 @@
 
 </div>
 
+## カテゴリ構成
+
+```mermaid
+flowchart TD
+    C[Concepts<br/>考え方の土台] --> T[Techniques<br/>具体的な手法]
+    C --> P[Patterns<br/>失敗と再発防止]
+    T --> CS[Case Studies<br/>実体験]
+    P --> CS
+    T --> TO[Tools<br/>道具と実装]
+    CS --> TN[Tech Notes<br/>小さな知見]
+    TO --> TN
+
+    style C fill:#0a0a0a,color:#fff,stroke:#0a0a0a
+    style T fill:#e8f5e9,stroke:#81c784
+    style P fill:#ffebee,stroke:#e57373
+    style CS fill:#e3f2fd,stroke:#64b5f6
+    style TO fill:#fff3e0,stroke:#ffb74d
+    style TN fill:#f6f6f6,stroke:#8a8a8a
+```
+
 ## はじめての方へ
 
 **推奨の読み順**:

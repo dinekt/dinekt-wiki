@@ -87,3 +87,9 @@ flowchart TD
 - [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](../case-studies/claudemd-肥大化を-adr-分離で回復した事例.md)
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](../case-studies/llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
+
+
+<div class="dnk-prev-next" markdown>
+  <div class="prev"></div>
+  <div class="next">[ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md) →</div>
+</div>

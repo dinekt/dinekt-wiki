@@ -102,3 +102,9 @@ flowchart LR
 - [SQLite FTS5 で日本語を全文検索する](../tech-notes/sqlite-fts5-で日本語を全文検索する.md)
 - [SQLite FTS5 クエリは phrase 化して安全に渡す](../tech-notes/sqlite-fts5-クエリは-phrase-化して安全に渡す.md)
 - [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)
+
+
+<div class="dnk-prev-next" markdown>
+  <div class="prev">← [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)</div>
+  <div class="next"></div>
+</div>

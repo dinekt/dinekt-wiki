@@ -101,3 +101,9 @@ Next.js では route ごとに `export const runtime = 'edge'` または `'nodej
 - [Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](../case-studies/nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)
 - [Next.js で LLM のストリーミング応答を扱う実装パターン](../case-studies/nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)
 - [Stripe Webhook を Next.js で安全に実装する](../case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)
+
+
+<div class="dnk-prev-next" markdown>
+  <div class="prev">← [SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md)</div>
+  <div class="next">[ナレッジベースのファイル命名規則とテキスト規約](ナレッジベースのファイル命名規則とテキスト規約.md) →</div>
+</div>

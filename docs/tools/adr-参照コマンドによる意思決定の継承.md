@@ -94,3 +94,9 @@ flowchart LR
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](../case-studies/claudemd-肥大化を-adr-分離で回復した事例.md)
 - [forge — ハーネス設計フレームワーク](forge-ハーネス設計フレームワーク.md)
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](../case-studies/llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
+
+
+<div class="dnk-prev-next" markdown>
+  <div class="prev">← [forge — ハーネス設計フレームワーク](forge-ハーネス設計フレームワーク.md)</div>
+  <div class="next">[ナレッジベースを静的 Wiki として自動公開するパイプライン](ナレッジベースを静的-wiki-として自動公開するパイプライン.md) →</div>
+</div>
