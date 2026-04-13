@@ -129,7 +129,7 @@ LLM の非決定性は**治すべきバグではなく、前提条件**。前提
 
 - [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)
 - [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
-- [AI プロダクト設計の 3 つの基本原則](ai-プロダクト設計の-3-つの基本原則.md)
+- [AI プロダクトと倫理 — 7 つの観点](ai-プロダクトと倫理-7-つの観点.md)
 
 
 <div class="dnk-prev-next" markdown>

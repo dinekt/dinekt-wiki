@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>67 entries</span>
+  <span>68 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -36,7 +36,7 @@ flowchart TD
 
 ```mermaid
 pie showData title カテゴリの分布
-    "Concepts" : 11
+    "Concepts" : 12
     "Techniques" : 20
     "Patterns" : 7
     "Case Studies" : 12
@@ -65,7 +65,7 @@ pie showData title カテゴリの分布
 
     AI 開発の根底にある概念・思想
 
-    _11 entries_
+    _12 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[AI プロダクトと倫理 — 7 つの観点](concepts/ai-プロダクトと倫理-7-つの観点.md)__
+
+    ---
+
+    AI を組み込んだプロダクトを作る際、技術・コスト・品質だけでなく、倫理的な考慮を避けられない論点として扱う必要がある。具体的な 7 つの観点を示す。 7 つの倫理的論点 1. 透明性（Transpa…
+
 -   __[エージェントと協業する 1 日のワークフロー](techniques/エージェントと協業する-1-日のワークフロー.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM を組み込んだアプリの安全性を検証するには、意図的に攻撃を試みるレッドチーミングが有効。実運用前に必ず通す工程にする。 レッドチーミングの位置づけ 評価セット（正常系の確認）と別物。攻撃者視点で…
-
--   __[評価セットを後回しにしてリリース後に立て直した事例](case-studies/評価セットを後回しにしてリリース後に立て直した事例.md)__
-
-    ---
-
-    新規の LLM 機能を作る際、評価セットを後回しにしたことで、本番リリース後に品質問題を抱えた事例と、そこからの立て直し。 発生した事象 新機能（ユーザー質問への自動回答）をリリース。開発中は目視確認…
 
 </div>
 

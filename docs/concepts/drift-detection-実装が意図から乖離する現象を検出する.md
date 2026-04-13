@@ -73,7 +73,7 @@ drift は早期に検出するほど修復コストが低い。設計段階（Ph
 
 - [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)
 - [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
-- [AI プロダクト設計の 3 つの基本原則](ai-プロダクト設計の-3-つの基本原則.md)
+- [AI プロダクトと倫理 — 7 つの観点](ai-プロダクトと倫理-7-つの観点.md)
 
 
 <div class="dnk-prev-next" markdown>
