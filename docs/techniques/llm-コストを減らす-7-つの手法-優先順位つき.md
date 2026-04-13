@@ -129,6 +129,6 @@ flowchart LR
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md)</div>
+  <div class="prev">← [プロンプトのバージョン管理とデプロイ戦略](プロンプトのバージョン管理とデプロイ戦略.md)</div>
   <div class="next">[LLM ツール定義のスキーマ設計](llm-ツール定義のスキーマ設計.md) →</div>
 </div>

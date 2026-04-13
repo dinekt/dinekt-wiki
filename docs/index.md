@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>53 entries</span>
+  <span>54 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -61,7 +61,7 @@ flowchart TD
 
     エージェントやプロンプトの設計手法
 
-    _14 entries_
+    _15 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -101,6 +101,12 @@ flowchart TD
 
 <div class="grid cards" markdown>
 
+-   __[プロンプトのバージョン管理とデプロイ戦略](techniques/プロンプトのバージョン管理とデプロイ戦略.md)__
+
+    ---
+
+    プロンプトはコード同様にバージョン管理の対象。Git で管理するだけでは不十分で、評価・差分・ロールバックの仕組みが要る。 バージョン管理の基本構造 やるべきこと 1. ファイル分離 プロンプトをコー…
+
 -   __[OpenAI と Anthropic API の主要差分](tech-notes/openai-と-anthropic-api-の主要差分.md)__
 
     ---
@@ -130,12 +136,6 @@ flowchart TD
     ---
 
     LLM のハルシネーション（事実に基づかない生成）を完全に防ぐことはできないが、運用上許容できるレベルまで抑えることは可能。7 つの手法を効果順に紹介。 効果の優先度 1. RAG で文脈を足す（効果…
-
--   __[Claude Code のサブエージェント活用法](tools/claude-code-のサブエージェント活用法.md)__
-
-    ---
-
-    Claude Code のサブエージェント機能は、専門分野に特化した別エージェントを呼び出す仕組み。うまく使えばメインのコンテキストを節約しつつ、専門的な判断を得られる。 基本構造 メインはオーケスト…
 
 </div>
 
