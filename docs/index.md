@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>73 entries</span>
+  <span>74 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -36,7 +36,7 @@ flowchart TD
 
 ```mermaid
 pie showData title カテゴリの分布
-    "Concepts" : 13
+    "Concepts" : 14
     "Techniques" : 21
     "Patterns" : 8
     "Case Studies" : 12
@@ -65,7 +65,7 @@ pie showData title カテゴリの分布
 
     AI 開発の根底にある概念・思想
 
-    _13 entries_
+    _14 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[AI 開発の速度と品質は両立できる](concepts/ai-開発の速度と品質は両立できる.md)__
+
+    ---
+
+    AI 開発では「速く作る」と「品質を担保する」がトレードオフに見えるが、実は両立可能。評価セット・自動化・仕組みが速度を下げず、品質を上げる。 見かけのトレードオフ 「速く作ると雑」「丁寧にやると遅い…
+
 -   __[LLM アプリのインシデント対応](tech-notes/llm-アプリのインシデント対応.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     「コンテキストにたくさん情報を入れれば、精度が上がる」と思いがち。実は逆。情報過多のコンテキストは、かえって精度を落とす。 症状 4 つの失敗モード 1. 重要情報の見落とし (Lost in the…
-
--   __[AI プロダクトと倫理 — 7 つの観点](concepts/ai-プロダクトと倫理-7-つの観点.md)__
-
-    ---
-
-    AI を組み込んだプロダクトを作る際、技術・コスト・品質だけでなく、倫理的な考慮を避けられない論点として扱う必要がある。具体的な 7 つの観点を示す。 7 つの倫理的論点 1. 透明性（Transpa…
 
 </div>
 
