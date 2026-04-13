@@ -127,6 +127,6 @@ flowchart LR
 
 
 <div class="dnk-prev-next" markdown>
-  <div class="prev">← [エージェントのメモリ設計 (短期・中期・長期)](エージェントのメモリ設計-短期中期長期.md)</div>
+  <div class="prev">← [AI エージェントが読みやすいドキュメントの書き方](ai-エージェントが読みやすいドキュメントの書き方.md)</div>
   <div class="next">[ヒアリングテンプレートの設計](ヒアリングテンプレートの設計.md) →</div>
 </div>

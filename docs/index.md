@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>64 entries</span>
+  <span>65 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 11
-    "Techniques" : 18
+    "Techniques" : 19
     "Patterns" : 7
     "Case Studies" : 11
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _18 entries_
+    _19 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[AI エージェントが読みやすいドキュメントの書き方](techniques/ai-エージェントが読みやすいドキュメントの書き方.md)__
+
+    ---
+
+    AI エージェントが参照するドキュメントは、人間向けと書き方を変えると精度が大きく上がる。人間が読みやすい文章と、AI が解釈しやすい文章は、重なるが同じではない。 AI が解釈しやすい書き方 8 つ…
+
 -   __[Claude Code を日々使い倒す 10 の小技](techniques/claude-code-を日々使い倒す-10-の小技.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM の API キー（OpenAI, Anthropic 等）は高価・攻撃対象・漏洩時の影響が大きい。最初から管理の仕組みを整えないと、事故を起こす。 漏洩の主な経路 基本の守り方 1. 環境変数…
-
--   __[CoT・ToT・ReAct — 推論パターンの使い分け](techniques/cottotreact-推論パターンの使い分け.md)__
-
-    ---
-
-    LLM の推論能力を引き出すパターンとして、Chain-of-Thought (CoT)、Tree-of-Thoughts (ToT)、ReAct が筆者的。用途に応じて使い分ける。 3 つのパターン…
 
 </div>
 

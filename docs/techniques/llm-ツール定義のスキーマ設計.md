@@ -148,8 +148,8 @@ flowchart TD
 ## 関連エントリ
 
 - [RAG のチャンクサイズを選ぶ基準](rag-のチャンクサイズを選ぶ基準.md)
+- [AI エージェントが読みやすいドキュメントの書き方](ai-エージェントが読みやすいドキュメントの書き方.md)
 - [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)
-- [LLM から構造化 JSON を確実に取り出す](llm-から構造化-json-を確実に取り出す.md)
 
 
 <div class="dnk-prev-next" markdown>

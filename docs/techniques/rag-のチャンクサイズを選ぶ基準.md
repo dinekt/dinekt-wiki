@@ -113,8 +113,8 @@ Markdown なら見出し、HTML なら要素、コードなら関数単位で切
 ## 関連エントリ
 
 - [LLM ツール定義のスキーマ設計](llm-ツール定義のスキーマ設計.md)
+- [AI エージェントが読みやすいドキュメントの書き方](ai-エージェントが読みやすいドキュメントの書き方.md)
 - [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)
-- [LLM から構造化 JSON を確実に取り出す](llm-から構造化-json-を確実に取り出す.md)
 
 
 <div class="dnk-prev-next" markdown>
