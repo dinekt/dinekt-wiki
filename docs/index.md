@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>66 entries</span>
+  <span>67 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -37,7 +37,7 @@ flowchart TD
 ```mermaid
 pie showData title カテゴリの分布
     "Concepts" : 11
-    "Techniques" : 19
+    "Techniques" : 20
     "Patterns" : 7
     "Case Studies" : 12
     "Tools" : 6
@@ -73,7 +73,7 @@ pie showData title カテゴリの分布
 
     エージェントやプロンプトの設計手法
 
-    _19 entries_
+    _20 entries_
 
 -   __[Patterns](patterns/index.md)__
 
@@ -113,6 +113,12 @@ pie showData title カテゴリの分布
 
 <div class="grid cards" markdown>
 
+-   __[エージェントと協業する 1 日のワークフロー](techniques/エージェントと協業する-1-日のワークフロー.md)__
+
+    ---
+
+    AI エージェントと日常的に協業する開発者の、典型的な 1 日の流れ。実践的にエージェントをどう使いこなすかを時系列で示す。 1 日の流れ（俯瞰） 朝: ブリーフィング (30 分) 目的: 今日やる…
+
 -   __[複雑なタスクを LLM に段階分解させて精度を上げた事例](case-studies/複雑なタスクを-llm-に段階分解させて精度を上げた事例.md)__
 
     ---
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     新規の LLM 機能を作る際、評価セットを後回しにしたことで、本番リリース後に品質問題を抱えた事例と、そこからの立て直し。 発生した事象 新機能（ユーザー質問への自動回答）をリリース。開発中は目視確認…
-
--   __[ファインチューニング vs プロンプト — どちらを選ぶか](concepts/ファインチューニング-vs-プロンプト-どちらを選ぶか.md)__
-
-    ---
-
-    「モデルをファインチューニングすべきか、プロンプトで頑張るか」は AI 機能開発でよく議論になる。結論から言うと、プロンプトエンジニアリングで行けるところまで行くのが基本。ファインチューニングは最後の…
 
 </div>
 

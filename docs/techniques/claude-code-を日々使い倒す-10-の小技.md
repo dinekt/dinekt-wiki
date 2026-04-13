@@ -121,12 +121,12 @@ flowchart LR
 
 ## 関連エントリ
 
+- [エージェントと協業する 1 日のワークフロー](エージェントと協業する-1-日のワークフロー.md)
 - [Claude Code を使った効率的な不具合調査](../case-studies/claude-code-を使った効率的な不具合調査.md)
 - [ADR 参照コマンドによる意思決定の継承](../tools/adr-参照コマンドによる意思決定の継承.md)
-- [CLAUDE.md 肥大化を ADR 分離で回復した事例](../case-studies/claudemd-肥大化を-adr-分離で回復した事例.md)
 
 
 <div class="dnk-prev-next" markdown>
   <div class="prev">← [AI エージェントが読みやすいドキュメントの書き方](ai-エージェントが読みやすいドキュメントの書き方.md)</div>
-  <div class="next">[ヒアリングテンプレートの設計](ヒアリングテンプレートの設計.md) →</div>
+  <div class="next">[エージェントと協業する 1 日のワークフロー](エージェントと協業する-1-日のワークフロー.md) →</div>
 </div>
