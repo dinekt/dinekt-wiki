@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>74 entries</span>
+  <span>75 entries</span>
   <span>6 categories</span>
   <span>updated 2026-04-13</span>
 </div>
@@ -39,7 +39,7 @@ pie showData title カテゴリの分布
     "Concepts" : 14
     "Techniques" : 21
     "Patterns" : 8
-    "Case Studies" : 12
+    "Case Studies" : 13
     "Tools" : 6
     "Tech Notes" : 13
 ```
@@ -89,7 +89,7 @@ pie showData title カテゴリの分布
 
     実際に遭遇したケースと対応の記録
 
-    _12 entries_
+    _13 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -112,6 +112,12 @@ pie showData title カテゴリの分布
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[評価駆動で LLM 機能をゼロから作った 5 日間の流れ](case-studies/評価駆動で-llm-機能をゼロから作った-5-日間の流れ.md)__
+
+    ---
+
+    評価駆動開発（EDD）で LLM 機能をゼロから作った際の、実際の時系列と意思決定。新規機能をどう立ち上げるかの雛形として使える。 開発する機能 ユーザーが入力した商品レビューから、改善ポイントを 3…
 
 -   __[AI 開発の速度と品質は両立できる](concepts/ai-開発の速度と品質は両立できる.md)__
 
@@ -142,12 +148,6 @@ pie showData title カテゴリの分布
     ---
 
     AI エージェントを本番運用する際、何を計測すべきかが曖昧だと改善できない。重要な 10 のメトリクスを 4 層で整理。 メトリクスの 4 層 品質層 1. 正答率（Accuracy） 評価セットでの…
-
--   __[情報過多コンテキストの 4 つの失敗モード](patterns/情報過多コンテキストの-4-つの失敗モード.md)__
-
-    ---
-
-    「コンテキストにたくさん情報を入れれば、精度が上がる」と思いがち。実は逆。情報過多のコンテキストは、かえって精度を落とす。 症状 4 つの失敗モード 1. 重要情報の見落とし (Lost in the…
 
 </div>
 
