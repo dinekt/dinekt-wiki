@@ -5,7 +5,7 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>22 entries</span>
+  <span>25 entries</span>
   <span>6 categories</span>
   <span>auto-generated</span>
 </div>
@@ -33,7 +33,7 @@
 
     AI 開発の根底にある概念・思想
 
-    _3 entries_
+    _4 entries_
 
 -   __[Techniques](techniques/index.md)__
 
@@ -57,7 +57,7 @@
 
     実際に遭遇したケースと対応の記録
 
-    _5 entries_
+    _6 entries_
 
 -   __[Tools](tools/index.md)__
 
@@ -73,13 +73,31 @@
 
     技術仕様・Tips・検証メモ
 
-    _4 entries_
+    _5 entries_
 
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[Stripe Webhook を Next.js で安全に実装する](case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)__
+
+    ---
+
+    Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。 Webhook…
+
+-   __[技術選定の5軸評価フレームワーク](concepts/技術選定の5軸評価フレームワーク.md)__
+
+    ---
+
+    新しいプロジェクトで技術スタックを選ぶ際、場当たり的に「流行ってるから」「使ったことあるから」で選ぶと後で痛い目を見る。判断軸を言語化しておくと、同じ失敗を繰り返さずに済む。 5 つの判断軸 merm…
+
+-   __[chrome.storage は local / sync / session を正しく使い分ける](tech-notes/chromestorage-は-local-sync-session-を正しく使い分ける.md)__
+
+    ---
+
+    Chrome 拡張で状態を保存する際、chrome.storage.local と chrome.storage.sync のどちらを使うかは意外と間違えやすい。誤って sync を選ぶと、クォータ制…
 
 -   __[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)__
 
@@ -98,24 +116,6 @@
     ---
 
     Python で PDF を扱う際、PyMuPDF（fitz） と pikepdf は両方とも有力だが、得意領域が異なる。両方を使い分けると実装の見通しが良くなる。 役割分担のマップ mermaid…
-
--   __[Drift Detection — 実装が意図から乖離する現象を検出する](concepts/drift-detection-実装が意図から乖離する現象を検出する.md)__
-
-    ---
-
-    AI エージェントによる実装が、当初の意図・仕様から徐々に乖離していく現象。これを検出して巻き戻す仕組みが driftdetection。 発生と検出のメカニズム mermaid flowchart…
-
--   __[Intent Engineering — 意図を凍結してから設計する](concepts/intent-engineering-意図を凍結してから設計する.md)__
-
-    ---
-
-    AI エージェントへの依頼で、実装が意図から乖離する問題を減らす考え方。意図（intent）を明文化された中間表現に凍結してから設計・実装に進むというアプローチ。 全体フロー mermaid flow…
-
--   __[コンテキストは有限で劣化する資源である](concepts/コンテキストは有限で劣化する資源である.md)__
-
-    ---
-
-    LLM エージェントの回答品質は、渡されたコンテキスト量に比例しない。むしろ反比例する場面が多い。コンテキストは有限かつ劣化する資源として扱うのが、実運用での正しい前提。 コンテキスト量と品質の関係…
 
 </div>
 

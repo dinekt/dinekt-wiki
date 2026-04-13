@@ -4,7 +4,7 @@
 
 特定の技術に関する小さな発見や設定ノウハウをまとめた、辞書的なカテゴリです。必要な項目だけを拾い読みしてください。
 
-**4 件のエントリ**
+**5 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -31,5 +31,11 @@
     ---
 
     個人・チームでナレッジを運用する際、命名規則とコンテンツルールを先に決めておくと、検索性と整合性が保てる。Dinekt で実運用している規約を一般化した例。 ファイル命名  種類  命名    日次フ…
+
+-   __[chrome.storage は local / sync / session を正しく使い分ける](chromestorage-は-local-sync-session-を正しく使い分ける.md)__
+
+    ---
+
+    Chrome 拡張で状態を保存する際、chrome.storage.local と chrome.storage.sync のどちらを使うかは意外と間違えやすい。誤って sync を選ぶと、クォータ制…
 
 </div>

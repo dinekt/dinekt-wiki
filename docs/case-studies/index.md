@@ -4,7 +4,7 @@
 
 実際のセッションで遭遇した出来事と、そこから得た学びを記録しています。具体的なシチュエーションを通じて、Concepts や Patterns の妥当性を確認できます。
 
-**5 件のエントリ**
+**6 件のエントリ**
 
 <div class="grid cards" markdown>
 
@@ -37,5 +37,11 @@
     ---
 
     Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。 併用の基本構造 mermaid f…
+
+-   __[Stripe Webhook を Next.js で安全に実装する](stripe-webhook-を-nextjs-で安全に実装する.md)__
+
+    ---
+
+    Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。 Webhook…
 
 </div>
