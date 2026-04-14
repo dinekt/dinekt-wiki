@@ -2,6 +2,18 @@
    Diagram Zoom — Mermaid/画像のクリック拡大表示
    依存: svg-pan-zoom (CDN経由で読み込み)
    ============================================================ */
+
+/* Mermaid v11 の closed Shadow DOM を open に強制（外部からSVGアクセス可能にするため） */
+(function patchShadow() {
+  if (window.__dnkShadowPatched) return;
+  window.__dnkShadowPatched = true;
+  const orig = Element.prototype.attachShadow;
+  Element.prototype.attachShadow = function (init) {
+    const opts = init ? Object.assign({}, init, { mode: "open" }) : { mode: "open" };
+    return orig.call(this, opts);
+  };
+})();
+
 (function () {
   "use strict";
 
@@ -104,19 +116,27 @@
   }
 
   function findMermaidSvg(container) {
-    // 1) 直下/子孫の SVG（旧 Mermaid 動作）
+    // 1) Open shadow root（attachShadowパッチで closed→open に変換済みのはず）
+    if (container.shadowRoot) {
+      const svg = container.shadowRoot.querySelector("svg");
+      if (svg) return svg;
+    }
+    // 2) 直下/子孫の SVG（旧 Mermaid 動作）
     let svg = container.querySelector("svg");
     if (svg) return svg;
-    // 2) <template shadowrootmode="..."> の中身（Mermaid v11 declarative shadow DOM）
+    // 3) <template shadowrootmode> の中身（declarative shadow DOM が未活性の場合）
     const tpl = container.querySelector("template");
     if (tpl && tpl.content) {
       svg = tpl.content.querySelector("svg");
       if (svg) return svg;
     }
-    // 3) Open shadow root
-    if (container.shadowRoot) {
-      svg = container.shadowRoot.querySelector("svg");
-      if (svg) return svg;
+    // 4) container 自身に shadow root が無くても、子孫要素にある可能性
+    const allChildren = container.querySelectorAll("*");
+    for (const el of allChildren) {
+      if (el.shadowRoot) {
+        const s = el.shadowRoot.querySelector("svg");
+        if (s) return s;
+      }
     }
     return null;
   }
