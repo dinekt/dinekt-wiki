@@ -103,9 +103,27 @@
     if (content) content.innerHTML = "";
   }
 
+  function findMermaidSvg(container) {
+    // 1) 直下/子孫の SVG（旧 Mermaid 動作）
+    let svg = container.querySelector("svg");
+    if (svg) return svg;
+    // 2) <template shadowrootmode="..."> の中身（Mermaid v11 declarative shadow DOM）
+    const tpl = container.querySelector("template");
+    if (tpl && tpl.content) {
+      svg = tpl.content.querySelector("svg");
+      if (svg) return svg;
+    }
+    // 3) Open shadow root
+    if (container.shadowRoot) {
+      svg = container.shadowRoot.querySelector("svg");
+      if (svg) return svg;
+    }
+    return null;
+  }
+
   function bindMermaid(container) {
     if (container.dataset.zoomBound === "1") return;
-    const svg = container.querySelector("svg");
+    const svg = findMermaidSvg(container);
     if (!svg) return;
     container.dataset.zoomBound = "1";
     container.classList.add("dnk-zoomable");
@@ -115,7 +133,7 @@
     const handler = (e) => {
       e.preventDefault();
       e.stopPropagation();
-      const live = container.querySelector("svg") || svg;
+      const live = findMermaidSvg(container) || svg;
       openWithSvg(live);
     };
     container.addEventListener("click", handler);
