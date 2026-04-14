@@ -5,9 +5,9 @@
 <p class="dnk-hero-tagline">Claude Code と AI エージェントの設計・運用を続けるなかで積み上げてきた知見を、他のプロジェクトでも参照できる形でまとめたナレッジベースです。概念・手法・失敗パターン・道具・実際のケーススタディまでを横断して扱います。</p>
 
 <div class="dnk-hero-meta">
-  <span>79 entries</span>
-  <span>6 categories</span>
-  <span>updated 2026-04-13</span>
+  <span>82 entries</span>
+  <span>7 categories</span>
+  <span>updated 2026-04-14</span>
 </div>
 
 </div>
@@ -35,6 +35,7 @@ pie showData title カテゴリの分布
     "Case Studies" : 13
     "Tools" : 6
     "Tech Notes" : 14
+    "Lesson" : 3
 ```
 
 ## はじめての方へ
@@ -100,11 +101,37 @@ pie showData title カテゴリの分布
 
     _14 entries_
 
+-   __[Lesson](lesson/index.md)__
+
+    ---
+
+    実体験から得た学び
+
+    _3 entries_
+
 </div>
 
 ## 最近のエントリ
 
 <div class="grid cards" markdown>
+
+-   __[AIエージェントセッションのトークン効率を構造化する](lesson/aiエージェントセッションのトークン効率を構造化する.md)__
+
+    ---
+
+    AIエージェント（Claude Code等）を使った開発で週次トークン上限に早期到達する場合、原因は『最高性能モデルでルーチン作業を実行』『同じファイルを複数回フルRead』『サブエージェントの完成原…
+
+-   __[フレームワーク既定値は最後の手段として触る](lesson/フレームワーク既定値は最後の手段として触る.md)__
+
+    ---
+
+    Material for MkDocs・Next.js・Material UI・Tailwind UIなど完成度の高いフレームワークの既定挙動（z-index、focus管理、ナビゲーション、スクロー…
+
+-   __[観察を先に、修正は後に — ランタイム挙動デバッグの鉄則](lesson/観察を先に修正は後に-ランタイム挙動デバッグの鉄則.md)__
+
+    ---
+
+    ブラウザDOM・サードパーティライブラリの出力・レンダリング後HTML・Shadow DOM・非同期描画など、ランタイムで動くものを扱うときは、修正コードを書く前に必ず実物の出力を観察する。コード読解…
 
 -   __[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](case-studies/chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)__
 
@@ -123,24 +150,6 @@ pie showData title カテゴリの分布
     ---
 
     LLM エージェントに大規模な構造変更（リファクタリング）を任せる際、ナイーブに依頼すると既存挙動を壊す。段階分けと挙動保証の仕組みを先に作ってから進めるのが鉄則。 失敗パターン 成功させる 4 ステ…
-
--   __[LLM モデル / プロバイダー切り替え時の互換性問題と段階移行](case-studies/llm-モデル-プロバイダー切り替え時の互換性問題と段階移行.md)__
-
-    ---
-
-    コストや性能を理由に、運用中の LLM を別のモデル・プロバイダーに切り替える場面は増えている。互換性は完全ではない。事前に想定すべき差分と、段階的な移行手順。 遭遇しうる差分 よく遭遇する具体的な問…
-
--   __[Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](case-studies/nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)__
-
-    ---
-
-    Next.js アプリで Supabase（認証・RLS 付き Postgres）と Prisma（型付き ORM）を併用する際、認証情報の同期で詰まる問題と対処。 併用の基本構造 ハマりどころ 1.…
-
--   __[Stripe Webhook を Next.js で安全に実装する](case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)__
-
-    ---
-
-    Stripe の Webhook エンドポイントを実装する際、署名検証を正しく行わないと、第三者が偽の決済完了通知を送り込める。Next.js 環境での実装で遭遇した落とし穴と対処。 Webhook…
 
 </div>
 
