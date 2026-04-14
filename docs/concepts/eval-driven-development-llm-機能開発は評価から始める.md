@@ -98,7 +98,7 @@ LLM を使った機能の品質を担保するには、**評価を仕組み化**
 - [AI プロダクトと倫理 — 7 つの観点](ai-プロダクトと倫理-7-つの観点.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [AI プロダクトと倫理 — 7 つの観点](ai-プロダクトと倫理-7-つの観点.md)</div>
-  <div class="next">[プロンプトインジェクション — LLM アプリの最重要セキュリティ論点](プロンプトインジェクション-llm-アプリの最重要セキュリティ論点.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../ai-プロダクトと倫理-7-つの観点/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">AI プロダクトと倫理 — 7 つの観点</span></a>
+  <a class="next" href="../プロンプトインジェクション-llm-アプリの最重要セキュリティ論点/"><span class="dnk-pn-title">プロンプトインジェクション — LLM アプリの最重要セキュリティ論点</span><span class="dnk-pn-arrow">→</span></a>
 </div>

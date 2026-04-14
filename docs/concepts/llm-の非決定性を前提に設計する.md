@@ -128,7 +128,6 @@ LLM の非決定性は**治すべきバグではなく、前提条件**。前提
 - [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev"></div>
-  <div class="next">[コンテキストは有限で劣化する資源である](コンテキストは有限で劣化する資源である.md) →</div>
+<div class="dnk-prev-next">
+  <a class="next" href="../コンテキストは有限で劣化する資源である/"><span class="dnk-pn-title">コンテキストは有限で劣化する資源である</span><span class="dnk-pn-arrow">→</span></a>
 </div>

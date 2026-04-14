@@ -64,7 +64,6 @@ CLAUDE.md を「索引」に徹させ、個別の意思決定は ADR（Architect
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev"></div>
-  <div class="next">[比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md) →</div>
+<div class="dnk-prev-next">
+  <a class="next" href="../比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例/"><span class="dnk-pn-title">比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例</span><span class="dnk-pn-arrow">→</span></a>
 </div>

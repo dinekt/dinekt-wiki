@@ -149,7 +149,6 @@ LLM モデル切替は**アプリの再テスト**に近い労力がかかる。
 - [複雑なタスクを LLM に段階分解させて精度を上げた事例](複雑なタスクを-llm-に段階分解させて精度を上げた事例.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Next.js で LLM のストリーミング応答を扱う実装パターン](nextjs-で-llm-のストリーミング応答を扱う実装パターン.md)</div>
-  <div class="next"></div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../nextjs-で-llm-のストリーミング応答を扱う実装パターン/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Next.js で LLM のストリーミング応答を扱う実装パターン</span></a>
 </div>

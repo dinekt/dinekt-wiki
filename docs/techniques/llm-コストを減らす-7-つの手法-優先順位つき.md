@@ -125,7 +125,7 @@ flowchart LR
 - [RAG のチャンクサイズを選ぶ基準](rag-のチャンクサイズを選ぶ基準.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [プロンプトのバージョン管理とデプロイ戦略](プロンプトのバージョン管理とデプロイ戦略.md)</div>
-  <div class="next">[LLM ツール定義のスキーマ設計](llm-ツール定義のスキーマ設計.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../プロンプトのバージョン管理とデプロイ戦略/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">プロンプトのバージョン管理とデプロイ戦略</span></a>
+  <a class="next" href="../llm-ツール定義のスキーマ設計/"><span class="dnk-pn-title">LLM ツール定義のスキーマ設計</span><span class="dnk-pn-arrow">→</span></a>
 </div>

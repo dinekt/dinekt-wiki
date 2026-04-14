@@ -151,7 +151,7 @@ flowchart TD
 - [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [LLM コストを減らす 7 つの手法 (優先順位つき)](llm-コストを減らす-7-つの手法-優先順位つき.md)</div>
-  <div class="next">[プロンプトが期待通りに動かないときのデバッグ手順](プロンプトが期待通りに動かないときのデバッグ手順.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../llm-コストを減らす-7-つの手法-優先順位つき/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">LLM コストを減らす 7 つの手法 (優先順位つき)</span></a>
+  <a class="next" href="../プロンプトが期待通りに動かないときのデバッグ手順/"><span class="dnk-pn-title">プロンプトが期待通りに動かないときのデバッグ手順</span><span class="dnk-pn-arrow">→</span></a>
 </div>

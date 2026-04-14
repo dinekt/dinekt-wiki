@@ -65,7 +65,7 @@ Dinekt では forge というハーネス設計フレームワークで実装し
 - [AI エージェントと人間の責任分界](ai-エージェントと人間の責任分界.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [コンテキストは有限で劣化する資源である](コンテキストは有限で劣化する資源である.md)</div>
-  <div class="next">[Drift Detection — 実装が意図から乖離する現象を検出する](drift-detection-実装が意図から乖離する現象を検出する.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../コンテキストは有限で劣化する資源である/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">コンテキストは有限で劣化する資源である</span></a>
+  <a class="next" href="../drift-detection-実装が意図から乖離する現象を検出する/"><span class="dnk-pn-title">Drift Detection — 実装が意図から乖離する現象を検出する</span><span class="dnk-pn-arrow">→</span></a>
 </div>

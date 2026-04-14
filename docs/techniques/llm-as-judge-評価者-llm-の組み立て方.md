@@ -107,7 +107,7 @@ LLM-as-Judge は**完全な代替ではなく、人間の目を補う仕組み**
 - [LLM ツール定義のスキーマ設計](llm-ツール定義のスキーマ設計.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [マルチエージェント組織の4つの設計教訓](マルチエージェント組織の4つの設計教訓.md)</div>
-  <div class="next">[RAG のチャンクサイズを選ぶ基準](rag-のチャンクサイズを選ぶ基準.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../マルチエージェント組織の4つの設計教訓/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">マルチエージェント組織の4つの設計教訓</span></a>
+  <a class="next" href="../rag-のチャンクサイズを選ぶ基準/"><span class="dnk-pn-title">RAG のチャンクサイズを選ぶ基準</span><span class="dnk-pn-arrow">→</span></a>
 </div>

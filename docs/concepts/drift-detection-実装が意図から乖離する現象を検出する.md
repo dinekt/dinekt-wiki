@@ -68,7 +68,7 @@ drift は早期に検出するほど修復コストが低い。設計段階（Ph
 - [AI プロダクトと倫理 — 7 つの観点](ai-プロダクトと倫理-7-つの観点.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Intent Engineering — 意図を凍結してから設計する](intent-engineering-意図を凍結してから設計する.md)</div>
-  <div class="next">[エージェントの自律度レベルと昇格基準](エージェントの自律度レベルと昇格基準.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../intent-engineering-意図を凍結してから設計する/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Intent Engineering — 意図を凍結してから設計する</span></a>
+  <a class="next" href="../エージェントの自律度レベルと昇格基準/"><span class="dnk-pn-title">エージェントの自律度レベルと昇格基準</span><span class="dnk-pn-arrow">→</span></a>
 </div>

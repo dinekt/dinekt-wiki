@@ -90,7 +90,7 @@ flowchart LR
 - [Claude Code のサブエージェント活用法](claude-code-のサブエージェント活用法.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [forge — ハーネス設計フレームワーク](forge-ハーネス設計フレームワーク.md)</div>
-  <div class="next">[Claude Code settings.json を使いこなす](claude-code-settingsjson-を使いこなす.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../forge-ハーネス設計フレームワーク/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">forge — ハーネス設計フレームワーク</span></a>
+  <a class="next" href="../claude-code-settingsjson-を使いこなす/"><span class="dnk-pn-title">Claude Code settings.json を使いこなす</span><span class="dnk-pn-arrow">→</span></a>
 </div>

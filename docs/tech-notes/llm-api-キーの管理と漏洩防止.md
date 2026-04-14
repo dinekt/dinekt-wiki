@@ -149,7 +149,7 @@ API キー管理は**プロジェクト最初のコミット**から仕組み化
 - [Stripe Webhook を Next.js で安全に実装する](../case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [実装言語を選ぶ前に環境前提を確認する](実装言語を選ぶ前に環境前提を確認する.md)</div>
-  <div class="next">[LLM 機能を本番リリースする前のチェックリスト](llm-機能を本番リリースする前のチェックリスト.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../実装言語を選ぶ前に環境前提を確認する/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">実装言語を選ぶ前に環境前提を確認する</span></a>
+  <a class="next" href="../llm-機能を本番リリースする前のチェックリスト/"><span class="dnk-pn-title">LLM 機能を本番リリースする前のチェックリスト</span><span class="dnk-pn-arrow">→</span></a>
 </div>

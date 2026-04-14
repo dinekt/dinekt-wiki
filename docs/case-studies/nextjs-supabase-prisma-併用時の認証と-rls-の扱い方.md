@@ -83,7 +83,7 @@ flowchart TD
 - [Edge Runtime vs Node Runtime の使い分け](../tech-notes/edge-runtime-vs-node-runtime-の使い分け.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md)</div>
-  <div class="next">[Stripe Webhook を Next.js で安全に実装する](stripe-webhook-を-nextjs-で安全に実装する.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../chrome-拡張-manifest-v3-での-content-script-side-panel-連携/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携</span></a>
+  <a class="next" href="../stripe-webhook-を-nextjs-で安全に実装する/"><span class="dnk-pn-title">Stripe Webhook を Next.js で安全に実装する</span><span class="dnk-pn-arrow">→</span></a>
 </div>

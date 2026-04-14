@@ -120,7 +120,7 @@ LLM アプリの品質改善は**ログの質**に直結する。本番投入の
 - [LLM 機能を本番リリースする前のチェックリスト](llm-機能を本番リリースする前のチェックリスト.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [LLM API のレート制限との付き合い方](llm-api-のレート制限との付き合い方.md)</div>
-  <div class="next">[ナレッジベースのファイル命名規則とテキスト規約](ナレッジベースのファイル命名規則とテキスト規約.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../llm-api-のレート制限との付き合い方/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">LLM API のレート制限との付き合い方</span></a>
+  <a class="next" href="../ナレッジベースのファイル命名規則とテキスト規約/"><span class="dnk-pn-title">ナレッジベースのファイル命名規則とテキスト規約</span><span class="dnk-pn-arrow">→</span></a>
 </div>

@@ -125,7 +125,7 @@ flowchart LR
 - [ADR 参照コマンドによる意思決定の継承](../tools/adr-参照コマンドによる意思決定の継承.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [AI エージェントが読みやすいドキュメントの書き方](ai-エージェントが読みやすいドキュメントの書き方.md)</div>
-  <div class="next">[エージェントと協業する 1 日のワークフロー](エージェントと協業する-1-日のワークフロー.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../ai-エージェントが読みやすいドキュメントの書き方/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">AI エージェントが読みやすいドキュメントの書き方</span></a>
+  <a class="next" href="../エージェントと協業する-1-日のワークフロー/"><span class="dnk-pn-title">エージェントと協業する 1 日のワークフロー</span><span class="dnk-pn-arrow">→</span></a>
 </div>

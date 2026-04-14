@@ -86,7 +86,6 @@ flowchart TD
 - [Claude Code のサブエージェント活用法](claude-code-のサブエージェント活用法.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev"></div>
-  <div class="next">[ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md) →</div>
+<div class="dnk-prev-next">
+  <a class="next" href="../adr-参照コマンドによる意思決定の継承/"><span class="dnk-pn-title">ADR 参照コマンドによる意思決定の継承</span><span class="dnk-pn-arrow">→</span></a>
 </div>

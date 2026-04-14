@@ -82,7 +82,6 @@ flowchart TD
 - [Claude Code の Slash Command と Skill の使い分け](claude-code-の-slash-command-と-skill-の使い分け.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [ナレッジベースのファイル命名規則とテキスト規約](ナレッジベースのファイル命名規則とテキスト規約.md)</div>
-  <div class="next"></div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../ナレッジベースのファイル命名規則とテキスト規約/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">ナレッジベースのファイル命名規則とテキスト規約</span></a>
 </div>

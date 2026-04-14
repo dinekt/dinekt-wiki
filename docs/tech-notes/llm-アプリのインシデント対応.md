@@ -200,7 +200,7 @@ LLM アプリのインシデント対応は、**発生してから考える**の
 - [LLM レッドチーミング — 意図的な攻撃で安全性を検証する](../techniques/llm-レッドチーミング-意図的な攻撃で安全性を検証する.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [AI エージェント運用の 10 メトリクス](ai-エージェント運用の-10-メトリクス.md)</div>
-  <div class="next">[OpenAI と Anthropic API の主要差分](openai-と-anthropic-api-の主要差分.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../ai-エージェント運用の-10-メトリクス/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">AI エージェント運用の 10 メトリクス</span></a>
+  <a class="next" href="../openai-と-anthropic-api-の主要差分/"><span class="dnk-pn-title">OpenAI と Anthropic API の主要差分</span><span class="dnk-pn-arrow">→</span></a>
 </div>

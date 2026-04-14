@@ -111,7 +111,7 @@ Markdown なら見出し、HTML なら要素、コードなら関数単位で切
 - [Few-shot Examples の効果的な設計](few-shot-examples-の効果的な設計.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [LLM-as-Judge — 評価者 LLM の組み立て方](llm-as-judge-評価者-llm-の組み立て方.md)</div>
-  <div class="next">[Python での PDF 処理: PyMuPDF と pikepdf の使い分け](python-での-pdf-処理-pymupdf-と-pikepdf-の使い分け.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../llm-as-judge-評価者-llm-の組み立て方/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">LLM-as-Judge — 評価者 LLM の組み立て方</span></a>
+  <a class="next" href="../python-での-pdf-処理-pymupdf-と-pikepdf-の使い分け/"><span class="dnk-pn-title">Python での PDF 処理: PyMuPDF と pikepdf の使い分け</span><span class="dnk-pn-arrow">→</span></a>
 </div>

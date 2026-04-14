@@ -44,7 +44,7 @@ FTS5 のクエリ構文では `-` `"` `(` `)` `*` などが演算子として解
 - [AI エージェント運用の 10 メトリクス](ai-エージェント運用の-10-メトリクス.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [SQLite FTS5 で日本語を全文検索する](sqlite-fts5-で日本語を全文検索する.md)</div>
-  <div class="next">[Edge Runtime vs Node Runtime の使い分け](edge-runtime-vs-node-runtime-の使い分け.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../sqlite-fts5-で日本語を全文検索する/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">SQLite FTS5 で日本語を全文検索する</span></a>
+  <a class="next" href="../edge-runtime-vs-node-runtime-の使い分け/"><span class="dnk-pn-title">Edge Runtime vs Node Runtime の使い分け</span><span class="dnk-pn-arrow">→</span></a>
 </div>

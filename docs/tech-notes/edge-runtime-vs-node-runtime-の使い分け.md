@@ -101,7 +101,7 @@ Next.js では route ごとに `export const runtime = 'edge'` または `'nodej
 - [Stripe Webhook を Next.js で安全に実装する](../case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md)</div>
-  <div class="next">[LLM API のレート制限との付き合い方](llm-api-のレート制限との付き合い方.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../sqlite-fts5-クエリは-phrase-化して安全に渡す/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">SQLite FTS5 クエリは phrase 化して安全に渡す</span></a>
+  <a class="next" href="../llm-api-のレート制限との付き合い方/"><span class="dnk-pn-title">LLM API のレート制限との付き合い方</span><span class="dnk-pn-arrow">→</span></a>
 </div>

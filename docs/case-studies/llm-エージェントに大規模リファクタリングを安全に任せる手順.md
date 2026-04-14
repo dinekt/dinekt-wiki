@@ -117,7 +117,7 @@ flowchart LR
 - [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [LLM エージェントに push 通知チャネルを組み込む際の落とし穴](llm-エージェントに-push-通知チャネルを組み込む際の落とし穴.md)</div>
-  <div class="next">[Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携](chrome-拡張-manifest-v3-での-content-script-side-panel-連携.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../llm-エージェントに-push-通知チャネルを組み込む際の落とし穴/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">LLM エージェントに push 通知チャネルを組み込む際の落とし穴</span></a>
+  <a class="next" href="../chrome-拡張-manifest-v3-での-content-script-side-panel-連携/"><span class="dnk-pn-title">Chrome 拡張 Manifest V3 での Content Script + Side Panel 連携</span><span class="dnk-pn-arrow">→</span></a>
 </div>

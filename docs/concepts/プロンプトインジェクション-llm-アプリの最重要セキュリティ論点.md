@@ -122,7 +122,7 @@ LLM の出力に、センシティブ情報（API キー、個人情報、シス
 - [LLM API のレート制限との付き合い方](../tech-notes/llm-api-のレート制限との付き合い方.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Eval-Driven Development — LLM 機能開発は評価から始める](eval-driven-development-llm-機能開発は評価から始める.md)</div>
-  <div class="next">[ファインチューニング vs プロンプト — どちらを選ぶか](ファインチューニング-vs-プロンプト-どちらを選ぶか.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../eval-driven-development-llm-機能開発は評価から始める/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Eval-Driven Development — LLM 機能開発は評価から始める</span></a>
+  <a class="next" href="../ファインチューニング-vs-プロンプト-どちらを選ぶか/"><span class="dnk-pn-title">ファインチューニング vs プロンプト — どちらを選ぶか</span><span class="dnk-pn-arrow">→</span></a>
 </div>

@@ -50,7 +50,7 @@ CREATE VIRTUAL TABLE entries_fts USING fts5(
 - [AI エージェント運用の 10 メトリクス](ai-エージェント運用の-10-メトリクス.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Claude Code の Slash Command と Skill の使い分け](claude-code-の-slash-command-と-skill-の使い分け.md)</div>
-  <div class="next">[SQLite FTS5 クエリは phrase 化して安全に渡す](sqlite-fts5-クエリは-phrase-化して安全に渡す.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../claude-code-の-slash-command-と-skill-の使い分け/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Claude Code の Slash Command と Skill の使い分け</span></a>
+  <a class="next" href="../sqlite-fts5-クエリは-phrase-化して安全に渡す/"><span class="dnk-pn-title">SQLite FTS5 クエリは phrase 化して安全に渡す</span><span class="dnk-pn-arrow">→</span></a>
 </div>

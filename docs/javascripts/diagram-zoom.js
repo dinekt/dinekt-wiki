@@ -97,10 +97,8 @@
     if (content) content.innerHTML = "";
   }
 
-  function attachMermaid(container) {
+  function bindMermaidContainer(container, svg) {
     if (container.dataset.zoomBound === "1") return;
-    const svg = container.querySelector("svg");
-    if (!svg) return;
     container.dataset.zoomBound = "1";
     container.classList.add("dnk-zoomable");
     container.setAttribute("role", "button");
@@ -108,12 +106,33 @@
     container.setAttribute("aria-label", "図を拡大表示");
     const handler = (e) => {
       e.preventDefault();
-      openWithSvg(svg);
+      openWithSvg(container.querySelector("svg") || svg);
     };
     container.addEventListener("click", handler);
     container.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") handler(e);
     });
+  }
+
+  function attachMermaid(container) {
+    if (container.dataset.zoomBound === "1") return;
+    const svg = container.querySelector("svg");
+    if (svg) {
+      bindMermaidContainer(container, svg);
+      return;
+    }
+    if (container.dataset.zoomWatch === "1") return;
+    container.dataset.zoomWatch = "1";
+    const observer = new MutationObserver(() => {
+      const found = container.querySelector("svg");
+      if (found) {
+        bindMermaidContainer(container, found);
+        observer.disconnect();
+      }
+    });
+    observer.observe(container, { childList: true, subtree: true });
+    // Safety stop after 30s
+    setTimeout(() => observer.disconnect(), 30000);
   }
 
   function attachImage(img) {

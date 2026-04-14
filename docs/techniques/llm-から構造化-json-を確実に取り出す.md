@@ -124,7 +124,7 @@ flowchart TD
 - [RAG のチャンクサイズを選ぶ基準](rag-のチャンクサイズを選ぶ基準.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [推論モデル (o1/o3/Extended Thinking) の使いどころ](推論モデル-o1o3extended-thinking-の使いどころ.md)</div>
-  <div class="next">[プロンプトキャッシュを壊さない書き方](プロンプトキャッシュを壊さない書き方.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../推論モデル-o1o3extended-thinking-の使いどころ/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">推論モデル (o1/o3/Extended Thinking) の使いどころ</span></a>
+  <a class="next" href="../プロンプトキャッシュを壊さない書き方/"><span class="dnk-pn-title">プロンプトキャッシュを壊さない書き方</span><span class="dnk-pn-arrow">→</span></a>
 </div>

@@ -179,7 +179,7 @@ flowchart LR
 - [Stripe Webhook を Next.js で安全に実装する](../case-studies/stripe-webhook-を-nextjs-で安全に実装する.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [ハルシネーションを抑える 7 つの手法](ハルシネーションを抑える-7-つの手法.md)</div>
-  <div class="next">[Guardrails — LLM 出力を決定論的に制御する仕組み](guardrails-llm-出力を決定論的に制御する仕組み.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../ハルシネーションを抑える-7-つの手法/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">ハルシネーションを抑える 7 つの手法</span></a>
+  <a class="next" href="../guardrails-llm-出力を決定論的に制御する仕組み/"><span class="dnk-pn-title">Guardrails — LLM 出力を決定論的に制御する仕組み</span><span class="dnk-pn-arrow">→</span></a>
 </div>

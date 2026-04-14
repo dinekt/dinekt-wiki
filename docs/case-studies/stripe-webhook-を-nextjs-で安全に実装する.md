@@ -114,7 +114,7 @@ flowchart TD
 - [Edge Runtime vs Node Runtime の使い分け](../tech-notes/edge-runtime-vs-node-runtime-の使い分け.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方](nextjs-supabase-prisma-併用時の認証と-rls-の扱い方.md)</div>
-  <div class="next">[Next.js で LLM のストリーミング応答を扱う実装パターン](nextjs-で-llm-のストリーミング応答を扱う実装パターン.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../nextjs-supabase-prisma-併用時の認証と-rls-の扱い方/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Next.js + Supabase + Prisma 併用時の認証と RLS の扱い方</span></a>
+  <a class="next" href="../nextjs-で-llm-のストリーミング応答を扱う実装パターン/"><span class="dnk-pn-title">Next.js で LLM のストリーミング応答を扱う実装パターン</span><span class="dnk-pn-arrow">→</span></a>
 </div>

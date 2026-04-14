@@ -155,7 +155,7 @@ Claude Code での不具合調査は、**「再現 → 仮説 → 検証 → 根
 - [CLAUDE.md 肥大化を ADR 分離で回復した事例](claudemd-肥大化を-adr-分離で回復した事例.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例](比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例.md)</div>
-  <div class="next">[評価セットを後回しにしてリリース後に立て直した事例](評価セットを後回しにしてリリース後に立て直した事例.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../比喩的な指示が実装の食い違いを生む-二役レビューで救われた事例/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">比喩的な指示が実装の食い違いを生む — 二役レビューで救われた事例</span></a>
+  <a class="next" href="../評価セットを後回しにしてリリース後に立て直した事例/"><span class="dnk-pn-title">評価セットを後回しにしてリリース後に立て直した事例</span><span class="dnk-pn-arrow">→</span></a>
 </div>

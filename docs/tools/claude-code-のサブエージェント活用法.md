@@ -123,7 +123,7 @@ flowchart LR
 - [forge — ハーネス設計フレームワーク](forge-ハーネス設計フレームワーク.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [Claude Code settings.json を使いこなす](claude-code-settingsjson-を使いこなす.md)</div>
-  <div class="next">[評価ハーネスの設計 — プロンプトを育てる仕組み](評価ハーネスの設計-プロンプトを育てる仕組み.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../claude-code-settingsjson-を使いこなす/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">Claude Code settings.json を使いこなす</span></a>
+  <a class="next" href="../評価ハーネスの設計-プロンプトを育てる仕組み/"><span class="dnk-pn-title">評価ハーネスの設計 — プロンプトを育てる仕組み</span><span class="dnk-pn-arrow">→</span></a>
 </div>

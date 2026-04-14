@@ -172,7 +172,7 @@ flowchart LR
 - [CoT・ToT・ReAct — 推論パターンの使い分け](cottotreact-推論パターンの使い分け.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [CoT・ToT・ReAct — 推論パターンの使い分け](cottotreact-推論パターンの使い分け.md)</div>
-  <div class="next">[LLM から構造化 JSON を確実に取り出す](llm-から構造化-json-を確実に取り出す.md) →</div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../cottotreact-推論パターンの使い分け/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">CoT・ToT・ReAct — 推論パターンの使い分け</span></a>
+  <a class="next" href="../llm-から構造化-json-を確実に取り出す/"><span class="dnk-pn-title">LLM から構造化 JSON を確実に取り出す</span><span class="dnk-pn-arrow">→</span></a>
 </div>

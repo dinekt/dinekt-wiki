@@ -100,7 +100,6 @@ flowchart LR
 - [ADR 参照コマンドによる意思決定の継承](adr-参照コマンドによる意思決定の継承.md)
 
 
-<div class="dnk-prev-next" markdown>
-  <div class="prev">← [評価ハーネスの設計 — プロンプトを育てる仕組み](評価ハーネスの設計-プロンプトを育てる仕組み.md)</div>
-  <div class="next"></div>
+<div class="dnk-prev-next">
+  <a class="prev" href="../評価ハーネスの設計-プロンプトを育てる仕組み/"><span class="dnk-pn-arrow">←</span><span class="dnk-pn-title">評価ハーネスの設計 — プロンプトを育てる仕組み</span></a>
 </div>
