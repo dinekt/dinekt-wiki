@@ -551,31 +551,13 @@ body, .md-typeset {
   text-overflow: ellipsis;
 }
 
-/* ---------- Sidebar z-index / overlap fix ---------- */
+/* ---------- Sidebar overscroll containment (desktop only) ---------- */
+/* z-index は Material デフォルトに任せる（モバイルドロワーを壊さないため） */
 
-.md-header {
-  z-index: 4;
-}
-
-.md-sidebar {
-  z-index: 2;
-}
-
-.md-footer {
-  position: relative;
-  z-index: 3;
-}
-
-/* サイドバーがフッター領域に被らないよう上限を明示 */
-.md-sidebar--primary,
-.md-sidebar--secondary {
-  top: 2.4rem;
-  height: calc(100vh - 2.4rem);
-}
-
-.md-sidebar__scrollwrap {
-  overflow-y: auto;
-  overscroll-behavior: contain;
+@media (min-width: 76.25em) {
+  .md-sidebar__scrollwrap {
+    overscroll-behavior: contain;
+  }
 }
 
 /* ---------- Responsive ---------- */

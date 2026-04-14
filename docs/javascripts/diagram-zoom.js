@@ -123,8 +123,6 @@
 
   function bindMermaid(container) {
     if (container.dataset.zoomBound === "1") return;
-    const svg = findMermaidSvg(container);
-    if (!svg) return;
     container.dataset.zoomBound = "1";
     container.classList.add("dnk-zoomable");
     container.setAttribute("role", "button");
@@ -133,7 +131,11 @@
     const handler = (e) => {
       e.preventDefault();
       e.stopPropagation();
-      const live = findMermaidSvg(container) || svg;
+      const live = findMermaidSvg(container);
+      if (!live) {
+        console.warn("[diagram-zoom] no SVG found in", container);
+        return;
+      }
       openWithSvg(live);
     };
     container.addEventListener("click", handler);
