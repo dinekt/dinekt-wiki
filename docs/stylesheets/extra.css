@@ -534,8 +534,40 @@ body, .md-typeset {
 
 .dnk-prev-next .prev:empty,
 .dnk-prev-next .next:empty {
-  border: none;
-  background: transparent;
+  display: none;
+}
+
+/* 片側だけのとき、残りを1カラム表示にする */
+.dnk-prev-next:has(.prev:empty),
+.dnk-prev-next:has(.next:empty) {
+  grid-template-columns: 1fr;
+}
+
+/* ---------- Sidebar z-index / overlap fix ---------- */
+
+.md-header {
+  z-index: 4;
+}
+
+.md-sidebar {
+  z-index: 2;
+}
+
+.md-footer {
+  position: relative;
+  z-index: 3;
+}
+
+/* サイドバーがフッター領域に被らないよう上限を明示 */
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  top: 2.4rem;
+  height: calc(100vh - 2.4rem);
+}
+
+.md-sidebar__scrollwrap {
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 /* ---------- Responsive ---------- */
@@ -642,4 +674,156 @@ body, .md-typeset {
 .md-typeset ul li::marker,
 .md-typeset ol li::marker {
   color: var(--dnk-fg-mute);
+}
+
+/* ---------- Diagram zoom (Mermaid / images) ---------- */
+
+.md-typeset .dnk-zoomable {
+  cursor: zoom-in;
+  position: relative;
+  transition: border-color 0.15s ease;
+}
+
+.md-typeset .dnk-zoomable:hover {
+  border-color: var(--dnk-border-strong);
+}
+
+.md-typeset .dnk-zoomable::after {
+  content: "拡大";
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  font-family: var(--md-code-font);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  background: var(--dnk-fg);
+  color: var(--dnk-bg);
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.md-typeset .dnk-zoomable:hover::after,
+.md-typeset .dnk-zoomable:focus::after {
+  opacity: 1;
+}
+
+.md-typeset .dnk-zoomable-img {
+  cursor: zoom-in;
+}
+
+.dnk-zoom-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.dnk-zoom-modal.is-open {
+  display: flex;
+}
+
+.dnk-zoom-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.dnk-zoom-stage {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5vh 2.5vw;
+  background: var(--dnk-bg);
+  border: 1px solid var(--dnk-border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+[data-md-color-scheme="slate"] .dnk-zoom-stage {
+  background: #0a0a0a;
+}
+
+.dnk-zoom-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 2;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid var(--dnk-border);
+  background: var(--dnk-bg);
+  color: var(--dnk-fg);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.dnk-zoom-close:hover {
+  background: var(--dnk-bg-soft);
+  border-color: var(--dnk-fg-soft);
+}
+
+.dnk-zoom-hint {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: var(--md-code-font);
+  font-size: 0.68rem;
+  color: var(--dnk-fg-mute);
+  background: var(--dnk-bg);
+  border: 1px solid var(--dnk-border);
+  border-radius: 3px;
+  padding: 0.25rem 0.7rem;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.dnk-zoom-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.dnk-zoom-content svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.dnk-zoom-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+@media (max-width: 44.9375em) {
+  .dnk-zoom-stage {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+  .dnk-zoom-hint {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
+  }
 }
