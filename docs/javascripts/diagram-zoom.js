@@ -321,32 +321,38 @@
     });
   }
 
-  /* ナビゲーション後にフォーカスをメインに戻す（Tabキーが効かない問題への対策） */
-  function resetFocusToMain() {
-    const main =
-      document.querySelector("main .md-content__inner") ||
-      document.querySelector(".md-content") ||
-      document.querySelector("main");
-    if (!main) return;
-    if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1");
-    try {
-      main.focus({ preventScroll: true });
-    } catch (_) {
-      main.focus();
-    }
+  /* Tabキーが「迷子」になったときだけ、メインコンテンツへフォーカスを誘導する。
+     ナビゲーション直後に強制フォーカスはしない（Materialのレンダリングと干渉して
+     サイドバー描画が崩れるため） */
+  function setupTabRecovery() {
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Tab" || e.shiftKey) return;
+      const active = document.activeElement;
+      // 既にどこかにフォーカスが当たっていれば何もしない
+      if (active && active !== document.body && active !== document.documentElement) return;
+      const main =
+        document.querySelector("main .md-content__inner") ||
+        document.querySelector(".md-content") ||
+        document.querySelector("main");
+      if (!main) return;
+      e.preventDefault();
+      if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1");
+      try {
+        main.focus({ preventScroll: true });
+      } catch (_) {
+        main.focus();
+      }
+    });
   }
 
   function init() {
     scanAll();
     startGlobalObserver();
+    setupTabRecovery();
 
     // Material instant navigation
     if (window.document$ && typeof window.document$.subscribe === "function") {
-      window.document$.subscribe(() => {
-        scheduleScan();
-        // 少し遅延させて新DOMの構築完了後にフォーカス
-        setTimeout(resetFocusToMain, 50);
-      });
+      window.document$.subscribe(() => scheduleScan());
     }
 
     // Belt-and-suspenders retries (Mermaid sometimes renders very late)
