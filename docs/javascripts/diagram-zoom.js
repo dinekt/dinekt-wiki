@@ -49,6 +49,66 @@
 
   let panZoomInstance = null;
 
+  /* svg-pan-zoom customEventsHandler — touch (pinch + 1本指pan) を実装 */
+  function pinchHandler() {
+    let initialDistance = 0;
+    let initialZoom = 1;
+    let lastPanPoint = null;
+    let instance = null;
+    return {
+      haltEventListeners: ["touchstart", "touchend", "touchmove", "touchleave", "touchcancel"],
+      init: function (options) {
+        instance = options.instance;
+        const target = options.svgElement;
+        target.addEventListener("touchstart", onStart, { passive: false });
+        target.addEventListener("touchmove", onMove, { passive: false });
+        target.addEventListener("touchend", onEnd, { passive: true });
+        target.addEventListener("touchcancel", onEnd, { passive: true });
+        this._target = target;
+      },
+      destroy: function () {
+        if (!this._target) return;
+        this._target.removeEventListener("touchstart", onStart);
+        this._target.removeEventListener("touchmove", onMove);
+        this._target.removeEventListener("touchend", onEnd);
+        this._target.removeEventListener("touchcancel", onEnd);
+      },
+    };
+
+    function dist(t1, t2) {
+      return Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
+    }
+    function onStart(e) {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        initialDistance = dist(e.touches[0], e.touches[1]);
+        initialZoom = instance.getZoom();
+        lastPanPoint = null;
+      } else if (e.touches.length === 1) {
+        lastPanPoint = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      }
+    }
+    function onMove(e) {
+      if (e.touches.length === 2 && initialDistance > 0) {
+        e.preventDefault();
+        const newDist = dist(e.touches[0], e.touches[1]);
+        const scale = newDist / initialDistance;
+        instance.zoom(initialZoom * scale);
+      } else if (e.touches.length === 1 && lastPanPoint) {
+        e.preventDefault();
+        const t = e.touches[0];
+        const dx = t.clientX - lastPanPoint.x;
+        const dy = t.clientY - lastPanPoint.y;
+        instance.panBy({ x: dx, y: dy });
+        lastPanPoint = { x: t.clientX, y: t.clientY };
+      }
+    }
+    function onEnd(e) {
+      if (e.touches.length < 2) initialDistance = 0;
+      if (e.touches.length === 0) lastPanPoint = null;
+    }
+  }
+
   function openWithSvg(svgNode) {
     const modal = createModal();
     const content = modal.querySelector(".dnk-zoom-content");
@@ -79,6 +139,7 @@
             maxZoom: 30,
             zoomScaleSensitivity: 0.4,
             contain: false,
+            customEventsHandler: pinchHandler(),
           });
         } catch (err) {
           console.warn("[diagram-zoom] svgPanZoom init failed:", err);
@@ -178,14 +239,44 @@
     });
   }
 
+  /* IntersectionObserver で表示されたものだけ遅延バインド */
+  let intersectionObserver = null;
+  function getIO() {
+    if (intersectionObserver) return intersectionObserver;
+    if (!("IntersectionObserver" in window)) return null;
+    intersectionObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const el = entry.target;
+          intersectionObserver.unobserve(el);
+          if (el.classList.contains("mermaid")) bindMermaid(el);
+          else if (el.tagName === "IMG") bindImage(el);
+        }
+      },
+      { rootMargin: "200px 0px" }
+    );
+    return intersectionObserver;
+  }
+
+  function observeOrBind(el, immediate) {
+    if (el.dataset.zoomBound === "1") return;
+    const io = getIO();
+    if (immediate || !io) {
+      if (el.classList.contains("mermaid")) bindMermaid(el);
+      else if (el.tagName === "IMG") bindImage(el);
+    } else {
+      io.observe(el);
+    }
+  }
+
   function scanAll(root) {
     const scope = root && root.querySelectorAll ? root : document;
     scope.querySelectorAll(".mermaid").forEach((el) => {
-      // Skip nodes outside of content area or already bound
       if (el.closest(".dnk-zoom-modal")) return;
-      bindMermaid(el);
+      observeOrBind(el, false);
     });
-    scope.querySelectorAll(".md-typeset img").forEach(bindImage);
+    scope.querySelectorAll(".md-typeset img").forEach((el) => observeOrBind(el, false));
   }
 
   let scanScheduled = false;
@@ -230,13 +321,32 @@
     });
   }
 
+  /* ナビゲーション後にフォーカスをメインに戻す（Tabキーが効かない問題への対策） */
+  function resetFocusToMain() {
+    const main =
+      document.querySelector("main .md-content__inner") ||
+      document.querySelector(".md-content") ||
+      document.querySelector("main");
+    if (!main) return;
+    if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1");
+    try {
+      main.focus({ preventScroll: true });
+    } catch (_) {
+      main.focus();
+    }
+  }
+
   function init() {
     scanAll();
     startGlobalObserver();
 
     // Material instant navigation
     if (window.document$ && typeof window.document$.subscribe === "function") {
-      window.document$.subscribe(() => scheduleScan());
+      window.document$.subscribe(() => {
+        scheduleScan();
+        // 少し遅延させて新DOMの構築完了後にフォーカス
+        setTimeout(resetFocusToMain, 50);
+      });
     }
 
     // Belt-and-suspenders retries (Mermaid sometimes renders very late)
